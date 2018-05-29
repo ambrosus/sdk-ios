@@ -1,0 +1,6 @@
+framework module AmbrosusSDK {
+  umbrella header "AmbrosusSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

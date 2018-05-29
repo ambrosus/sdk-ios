@@ -1,0 +1,74 @@
+//
+//  Copyright: Ambrosus Technologies GmbH
+//  Email: tech@ambrosus.com
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files 
+// (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, 
+// distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+// IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+
+import UIKit
+import AmbrosusSDK
+
+final class EventTimelineCollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var timelineBorderViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var timelineBorderViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var eventTimelineBorderView: UIView!
+    @IBOutlet weak var eventTimelineIconView: UIImageView!
+    @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var privacyLevel: UILabel!
+
+    var event: AMBEvent = AMBEvent() {
+        didSet {
+            let privacyLevelValue: String = {
+                return event.accessLevel == 0 ? "Public" : "Private"
+            }()
+            let timelineIcon: UIImage = {
+                if event.type.contains("transport") {
+                    return #imageLiteral(resourceName: "Transport")
+                } else if event.type.contains("pressure") || event.type.contains("humidity") {
+                    return #imageLiteral(resourceName: "Beaker")
+                } else if event.type.contains("location") {
+                    return #imageLiteral(resourceName: "Pin")
+                } else if event.type.contains("identifier") {
+                    return #imageLiteral(resourceName: "ScanSmall")
+                } else {
+                    return #imageLiteral(resourceName: "Leaf")
+                }
+            }()
+            
+            eventNameLabel.text = event.type
+            locationLabel.text = event.locationName
+            timeLabel.text = event.date
+            privacyLevel.text = privacyLevelValue
+            eventTimelineIconView.image = timelineIcon
+        }
+    }
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        clipsToBounds = false
+        eventNameLabel.textColor = Colors.darkElement2
+        locationLabel.textColor = Colors.descriptionText
+        timeLabel.textColor = Colors.lightDescriptionText
+        privacyLevel.textColor = Colors.lightDescriptionText
+        eventTimelineIconView.backgroundColor = Colors.darkElement2
+        eventTimelineBorderView.backgroundColor = eventTimelineIconView.backgroundColor
+        eventTimelineIconView.layer.cornerRadius = 27 / 2
+
+        eventNameLabel.font = Fonts.cellTitle
+        locationLabel.font = Fonts.cellLightDescription
+        timeLabel.font = Fonts.cellLightDescription
+        privacyLevel.font = Fonts.cellLightDescription
+    }
+
+}

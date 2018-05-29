@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AmbrosusSDK_Example' do
+  pod 'AmbrosusSDK', :path => '../'
+
+  target 'AmbrosusSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

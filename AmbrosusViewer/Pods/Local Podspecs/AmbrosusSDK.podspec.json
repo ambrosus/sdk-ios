@@ -1,0 +1,22 @@
+{
+  "name": "AmbrosusSDK",
+  "version": "0.1.0",
+  "summary": "A short description of AmbrosusSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/allgamesallfree/AmbrosusSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "allgamesallfree": "max34563@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/allgamesallfree/AmbrosusSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AmbrosusSDK/**/*"
+}
