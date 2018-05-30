@@ -1,8 +1,30 @@
 ## About
 
-Ambrosus Viewer is an iOS application that uses the <a href="https://dev.ambrosus.com" target="_blank">Ambrosus API</a> combined with scanning technology to allow users to scan a Bar Code, QR Code, or other 1D or 2D symbology and get details about an item moving through a supply chain.
+The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the Ambrosus API, and build their own interfaces for displaying Assets and Events.
 
-Browse through scanned assets within the app and learn about their origins and other details such as temperature, weight, creation date, and more. See a timeline detailing all things that happened to the asset from the date of its creation to it arriving in stores. 
+## Integration
+
+To start using the SDK you can add the following to your Podfile:
+
+```ruby
+pod AmbrosusSDK
+```
+
+You can also download or clone this repository and import the AmbrosusSDK manually if not using Cocoapods, all of the code is contained in the top level "AmbrosusSDK" folder.
+
+## Usage
+
+To get back an asset from the API you can make a call like the following:
+
+```swift
+AMBNetwork.requestAsset(fromId: query, completion: { (asset) in
+  guard let asset = asset else {
+    print("asset failed to unwrap")
+    return
+  }
+  // Use unwrapped Asset here
+}
+```
 
 ## Supported OS & SDK Versions
 
