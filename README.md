@@ -45,12 +45,12 @@ AMBNetwork.requestAsset(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f3
 A single Asset in the Ambrosus SDK has many events associated with it, to get back all events associated with an asset you can make a call like the following:
 
 ```swift
-AMBNetwork.requestEvents(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664", completion: { (asset) in
-  guard let asset = asset else {
-    print("asset failed to unwrap")
-    return
-  }
-  // Use unwrapped Asset here
+AMBNetwork.requestEvents(fromAssetId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664") { (events) in
+    guard let events = events else {
+        print("Failed to return events")
+        return
+    }
+    // Use unwrapped events here
 }
 ```
 
@@ -72,6 +72,13 @@ AMBNetwork.requestAsset(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f3
         AMBDataStore.sharedInstance.eventStore.insert(events)
     })
 })
+```
+
+Once the asset along with its events are stored in the `AMBDataStore` they can then be accessed like so:
+```swift
+let assetId = "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664"
+let asset = AMBDataStore.sharedInstance.assetStore.fetch(withAssetId: assetId)
+let events = AMBDataStore.sharedInstance.eventStore.fetchEvents(forAssetId: assetId)
 ```
 
 ## Supported OS & SDK Versions
