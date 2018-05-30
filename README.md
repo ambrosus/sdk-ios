@@ -12,9 +12,9 @@ pod AmbrosusSDK
 
 You can also download or clone this repository and import the AmbrosusSDK manually if not using Cocoapods, all of the code is contained in the top level "AmbrosusSDK" folder.
 
-## Usage
+## Overview
 
-The SDK is composed of 3 main files
+The SDK is composed of three main files all contained within the "AmbrosusSDK" folder:
 
 `AMBNetwork.swift` 
 
@@ -27,6 +27,8 @@ A singleton caching layer, you can insert assets into it using `AMBDataStore.sha
 `AMBModels.swift`
 
 Defines the two main data models, `AMBAsset` and `AMBEvent` these are the objects which Asset and Event details screens can be built with. To see an example of these structures being used see the AmbrosusViewer example project included with this repository.
+
+## Usage
 
 To get back an asset from the API you can make a call like the following:
 
@@ -50,6 +52,26 @@ AMBNetwork.requestEvents(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f
   }
   // Use unwrapped Asset here
 }
+```
+
+To get back an asset along with all of its events, and store the information in the `AMBDataStore` this can be done as follows:
+
+```swift
+AMBNetwork.requestAsset(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664", completion: { (asset) in
+    guard let asset = asset else {
+        print("asset failed to unwrap")
+        return
+    }
+    AMBDataStore.sharedInstance.assetStore.insert(asset)
+
+    AMBNetwork.requestEvents(fromAssetId: asset.id, completion: { (events) in
+        guard let events = events else {
+            print("events failed to unwrap")
+            return
+        }
+        AMBDataStore.sharedInstance.eventStore.insert(events)
+    })
+})
 ```
 
 ## Supported OS & SDK Versions
