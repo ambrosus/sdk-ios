@@ -92,6 +92,11 @@ The included example application, Ambrosus Viewer includes a scanner that is cap
 To use the scanner in the Ambrosus Viewer you need a [Scandit](https://scandit.com) API key, you can sign up for a 30 day trial here:
 https://ssl.scandit.com/customers/new?p=test  
 
+The key can be replaced inside the `AppDelegate.swift` on line 27:
+```swift
+let scanditAppKey = "[YOUR SCANDIT KEY HERE]"
+```
+
 ## Ambrosus Viewer Support
 
 * Supports iPhone 5S and above, iPad 5th Generation and above, iPod Touch 6th Generation and Above.
