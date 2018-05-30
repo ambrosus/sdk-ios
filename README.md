@@ -1,6 +1,10 @@
-## About
+# Ambrosus iOS SDK
 
-The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the Ambrosus API, and build their own interfaces for displaying Assets and Events.
+The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the [Ambrosus API](https://ambrosus.docs.apiary.io) (AMB-NET), and build their own interfaces for displaying Assets and Events.
+
+* [Integration](#Integration)
+* [Overview](#overview)
+* [Usage](#usage)
 
 ## Integration
 
