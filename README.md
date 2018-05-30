@@ -2,7 +2,7 @@
 
 The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the [Ambrosus API](https://ambrosus.docs.apiary.io) (AMB-NET), and build their own interfaces for displaying Assets and Events.
 
-* [Integration](#Integration)
+* [Integration](#integration)
 * [Overview](#overview)
 * [Usage](#usage)
 
@@ -85,7 +85,14 @@ let asset = AMBDataStore.sharedInstance.assetStore.fetch(withAssetId: assetId)
 let events = AMBDataStore.sharedInstance.eventStore.fetchEvents(forAssetId: assetId)
 ```
 
-## Supported OS & SDK Versions
+# Sample Application (Ambrosus Viewer)
+
+The included example application, Ambrosus Viewer includes a scanner that is capable of scanning 1d and 2d codes and displaying details about an associated asset and its events from AMB-NET. It comes packaged with several sample assets and events as well. The app also contains Asset Details and Event Details screens which demonstrate using the SDK to build a fully featured iOS application for viewing data stored on AMB-NET.
+
+To use the scanner in the Ambrosus Viewer you need a [Scandit](https://scandit.com) API key, you can sign up for a 30 day trial here:
+https://ssl.scandit.com/customers/new?p=test  
+
+## Ambrosus Viewer Support
 
 * Supports iPhone 5S and above, iPad 5th Generation and above, iPod Touch 6th Generation and Above.
 * Minimum iOS Version 11
