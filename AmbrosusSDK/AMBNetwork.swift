@@ -74,7 +74,7 @@ public final class AMBNetwork: NSObject {
     /// - Parameters:
     ///   - query: The identifier including type of scanner e.g. [gtin]=0043345534
     ///   - completion: The events if available, nil if none returned
-    public static func requestEvents(fromQuery query: String, completion: @escaping (_ data: [AMBEvent]?) -> Void) {
+    @objc public static func requestEvents(fromQuery query: String, completion: @escaping (_ data: [AMBEvent]?) -> Void) {
         let path = configuration.ambrosusNetworkPath + "events?data[type]=ambrosus.asset.identifier&data" + query
         request(path: path) { (data) in
             fetchEvents(from: data, completion: { (events) in
@@ -91,7 +91,7 @@ public final class AMBNetwork: NSObject {
     /// - Parameters:
     ///   - id: The identifier associated with the desired asset
     ///   - completion: The asset if available, nil if unavailable
-    public static func requestAsset(fromId id: String, completion: @escaping (_ data: AMBAsset?) -> Void) {
+    @objc public static func requestAsset(fromId id: String, completion: @escaping (_ data: AMBAsset?) -> Void) {
         if let asset = AMBDataStore.sharedInstance.assetStore.fetch(withAssetId: id) {
             completion(asset)
             return
@@ -125,7 +125,7 @@ public final class AMBNetwork: NSObject {
     /// - Parameters:
     ///   - id: The identifier associated with the asset with desired events
     ///   - completion: The array of events if available, nil if unavailable
-    public static func requestEvents(fromAssetId id: String, completion: @escaping (_ data: [AMBEvent]?) -> Void) {
+    @objc public static func requestEvents(fromAssetId id: String, completion: @escaping (_ data: [AMBEvent]?) -> Void) {
         let path = configuration.ambrosusNetworkPath + "events?assetId=" + id
         request(path: path) { (data) in
             fetchEvents(from: data, completion: { (events) in
@@ -142,7 +142,7 @@ public final class AMBNetwork: NSObject {
     /// - Parameters:
     ///   - url: The URL of the image to download
     ///   - completion: The image if available, and optional error
-    public static func requestImage(from url: URL, completion: @escaping (_ image: UIImage?, _ error: Error? ) -> Void) {
+    @objc public static func requestImage(from url: URL, completion: @escaping (_ image: UIImage?, _ error: Error? ) -> Void) {
         if let cachedImage = AMBDataStore.sharedInstance.imageCache.object(forKey: url.absoluteString as NSString) {
             completion(cachedImage, nil)
         } else {

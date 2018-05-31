@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "AmbrosusSDK_Example.app"
-               BlueprintName = "AmbrosusSDK_Example"
-               ReferencedContainer = "container:AmbrosusSDK.xcodeproj">
+               BuildableName = "AmbrosusViewer.app"
+               BlueprintName = "AmbrosusViewer"
+               ReferencedContainer = "container:AmbrosusViewer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "AmbrosusSDK_Tests.xctest"
-               BlueprintName = "AmbrosusSDK_Tests"
-               ReferencedContainer = "container:AmbrosusSDK.xcodeproj">
+               BuildableName = "AmbrosusViewer_Tests.xctest"
+               BlueprintName = "AmbrosusViewer_Tests"
+               ReferencedContainer = "container:AmbrosusViewer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "AmbrosusSDK_Tests.xctest"
-               BlueprintName = "AmbrosusSDK_Tests"
-               ReferencedContainer = "container:AmbrosusSDK.xcodeproj">
+               BuildableName = "AmbrosusViewer_Tests.xctest"
+               BlueprintName = "AmbrosusViewer_Tests"
+               ReferencedContainer = "container:AmbrosusViewer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AmbrosusSDK_Example.app"
-            BlueprintName = "AmbrosusSDK_Example"
-            ReferencedContainer = "container:AmbrosusSDK.xcodeproj">
+            BuildableName = "AmbrosusViewer.app"
+            BlueprintName = "AmbrosusViewer"
+            ReferencedContainer = "container:AmbrosusViewer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AmbrosusSDK_Example.app"
-            BlueprintName = "AmbrosusSDK_Example"
-            ReferencedContainer = "container:AmbrosusSDK.xcodeproj">
+            BuildableName = "AmbrosusViewer.app"
+            BlueprintName = "AmbrosusViewer"
+            ReferencedContainer = "container:AmbrosusViewer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -101,9 +101,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AmbrosusSDK_Example.app"
-            BlueprintName = "AmbrosusSDK_Example"
-            ReferencedContainer = "container:AmbrosusSDK.xcodeproj">
+            BuildableName = "AmbrosusViewer.app"
+            BlueprintName = "AmbrosusViewer"
+            ReferencedContainer = "container:AmbrosusViewer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

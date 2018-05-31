@@ -117,7 +117,7 @@ private struct SectionFormatter {
 }
 
 /// The base model that both Assets and Events inherit from
-public class AMBModel: NSObject {
+@objcMembers public class AMBModel: NSObject {
 
     /// A signature unique to this Asset, used to verify authenticity
     public let signature: String
@@ -172,7 +172,7 @@ public class AMBModel: NSObject {
 }
 
 /// Assets are any item that can flow through a supply chain
-public class AMBAsset: AMBModel {
+@objcMembers public class AMBAsset: AMBModel {
 
     /// The unique identifier associated with only this Asset, used to map an asset to its associated Events
     public let id: String
@@ -213,7 +213,7 @@ public class AMBAsset: AMBModel {
 }
 
 /// Assets are any item that can flow through a supply chain
-public class AMBEvent: AMBModel {
+@objcMembers public class AMBEvent: AMBModel {
     
     fileprivate struct AssetInfo {
         public let name: String
