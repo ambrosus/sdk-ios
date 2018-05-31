@@ -90,7 +90,13 @@ let events = AMBDataStore.sharedInstance.eventStore.fetchEvents(forAssetId: asse
 
 ## Usage (Objective-C)
 
-The above example requesting both an asset and its events and storing in the `AMBDataStore` can be written as:
+The Ambrosus SDK is also fully compatible with Objective-C, you can import the SDK by adding the following to the top of your implementation file:
+```objective-c
+@import AmbrosusSDK
+```
+
+To fetch an asset as well as its events in Objective-C and store the data in `AMBDataStore` you can do the following:
+
 ```objective-c
 NSString *assetId = @"0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664";
 [AMBNetwork requestAssetFromId:assetId completion:^(AMBAsset * _Nullable asset) {
