@@ -88,6 +88,26 @@ let asset = AMBDataStore.sharedInstance.assetStore.fetch(withAssetId: assetId)
 let events = AMBDataStore.sharedInstance.eventStore.fetchEvents(forAssetId: assetId)
 ```
 
+## Usage (Objective-C)
+
+The above example requesting both an asset and its events and storing in the `AMBDataStore` can be written as:
+```objective-c
+NSString *assetId = @"0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664";
+[AMBNetwork requestAssetFromId:assetId completion:^(AMBAsset * _Nullable asset) {
+    if (!asset) {
+        return;
+    }
+    [[[AMBDataStore sharedInstance] assetStore] insert:asset];
+
+    [AMBNetwork requestEventsFromAssetId:assetId completion:^(NSArray<AMBEvent *> * _Nullable events) {
+        if (!events) {
+            return;
+        }
+        [[[AMBDataStore sharedInstance] eventStore] insert:events];
+    }];
+}];
+```
+
 # Sample Application (Ambrosus Viewer)
 
 The included example application, Ambrosus Viewer includes a scanner that is capable of scanning 1d and 2d codes and displaying details about an associated asset and its events from AMB-NET. It comes packaged with several sample assets and events as well. The app also contains Asset Details and Event Details screens which demonstrate using the SDK to build a fully featured iOS application for viewing data stored on AMB-NET.
