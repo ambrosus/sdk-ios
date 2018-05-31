@@ -2,6 +2,11 @@
 
 The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the [Ambrosus API](https://ambrosus.docs.apiary.io) (AMB-NET), and build their own interfaces for displaying Assets and Events.
 
+The Ambrosus iOS SDK is currently written in Swift 4.0 and is forward-compatible with Swift 4.1. Future versions of Swift will be made compatible as they come out. 
+
+Supports iOS 10 and above
+Supports Objective-C and Swift 4.0+
+
 * [Integration](#integration)
 * [Overview](#overview)
 * [Usage](#usage)
