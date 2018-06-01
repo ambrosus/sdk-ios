@@ -42,6 +42,11 @@ Defines the two main data models, `AMBAsset` and `AMBEvent` these are the object
 
 ## Usage
 
+To start using the Ambrosus SDK within a Swift file first import it:
+```swift
+import AmbrosusSDK
+```
+
 To get back an asset from the API you can make a call like the following:
 
 ```swift
