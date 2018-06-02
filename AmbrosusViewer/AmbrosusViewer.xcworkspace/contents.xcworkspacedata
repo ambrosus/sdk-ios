@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/maxstein/Dropbox/Max/iOS_Apps/Ambrosus/sdk-ios/AmbrosusViewer/AmbrosusViewer.xcodeproj">
+      location = "group:AmbrosusViewer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
