@@ -39,8 +39,8 @@ fileprivate let propertiesKey = "properties"
 fileprivate let coordinatesKey = "coordinates"
 
 /// An array of type [String: [String: Any]] useful for formatting complex AMB-Net Data
-/// to an easy to use Data Source for display
-public typealias FormattedSections = [[String: [String: Any]]]
+/// to an easy to use Data Source for display, formattedSections are accessible from both assets and events
+public typealias AMBFormattedSections = [[String: [String: Any]]]
 
 private struct SectionFormatter {
 
@@ -49,15 +49,15 @@ private struct SectionFormatter {
     ///
     /// - Parameter data: The dictionary to extract sub dictionaries from
     /// - Returns: The formatted data source
-    private static func getDictionaries(_ data: [String: Any]) -> FormattedSections {
+    private static func getDictionaries(_ data: [String: Any]) -> AMBFormattedSections {
         var formattedData = data
-        var sections: FormattedSections = []
+        var sections: AMBFormattedSections = []
 
         /// Finds all additional subdictionarys and removes those values from the main dictionary
         ///
         /// - Parameter dictionary: The dictionary with subdictionaries available, removes those values
         /// - Returns: The additional subdictionaries as formatted sections
-        func fetchAdditionalSections(dictionary: inout [String: Any]) -> FormattedSections {
+        func fetchAdditionalSections(dictionary: inout [String: Any]) -> AMBFormattedSections {
             let additionalSections = getDictionaries(dictionary)
             additionalSections.forEach {
                 $0.keys.forEach { dictionary.removeValue(forKey: $0)}
@@ -86,7 +86,7 @@ private struct SectionFormatter {
         return sections
     }
 
-    static func getFormattedSections(fromData data: [String: Any]) -> FormattedSections {
+    static func getFormattedSections(fromData data: [String: Any]) -> AMBFormattedSections {
         var formattedData = data
 
         data.forEach {
@@ -132,7 +132,7 @@ private struct SectionFormatter {
     public let timestamp: Double
 
     /// Formatted data sections, useful for displaying details about this Asset in a table or collection view
-    public let formattedSections: FormattedSections
+    public let formattedSections: AMBFormattedSections
 
     override internal init() {
         self.signature = ""

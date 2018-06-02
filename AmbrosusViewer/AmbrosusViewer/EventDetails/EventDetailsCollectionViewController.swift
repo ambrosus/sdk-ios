@@ -32,7 +32,7 @@ class EventDetailsCollectionViewController: UICollectionViewController {
         }
     }
 
-    private var formattedSections: FormattedSections {
+    private var formattedSections: AMBFormattedSections {
         return event.formattedSections
     }
 

@@ -12,10 +12,10 @@
 // IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-import Foundation
+import UIKit
 
 /// A store for persisting assets for later access, acts as a cache for already fetched assets
-public final class AMBAssetStore: NSObject {
+@objcMembers public final class AMBAssetStore: NSObject {
     
     /// A mapping between an Asset ID (String) and an Asset
     private var assets: [String: AMBAsset] = [:]
@@ -23,7 +23,7 @@ public final class AMBAssetStore: NSObject {
     /// Insert an asset into the store
     ///
     /// - Parameter asset: The asset to insert
-    @objc public func insert(_ asset: AMBAsset) {
+    public func insert(_ asset: AMBAsset) {
         guard assets[asset.id] == nil else {
             NSLog("Asset already stored")
             return
@@ -35,14 +35,14 @@ public final class AMBAssetStore: NSObject {
     ///
     /// - Parameter assetId: The id for the asset to return
     /// - Returns: The asset if available in the store, nil otherwise
-    @objc public func fetch(withAssetId assetId: String) -> AMBAsset? {
+    public func fetch(withAssetId assetId: String) -> AMBAsset? {
         return assets[assetId]
     }
-    
+
     /// Get all assets saved in the asset store
     ///
     /// - Returns: The array of assets, can be empty if no assets are stored
-    @objc public func allAssets() -> [AMBAsset] {
+    public var all: [AMBAsset] {
         let sortedAssets = Array(assets.values).sorted { (asset1, asset2) -> Bool in
             return asset1.timestamp > asset2.timestamp
         }
@@ -52,7 +52,7 @@ public final class AMBAssetStore: NSObject {
 }
 
 /// A store for persisting events for later access, acts as a cache for already fetched events
-public final class AMBEventStore: NSObject {
+@objcMembers public final class AMBEventStore: NSObject {
     
     /// A mapping between an Asset ID (String) and all of its events
     private var eventsForAssetId: [String: [AMBEvent]] = [:]
@@ -60,7 +60,7 @@ public final class AMBEventStore: NSObject {
     /// Insert an array of events into the store
     ///
     /// - Parameter events: The events to insert
-    @objc public func insert(_ events: [AMBEvent]) {
+    public func insert(_ events: [AMBEvent]) {
         guard let assetId = events.first?.assetId else {
             NSLog("Should be at least 1 event in order to store events, found zero")
             return
@@ -75,7 +75,7 @@ public final class AMBEventStore: NSObject {
     ///
     /// - Parameter assetId: The id for the asset associated with these events
     /// - Returns: The events if available in the store, nil otherwise
-    @objc public func fetchEvents(forAssetId assetId: String) -> [AMBEvent]? {
+    public func fetchEvents(forAssetId assetId: String) -> [AMBEvent]? {
         guard let events = eventsForAssetId[assetId] else {
             return nil
         }
@@ -85,17 +85,17 @@ public final class AMBEventStore: NSObject {
 }
 
 
-/// A Persistence layer to store Assets and Events
-public final class AMBDataStore: NSObject {
+/// A Persistence layer to store Assets and Events for later access
+@objcMembers public final class AMBDataStore: NSObject {
     
     /// A singleton of AMBDataSource, use to store all Assets and Events
-    @objc public static let sharedInstance = AMBDataStore()
+    public static let sharedInstance = AMBDataStore()
     
     /// A data store for Assets, allows for inserting, fetch by id, and returning all assets
-    @objc public var assetStore = AMBAssetStore()
+    public var assetStore = AMBAssetStore()
 
     /// A data store for Events, all events are associated with an Asset, and one asset maps to many Events
-    @objc public var eventStore = AMBEventStore()
+    public var eventStore = AMBEventStore()
 
     internal let imageCache = NSCache<NSString, UIImage>()
 }

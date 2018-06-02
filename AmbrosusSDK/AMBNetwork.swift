@@ -12,20 +12,13 @@
 // IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-import Foundation
-
-/// The Network Configuration, modify this to set custom configuration
-public final class AMBNetworkConfiguration: NSObject {
-
-    /// The base path for the Ambrosus API
-    public var ambrosusNetworkPath = "https://gateway-test.ambrosus.com/"
-
-}
+import UIKit
 
 /// A Network Layer for interfacing with the Ambrosus API
-public final class AMBNetwork: NSObject {
+@objcMembers public final class AMBNetwork: NSObject {
 
-    static var configuration: AMBNetworkConfiguration = AMBNetworkConfiguration()
+    /// The base path for the Ambrosus API, modify this to change the endpoint if needed
+    public static var endpointBasePath = "https://gateway-test.ambrosus.com/"
 
     fileprivate enum ResponseType {
         case json,
@@ -74,8 +67,8 @@ public final class AMBNetwork: NSObject {
     /// - Parameters:
     ///   - query: The identifier including type of scanner e.g. [gtin]=0043345534
     ///   - completion: The events if available, nil if none returned
-    @objc public static func requestEvents(fromQuery query: String, completion: @escaping (_ data: [AMBEvent]?) -> Void) {
-        let path = configuration.ambrosusNetworkPath + "events?data[type]=ambrosus.asset.identifier&data" + query
+    public static func requestEvents(fromQuery query: String, completion: @escaping (_ data: [AMBEvent]?) -> Void) {
+        let path = endpointBasePath + "events?data[type]=ambrosus.asset.identifier&data" + query
         request(path: path) { (data) in
             fetchEvents(from: data, completion: { (events) in
                 guard let events = events else {
@@ -91,13 +84,13 @@ public final class AMBNetwork: NSObject {
     /// - Parameters:
     ///   - id: The identifier associated with the desired asset
     ///   - completion: The asset if available, nil if unavailable
-    @objc public static func requestAsset(fromId id: String, completion: @escaping (_ data: AMBAsset?) -> Void) {
+    public static func requestAsset(fromId id: String, completion: @escaping (_ data: AMBAsset?) -> Void) {
         if let asset = AMBDataStore.sharedInstance.assetStore.fetch(withAssetId: id) {
             completion(asset)
             return
         }
 
-        let path = configuration.ambrosusNetworkPath + "assets/" + id
+        let path = endpointBasePath + "assets/" + id
         request(path: path) { (data) in
             guard let data = data as? [String: Any] else {
                 NSLog("Error, no asset found for id:" + id)
@@ -125,8 +118,8 @@ public final class AMBNetwork: NSObject {
     /// - Parameters:
     ///   - id: The identifier associated with the asset with desired events
     ///   - completion: The array of events if available, nil if unavailable
-    @objc public static func requestEvents(fromAssetId id: String, completion: @escaping (_ data: [AMBEvent]?) -> Void) {
-        let path = configuration.ambrosusNetworkPath + "events?assetId=" + id
+    public static func requestEvents(fromAssetId id: String, completion: @escaping (_ data: [AMBEvent]?) -> Void) {
+        let path = endpointBasePath + "events?assetId=" + id
         request(path: path) { (data) in
             fetchEvents(from: data, completion: { (events) in
                 guard let events = events else {
@@ -142,7 +135,7 @@ public final class AMBNetwork: NSObject {
     /// - Parameters:
     ///   - url: The URL of the image to download
     ///   - completion: The image if available, and optional error
-    @objc public static func requestImage(from url: URL, completion: @escaping (_ image: UIImage?, _ error: Error? ) -> Void) {
+    public static func requestImage(from url: URL, completion: @escaping (_ image: UIImage?, _ error: Error? ) -> Void) {
         if let cachedImage = AMBDataStore.sharedInstance.imageCache.object(forKey: url.absoluteString as NSString) {
             completion(cachedImage, nil)
         } else {

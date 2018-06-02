@@ -24,7 +24,7 @@ final class BrowseViewController: UIViewController {
 
     var heightConstraint = NSLayoutConstraint()
 
-    var dataSource = AMBDataStore.sharedInstance.assetStore.allAssets() {
+    var dataSource = AMBDataStore.sharedInstance.assetStore.all {
         didSet {
             updateHeight()
         }
@@ -32,7 +32,7 @@ final class BrowseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         heightConstraint = NSLayoutConstraint(item: moduleView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: 50)
         view.backgroundColor = Colors.background
         collectionView.backgroundColor = Colors.background
@@ -50,7 +50,7 @@ final class BrowseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.topItem?.title = "Browse"
-        dataSource = AMBDataStore.sharedInstance.assetStore.allAssets()
+        dataSource = AMBDataStore.sharedInstance.assetStore.all
         collectionView.reloadData()
     }
     

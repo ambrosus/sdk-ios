@@ -35,7 +35,6 @@ final class ScanDataFormatter {
                     return formattedData
                 }
             }
-
             return code.symbologyString + ":" + data
         case .datamatrix:
             let mappingStrings: [String: String] = ["(01)": "[identifiers.gtin]=", "(21)": "&[identifiers.sn]=", "(10)": "&[identifiers.batch]=", "(17)": "&[identifiers.expiry]="]
