@@ -59,31 +59,27 @@ struct AssetDetailsConstants {
 
 final class AssetDetailCollectionViewController: UICollectionViewController {
 
-    var parallaxHeroLayout: ParallaxHeroLayout? {
+    private var parallaxHeroLayout: ParallaxHeroLayout? {
         return collectionView?.collectionViewLayout as? ParallaxHeroLayout
     }
 
-    var assetTitleOverlayView: AssetTitleOverlayView? {
+    private var assetTitleOverlayView: AssetTitleOverlayView? {
         didSet {
             assetTitleOverlayView?.titleLabel.text = asset.name ?? asset.id
-            assetTitleOverlayView?.imageOverlay.image = self.image
+            assetTitleOverlayView?.imageOverlay.image = image
         }
     }
 
-    var heroView: HeroView? {
+    private var heroView: HeroView? {
         didSet {
-            heroView?.imageView.image = self.image
+            heroView?.imageView.image = image
         }
     }
     
-    var formattedSections: [[String: Any]] {
-        var formattedSections: [[String: Any]] = []
-        for section in asset.formattedSections {
-            formattedSections.append(section)
-        }
-        if let events = asset.events,
-            !events.isEmpty {
-                formattedSections.append(["events": events])
+    private var formattedSections: [[String: Any]] {
+        var formattedSections: [[String: Any]] = asset.formattedSections
+        if let events = asset.events, !events.isEmpty {
+            formattedSections.append(["events": events])
         }
         return formattedSections
     }
@@ -144,13 +140,13 @@ final class AssetDetailCollectionViewController: UICollectionViewController {
         }
     }
 
-    var image: UIImage? = nil {
+    private var image: UIImage? = nil {
         didSet {
             assetTitleOverlayView?.imageOverlay.image = image
             heroView?.imageView.image = image
         }
     }
-    let placeHolderimage = #imageLiteral(resourceName: "BigPlaceholder")
+    private let placeHolderimage = #imageLiteral(resourceName: "BigPlaceholder")
 
     // MARK: - View Life Cycle
     override func viewDidLoad() {

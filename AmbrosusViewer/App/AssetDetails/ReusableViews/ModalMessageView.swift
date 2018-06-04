@@ -44,7 +44,7 @@ class ModalMessageView: UIView {
         layer.shadowOffset = .zero
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.9
-        messageLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        messageLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
     }
     
     func present(in view: UIView, withMessage message: NSAttributedString) {
@@ -60,7 +60,7 @@ class ModalMessageView: UIView {
     }
     
     private func animateInView() {
-        self.alpha = 0
+        alpha = 0
         UIView.animate(withDuration: animationDuration, animations: {
             self.alpha = 1
         }) { (completed) in

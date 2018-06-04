@@ -19,7 +19,7 @@ final class SampleFetcher {
     
     /// Fetches sample assets and events stored as JSON locally
     func fetch() {
-        self.requestSampleJSON()
+        requestSampleJSON()
     }
     
     private func requestSampleJSON() {

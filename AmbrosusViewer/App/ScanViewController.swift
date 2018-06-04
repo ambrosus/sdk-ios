@@ -75,7 +75,7 @@ final class ScanViewController: UIViewController {
 
         tabBarController?.tabBar.centerItems()
         let leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "information"), style: .plain, target: self, action: #selector(tappedHelp))
-        self.navigationController?.navigationBar.topItem?.leftBarButtonItem = leftBarButtonItem
+        navigationController?.navigationBar.topItem?.leftBarButtonItem = leftBarButtonItem
         setupScanner()
         showInstructionsOnFirstLaunch()
     }

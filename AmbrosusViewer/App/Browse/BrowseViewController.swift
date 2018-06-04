@@ -22,9 +22,9 @@ final class BrowseViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
-    var heightConstraint = NSLayoutConstraint()
+    private var heightConstraint = NSLayoutConstraint()
 
-    var dataSource = AMBDataStore.sharedInstance.assetStore.all {
+    private var dataSource = AMBDataStore.sharedInstance.assetStore.all {
         didSet {
             updateHeight()
         }
