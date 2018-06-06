@@ -23,20 +23,28 @@ fileprivate let idDataKey = "idData"
 fileprivate let createdByKey = "createdBy"
 fileprivate let timestampKey = "timestamp"
 fileprivate let assetIdKey = "assetId"
-fileprivate let entriesKey = "entries"
 fileprivate let productImageKey = "productImage"
 fileprivate let nameKey = "name"
 fileprivate let typeKey = "type"
 fileprivate let accessLevelKey = "accessLevel"
 fileprivate let imagesKey = "images"
+fileprivate let defaultKey = "default"
+fileprivate let urlKey = "url"
 fileprivate let eventIdKey = "eventId"
 fileprivate let dataKey = "data"
 
 /// Location Keys
 fileprivate let locationKey = "location"
 fileprivate let geometryKey = "geometry"
+fileprivate let geoJsonKey = "geoJson"
 fileprivate let propertiesKey = "properties"
 fileprivate let coordinatesKey = "coordinates"
+
+
+/// Event Types
+fileprivate let assetInfoType = "ambrosus.asset.info"
+fileprivate let locationType = "ambrosus.event.location"
+fileprivate let locationGeoType = "ambrosus.event.location.geo"
 
 /// An array of type [String: [String: Any]] useful for formatting complex AMB-Net Data
 /// to an easy to use Data Source for display, formattedSections are accessible from both assets and events
@@ -69,7 +77,8 @@ private struct SectionFormatter {
             if var dictionary = formattedData[key] as? [String: Any] {
                 formattedData.removeValue(forKey: key)
                 sections.append(contentsOf: fetchAdditionalSections(dictionary: &dictionary))
-                let dataSection = [key: dictionary]
+                let name = dictionary[typeKey] as? String ?? key
+                let dataSection = [name: dictionary]
                 sections.append(dataSection)
 
                 // If this key contains an array of dictionaries, extract all dictionaries from the array
@@ -78,7 +87,8 @@ private struct SectionFormatter {
                     // index the dictionaries that belong to the same parent
                     sections.append(contentsOf: fetchAdditionalSections(dictionary: &dictionary))
                     let keyIndexed = i > 0 ? key + " \(i+1)" : key
-                    let dataSection = [keyIndexed: dictionary]
+                    let name = dictionary[typeKey] as? String ?? keyIndexed
+                    let dataSection = [name: dictionary]
                     sections.append(dataSection)
                 }
             }
@@ -116,82 +126,90 @@ private struct SectionFormatter {
 
 }
 
-/// The base model that both Assets and Events inherit from
-@objcMembers public class AMBModel: NSObject {
+fileprivate class DateFetcher {
 
-    /// A signature unique to this Asset, used to verify authenticity
+    static func getDate(fromTimestamp timestamp: Double) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+
+        // If the date timestamp is over 1 trillion it is in milliseconds and needs to be converted to seconds first to correctly fetch the date
+        let timeInterval: TimeInterval = timestamp > 1000000000000 ? timestamp / 1000 : timestamp
+        let date: Date = Date(timeIntervalSince1970: timeInterval)
+        let dateString = dateFormatter.string(from: date)
+        return dateString
+    }
+
+}
+
+fileprivate protocol AMBSharedFields: AnyObject {
+    /// A signature unique to this instance, used to verify authenticity
+    var signature: String { get }
+
+    /// A formatted date converted from the creation timestamp (e.g. Sep 17, 2017)
+    var date: String { get }
+
+    /// The address of the creator of this instance
+    var creator: String { get }
+
+    /// A timestamp in seconds of when this instance was created
+    var timestamp: Double { get }
+
+    /// Formatted data sections, useful for displaying details about this instance in a table or collection view
+    var formattedSections: AMBFormattedSections { get }
+}
+
+/// Assets are any item that can flow through a supply chain
+@objcMembers public class AMBAsset: NSObject, AMBSharedFields {
+
+    /// A signature unique to this asset, used to verify authenticity
     public let signature: String
 
     /// A formatted date converted from the creation timestamp (e.g. Sep 17, 2017)
-    public private(set) var date: String
+    public let date: String
 
-    /// The address of the creator of this Object
+    /// The address of the creator of this asset
     public let creator: String
 
-    /// A timestamp in seconds of when this Object was created
+    /// The unique identifier associated with only this asset, used to map an asset to its associated Events
+    public let id: String
+
+    /// A timestamp in seconds of when this asset was created
     public let timestamp: Double
 
-    /// Formatted data sections, useful for displaying details about this Asset in a table or collection view
+    /// An array of sections, useful for displaying details about this asset in a table or collection view
     public let formattedSections: AMBFormattedSections
 
-    override internal init() {
+    public override init() {
         self.signature = ""
         self.date = ""
         self.creator = ""
+        self.id = ""
         self.timestamp = 0
         self.formattedSections = []
+        super.init()
     }
 
-    internal init?(json: [String: Any]) {
+    public init?(json: [String: Any]) {
         guard let content = json[contentKey] as? [String: Any],
             let signature = content[signatureKey] as? String,
             let idData = content[idDataKey] as? [String: Any],
             let creator = idData[createdByKey] as? String,
+            let id = json[assetIdKey] as? String,
             let timestamp = idData[timestampKey] as? Double else {
                 return nil
         }
 
         self.signature = signature
         self.creator = creator
+        self.id = id
         self.timestamp = timestamp
+        self.date = DateFetcher.getDate(fromTimestamp: timestamp)
         self.formattedSections = SectionFormatter.getFormattedSections(fromData: json)
-
-        let date: String = {
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .medium
-            dateFormatter.timeStyle = .none
-
-            // If the date timestamp is over 1 trillion it is in milliseconds and needs to be converted to seconds first to correctly fetch the date
-            let timeInterval: TimeInterval = timestamp > 1000000000000 ? timestamp / 1000 : timestamp
-            let date: Date = Date(timeIntervalSince1970: timeInterval)
-            let dateString = dateFormatter.string(from: date)
-            return dateString
-        }()
-        self.date = date
-    }
-}
-
-/// Assets are any item that can flow through a supply chain
-@objcMembers public class AMBAsset: AMBModel {
-
-    /// The unique identifier associated with only this Asset, used to map an asset to its associated Events
-    public let id: String
-
-    public override init() {
-        self.id = ""
         super.init()
     }
-
-    public override init?(json: [String: Any]) {
-        guard let id = json[assetIdKey] as? String else {
-            return nil
-        }
-
-        self.id = id
-        super.init(json: json)
-    }
      
-    /// An array of events associated with this Asset saved inside the AMBDataStore Event Store, if any
+    /// An array of events associated with this asset saved inside the AMBDataStore Event Store, if any
     public var events: [AMBEvent]? {
         return AMBDataStore.sharedInstance.eventStore.fetchEvents(forAssetId: id)
     }
@@ -200,100 +218,143 @@ private struct SectionFormatter {
         return events?.filter { $0.assetInfo != nil }.first?.assetInfo
     }
      
-    /// A descriptive name of the asset, optional
+    /// A descriptive name of the asset, optional. Can fall back to using id if name is unavailable
     public var name: String? {
         return assetInfo?.name
     }
     
     /// Finds an image if one is available for the asset
     public var imageURLString: String? {
-        return assetInfo?.images.values.first
+        return assetInfo?.imagePath
     }
 
 }
 
-/// Assets are any item that can flow through a supply chain
-@objcMembers public class AMBEvent: AMBModel {
+/// Events are anything that occured to an asset in the process of moving through the supply chain
+@objcMembers public class AMBEvent: NSObject, AMBSharedFields {
     
     fileprivate struct AssetInfo {
         public let name: String
-        public let images: [String: String]
+        public let imageDictionary: [String: Any]
+        public let imagePath: String
         
-        init?(json: [String: Any]) {
-            guard let name = json[nameKey] as? String,
-                let images = json[imagesKey] as? [String: String] else {
+        init?(json: [String: Any]?) {
+            guard let json = json,
+                let name = json[nameKey] as? String,
+                let imageDictionary = json[imagesKey] as? [String: Any],
+                let imagesDefaultDictionary = imageDictionary[defaultKey] as? [String: Any],
+                let imagePath = imagesDefaultDictionary[urlKey] as? String else {
                     return nil
             }
             self.name = name
-            self.images = images
+            self.imageDictionary = imageDictionary
+            self.imagePath = imagePath
         }
     }
 
-    /// The unique identifier associated with only this Asset, used to map an asset to its associated Events
+    /// A signature unique to this event, used to verify authenticity
+    public let signature: String
+
+    /// A formatted date converted from the creation timestamp (e.g. Sep 17, 2017)
+    public let date: String
+
+    /// The address of the creator of this event
+    public let creator: String
+
+    /// The unique identifier associated with only this event
     public let id: String
 
     /// The unique identifier for the asset this event happened to
     public let assetId: String
 
+    /// A descriptive name of the event, optional. Fall back to using type if name isn't available
+    public let name: String?
+
     /// The type describes the category of event that occurs, can be used as a name for the event as well
     public let type: String
 
+    /// A timestamp in seconds of when this event was created
+    public let timestamp: Double
+
     /// Determines who has access to view this event, 0 = public. The higher the level the more restricted the event is
     public let accessLevel: Int
+
+    /// Formatted data sections, useful for displaying details about this instance in a table or collection view
+    public let formattedSections: AMBFormattedSections
     
-    /// If this event contains asset info such as name and image it is stored in this struct
+    /// Contains asset info such as name and image
     fileprivate let assetInfo: AssetInfo?
 
-    /// Finds an image if one is available for the event
-    public private(set) var imageURLString: String? = nil
-    
-    /// Finds an image if one is available for the event
-    public private(set) var assetName: String? = nil
-
     /// The lattitude coordinates for this events location
-    public private(set) var lattitude: NSNumber? = nil
+    public let lattitude: NSNumber?
 
     /// The longitude coordinates for this events location
-    public private(set) var longitude: NSNumber? = nil
+    public let longitude: NSNumber?
 
     /// A name describing where this event occured
-    public private(set) var locationName: String? = nil
+    public let locationName: String?
 
     public override init() {
+        self.signature = ""
+        self.date = ""
+        self.creator = ""
         self.id = ""
         self.assetId = ""
         self.type = ""
+        self.name = ""
+        self.timestamp = 0
         self.accessLevel = 0
+        self.formattedSections = []
         self.assetInfo = nil
+        self.lattitude = nil
+        self.longitude = nil
+        self.locationName = nil
         super.init()
     }
 
-    public override init?(json: [String: Any]) {
+    public init?(json: [String: Any]) {
         guard let id = json[eventIdKey] as? String,
             let content = json[contentKey] as? [String: Any],
             let idData = content[idDataKey] as? [String: Any],
-            let data = (content[dataKey] as? [[String: Any]])?.first,
-            let type = data[typeKey] as? String,
+            let dataDictionaries = (content[dataKey] as? [[String: Any]]),
+            let signature = content[signatureKey] as? String,
+            let creator = idData[createdByKey] as? String,
+            let type = dataDictionaries.first?[typeKey] as? String,
             let assetId = idData[assetIdKey] as? String,
+            let timestamp = idData[timestampKey] as? Double,
             let accessLevel = idData[accessLevelKey] as? Int else {
                 return nil
         }
 
+        self.formattedSections = SectionFormatter.getFormattedSections(fromData: json)
+        self.signature = signature
+        self.creator = creator
         self.id = id
         self.assetId = assetId
         self.type = type
         self.accessLevel = accessLevel
-        self.assetInfo = type.contains("asset_info") ? AssetInfo(json: data) : nil
-        super.init(json: json)
+        self.timestamp = timestamp
+        self.date = DateFetcher.getDate(fromTimestamp: timestamp)
 
-        let geometryDictionary = formattedSections.flatMap { $0[geometryKey] }.first
-        let propertiesDictionary = formattedSections.flatMap { $0[propertiesKey] }.first
+        let nameDictionary = dataDictionaries.filter { $0[nameKey] != nil }.first
+        self.name = nameDictionary?[nameKey] as? String
 
-        // Make sure lattitude longitude is available and has more than 1 value
-        if let lattitudeLongitude = geometryDictionary?[coordinatesKey] as? [NSNumber], lattitudeLongitude.count > 1 {
-            lattitude = lattitudeLongitude[0]
-            longitude = lattitudeLongitude[1]
-        }
-        locationName = propertiesDictionary?[nameKey] as? String
+        let assetInfoDictionary = dataDictionaries.filter { ($0[typeKey] as? String) == assetInfoType }.first
+        self.assetInfo = AssetInfo(json: assetInfoDictionary)
+
+        let locationContainerDictionary = dataDictionaries.filter { ($0[typeKey] as? String) == locationType }.first
+        let locationDictionary = locationContainerDictionary?[locationKey] as? [String: Any]
+        let geoJsonDictionary = dataDictionaries.flatMap { $0[geoJsonKey] as? [String: Any] }.first
+        let geometryDictionary = locationDictionary?[geometryKey] as? [String: Any]
+        let geoDictionary = geometryDictionary ?? geoJsonDictionary
+        let coordinates = geoDictionary?[coordinatesKey] as? [NSNumber] ?? []
+        let hasCoordinates = coordinates.count > 1
+        // Make sure lattitude longitude are available and have more than one value
+        lattitude = hasCoordinates ? coordinates[0] : nil
+        longitude = hasCoordinates ? coordinates[1] : nil
+
+        locationName = locationContainerDictionary?[nameKey] as? String
+
+        super.init()
     }
 }

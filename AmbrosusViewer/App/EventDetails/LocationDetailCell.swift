@@ -30,7 +30,7 @@ final class LocationDetailCell: UICollectionViewCell {
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinates
             annotation.title = event.locationName
-
+            
             /// The lattitude and longitude delta, set lower to set map closer to the coordinates
             let delta: Double = 0.0015
             let zoomSpan = MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)

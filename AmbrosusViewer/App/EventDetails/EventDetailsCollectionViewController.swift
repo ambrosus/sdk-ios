@@ -25,7 +25,7 @@ class EventDetailsCollectionViewController: UICollectionViewController {
 
     var event: AMBEvent = AMBEvent() {
         didSet {
-            title = event.type
+            title = event.name ?? event.type
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
                 self.collectionView?.reloadData()
             }
@@ -46,7 +46,7 @@ class EventDetailsCollectionViewController: UICollectionViewController {
     }
 
     fileprivate func isLocationSection(at section: Int) -> Bool {
-        return formattedSections[section].keys.first == locationKey
+        return formattedSections[section].keys.first?.contains(locationKey) ?? false
     }
 
 }

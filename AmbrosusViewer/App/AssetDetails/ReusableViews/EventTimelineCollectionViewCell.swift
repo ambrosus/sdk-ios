@@ -17,6 +17,58 @@ import AmbrosusSDK
 
 final class EventTimelineCollectionViewCell: UICollectionViewCell {
 
+    fileprivate enum EventType {
+        case transport
+        case lab
+        case pin
+        case identification
+        case harvest
+
+        // Array of all types, can be removed when moving to Swift 4.2
+        static var allTypes: [EventType] = [.transport, .lab, .pin, .identification, .harvest]
+
+        var image: UIImage {
+            switch self {
+            case .transport:
+                return #imageLiteral(resourceName: "Transport")
+            case .lab:
+                return #imageLiteral(resourceName: "Beaker")
+            case .pin:
+                return #imageLiteral(resourceName: "Pin")
+            case .identification:
+                return #imageLiteral(resourceName: "ScanSmall")
+            case .harvest:
+                return #imageLiteral(resourceName: "Leaf")
+            }
+        }
+
+        var fields: [String] {
+            switch self {
+            case .transport:
+                return ["transport", "redirection", "shipped"]
+            case .lab:
+                return ["pressure", "humidity", "qualityControlled"]
+            case .pin:
+                return ["location", "customs", "displayed", "arrived"]
+            case .identification:
+                return ["identifier", "info"]
+            case .harvest:
+                return ["harvested", "manufactured"]
+            }
+        }
+
+        static func getType(for event: AMBEvent) -> EventType {
+            for type in allTypes {
+                for field in type.fields {
+                    if event.type.contains(field) {
+                        return type
+                    }
+                }
+            }
+            return .identification
+        }
+    }
+
     @IBOutlet weak var timelineBorderViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var timelineBorderViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var eventTimelineBorderView: UIView!
@@ -31,21 +83,9 @@ final class EventTimelineCollectionViewCell: UICollectionViewCell {
             let privacyLevelValue: String = {
                 return event.accessLevel == 0 ? "Public" : "Private"
             }()
-            let timelineIcon: UIImage = {
-                if event.type.contains("transport") {
-                    return #imageLiteral(resourceName: "Transport")
-                } else if event.type.contains("pressure") || event.type.contains("humidity") {
-                    return #imageLiteral(resourceName: "Beaker")
-                } else if event.type.contains("location") {
-                    return #imageLiteral(resourceName: "Pin")
-                } else if event.type.contains("identifier") {
-                    return #imageLiteral(resourceName: "ScanSmall")
-                } else {
-                    return #imageLiteral(resourceName: "Leaf")
-                }
-            }()
+            let timelineIcon: UIImage = EventType.getType(for: event).image
             
-            eventNameLabel.text = event.type
+            eventNameLabel.text = event.name ?? event.type
             locationLabel.text = event.locationName
             timeLabel.text = event.date
             privacyLevel.text = privacyLevelValue
