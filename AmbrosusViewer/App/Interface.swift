@@ -78,8 +78,8 @@ struct Fonts {
 struct Interface {
 
     private static let rootNavigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController
-    
     private static let screenSize = UIScreen.main.bounds
+
     static let screenWidth = screenSize.width
     static let screenHeight = screenSize.height
     static let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -109,13 +109,13 @@ struct Interface {
 extension UITabBar {
     
     func centerItems() {
-        guard let items = items,
-            items.count > 1 else {
-                return
+        guard let items = items else {
+            return
         }
-        let centeredImageEdgeInsets = UIEdgeInsetsMake(6,0,-6,0)
-        items[0].imageInsets = centeredImageEdgeInsets
-        items[1].imageInsets = centeredImageEdgeInsets
+        let centeredImageEdgeInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        for item in items {
+            item.imageInsets = centeredImageEdgeInsets
+        }
     }
     
 }

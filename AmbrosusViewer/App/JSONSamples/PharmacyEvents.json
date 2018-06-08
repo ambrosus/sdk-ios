@@ -9,22 +9,42 @@
 				"timestamp": 1503424923,
 				"dataHash": "0xefa3bf2b841a2130b6948ce16220645c03e6464dc920a073ace9f29ce642203f"
 			},
-			"data": [{
-				"type": "ambrosus.asset.creation",
-				"entries": [{
-					"supply": 25000,
-					"unitSize": 50,
-					"batchNumber": "#V72430",
-					"authenticityVerified": "No",
-					"pressureLevels": "normal",
-					"humidity": "normal",
-					"productImage": "https://i.imgur.com/Nb86TcQ.jpg",
-					"sensorReading": {
-						"temperature": "22.4 °C",
-						"pressure": "984 Pa",
-						"humidity": "33.4%"
+			"data": [
+            {
+				"type": "ambrosus.asset.qualityControlled",
+				"name": "Quality Control (post-production, pre-packaging)",
+				"document": {
+					"chemical-report": {
+						"url": "https://www.isoformcovers.com/wp-content/uploads/2018/01/rapporto-prova-test-tuv-2.jpg"
 					}
-				}]
+				},
+				"Test Results": {
+                     "supply": 25000,
+                     "unit-size": 50,
+                     "batch-number": "#V72430",
+                     "authenticity-verified": "No",
+                     "pressure-levels": "normal",
+                     "humidity": "normal",
+                     "Sensor Reading": {
+                         "temperature": "22.4 °C",
+                         "pressure": "984 Pa",
+                         "humidity": "33.4%"
+                     }
+				}
+			}, {
+				"type": "ambrosus.event.location",
+				"location": {
+					"type": "Feature",
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-13.6683037, 48.4448781]
+					}
+				},
+				"name": "Ambanja Factory",
+				"city": "Ambanja",
+				"country": "MG",
+				"locationId": "809c578721b74cae1d56504594819285",
+				"GLN": 9501101530003
 			}],
 			"signature": "0xcdd40c4c4218bae715db1f21f5e01be5d63aefb55f5088beb0821f15380dc8f55b10f0f72eb82f3d2636e86966b3319b02b3fd46ad739bbc679d3cf608abc5761c"
 		},
@@ -43,15 +63,16 @@
 				"dataHash": "0xefa3bf2b841a2130b6948ce16220645c03e6464dc920a073ace9f29ce642203f"
 			},
 			"data": [{
-				"type": "ambrosus.asset.asset_info",
+				"type": "ambrosus.asset.info",
                  "name": "Ibuprofen Batch 200mg",
                  "localisedName" : {
                     "US" : "Ibuprofen Batch 200mg"
                  },
-                 "images" : {
-                    "1" : "https://i.imgur.com/Nb86TcQ.jpg"
-                 },
-				"entries": []
+                 "images": {
+					"default": {
+						"url": "https://i.imgur.com/Nb86TcQ.jpg"
+					}
+				 },
 			}],
         "signature": "0xcdd40c4c4218bae715db1f21f5e01be5d63aefb55f5088beb0821f15380dc8f55b10f0f72eb82f3d2636e86966b3319b02b3fd46ad739bbc679d3cf608abc5761c"
         },

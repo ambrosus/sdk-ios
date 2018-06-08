@@ -13,6 +13,9 @@
 //
 
 import UIKit
+import os.log
+
+internal let ambLog = OSLog(subsystem: "com.ambrosus.sdk", category: "ambrosus_sdk")
 
 /// A Network Layer for interfacing with the Ambrosus API
 @objcMembers public final class AMBNetwork: NSObject {
@@ -37,14 +40,14 @@ import UIKit
     private static func request(path: String, responseType: ResponseType = .json, completion: @escaping (_ data: Any?) -> Void) {
         guard let url = URL(string: path) else {
             completion(nil)
-            print("URL Invalid")
+            os_log("%@", log: ambLog, type: .debug, "URL Invalid")
             return
         }
         let request = URLRequest(url: url, responseType: responseType)
         let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data, error == nil else {
                 completion(nil)
-                print(error?.localizedDescription ?? "")
+                os_log("%@", log: ambLog, type: .debug, error?.localizedDescription ?? "")
                 return
             }
             if responseType == .data {
@@ -56,7 +59,7 @@ import UIKit
                 completion(json)
             } catch {
                 completion(nil)
-                print(error.localizedDescription)
+                os_log("%@", log: ambLog, type: .debug, error.localizedDescription)
             }
         }
         dataTask.resume()
@@ -72,6 +75,7 @@ import UIKit
         request(path: path) { (data) in
             fetchEvents(from: data, completion: { (events) in
                 guard let events = events else {
+                    os_log("%@", log: ambLog, type: .debug, "Error, no events found for query: \(query)")
                     return
                 }
                 completion(events)
@@ -93,7 +97,7 @@ import UIKit
         let path = endpointBasePath + "assets/" + id
         request(path: path) { (data) in
             guard let data = data as? [String: Any] else {
-                NSLog("Error, no asset found for id:" + id)
+                os_log("%@", log: ambLog, type: .debug, "Error, no asset found for id: \(id)")
                 completion(nil)
                 return
             }
@@ -105,7 +109,7 @@ import UIKit
     private static func fetchEvents(from data: Any?, completion: @escaping (_ data: [AMBEvent]?) -> Void) {
         guard let data = data as? [String: Any],
             let results = data["results"] as? [[String: Any]] else {
-                NSLog("Couldn't find events for data")
+                os_log("%@", log: ambLog, type: .debug, "Couldn't find events for data")
                 completion(nil)
                 return
         }
@@ -123,6 +127,7 @@ import UIKit
         request(path: path) { (data) in
             fetchEvents(from: data, completion: { (events) in
                 guard let events = events else {
+                    os_log("%@", log: ambLog, type: .debug, "Error, no asset found for asset id: \(id)")
                     return
                 }
                 completion(events)
@@ -136,14 +141,18 @@ import UIKit
     ///   - url: The URL of the image to download
     ///   - completion: The image if available, and optional error
     public static func requestImage(from url: URL, completion: @escaping (_ image: UIImage?, _ error: Error? ) -> Void) {
-        if let cachedImage = AMBDataStore.sharedInstance.imageCache.object(forKey: url.absoluteString as NSString) {
+        let urlString =  url.absoluteString
+        let urlNSString = urlString  as NSString
+
+        if let cachedImage = AMBDataStore.sharedInstance.imageCache.object(forKey: urlNSString) {
             completion(cachedImage, nil)
         } else {
-            request(path: url.absoluteString, responseType: .data, completion: { (data) in
+            request(path: urlString, responseType: .data, completion: { (data) in
                 if let data = data as? Data, let image = UIImage(data: data) {
-                    AMBDataStore.sharedInstance.imageCache.setObject(image, forKey: url.absoluteString as NSString)
+                    AMBDataStore.sharedInstance.imageCache.setObject(image, forKey: urlNSString)
                     completion(image, nil)
                 } else {
+                    os_log("%@", log: ambLog, type: .debug, "No image found at URL: \(urlString)")
                     completion(nil, nil)
                 }
             })

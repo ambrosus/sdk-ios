@@ -13,6 +13,7 @@
 //
 
 import UIKit
+import os.log
 
 
 /// A Persistence layer to store Assets and Events for later access
@@ -29,7 +30,7 @@ import UIKit
         /// - Parameter asset: The asset to insert
         public func insert(_ asset: AMBAsset) {
             guard assets[asset.id] == nil else {
-                NSLog("Asset already stored")
+                os_log("%@", log: ambLog, type: .debug, "Asset already stored")
                 return
             }
             assets[asset.id] = asset
@@ -66,7 +67,7 @@ import UIKit
         /// - Parameter events: The events to insert
         public func insert(_ events: [AMBEvent]) {
             guard let assetId = events.first?.assetId else {
-                NSLog("Should be at least 1 event in order to store events, found zero")
+                os_log("%@", log: ambLog, type: .debug, "Should be at least 1 event in order to store events, found zero")
                 return
             }
             let sortedEvents = events.sorted { (event1, event2) -> Bool in
@@ -79,8 +80,9 @@ import UIKit
         ///
         /// - Parameter assetId: The id for the asset associated with these events
         /// - Returns: The events if available in the store, nil otherwise
-        public func fetchEvents(forAssetId assetId: String) -> [AMBEvent]? {
-            guard let events = eventsForAssetId[assetId] else {
+        public func fetchEvents(forAssetId id: String) -> [AMBEvent]? {
+            guard let events = eventsForAssetId[id] else {
+                os_log("%@", log: ambLog, type: .info, "No events found for asset id \(id)")
                 return nil
             }
             return events
@@ -97,5 +99,6 @@ import UIKit
     /// A data store for Events, all events are associated with an Asset, and one asset maps to many Events
     public var eventStore = AMBEventStore()
 
+    /// AMBNetwork.requestImage(_:) calls will return images from this cache if available
     internal let imageCache = NSCache<NSString, UIImage>()
 }

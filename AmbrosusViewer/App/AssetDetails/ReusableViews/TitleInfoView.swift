@@ -49,17 +49,29 @@ class TitleInfoView: UIView {
         infoLabel.text = info
     }
 
+    override func updateConstraints() {
+        if constraints.isEmpty {
+            let labelConstraints: [NSLayoutConstraint] = {
+                var labelConstraints: [NSLayoutConstraint] = []
+                labelConstraints.append(titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor))
+                labelConstraints.append(titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor))
+                labelConstraints.append(titleLabel.topAnchor.constraint(equalTo: topAnchor))
+                labelConstraints.append(infoLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5))
+                labelConstraints.append(infoLabel.leadingAnchor.constraint(equalTo: leadingAnchor))
+                labelConstraints.append(infoLabel.trailingAnchor.constraint(equalTo: trailingAnchor))
+                labelConstraints.append(infoLabel.bottomAnchor.constraint(equalTo: bottomAnchor))
+                return labelConstraints
+            }()
+            addConstraints(labelConstraints)
+            NSLayoutConstraint.activate(constraints)
+        }
+        super.updateConstraints()
+    }
+
     private func setupAutoLayout() {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         infoLabel.translatesAutoresizingMaskIntoConstraints = false
-
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        infoLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5).isActive = true
-        infoLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor).isActive = true
-        infoLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor).isActive = true
-        infoLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        setNeedsUpdateConstraints()
     }
 
     @objc func copyInfo(_ sender: UITapGestureRecognizer) {

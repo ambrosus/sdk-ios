@@ -14,6 +14,21 @@
 
 import UIKit
 
+fileprivate class StringFromValueFormatter {
+
+    static func getString(from value: Any) -> String? {
+        if let value = value as? CustomStringConvertible {
+            var description = value.description
+            while let rangeToReplace = description.range(of: "\n") {
+                description.replaceSubrange(rangeToReplace, with: "")
+            }
+            return description
+        }
+        return nil
+    }
+
+}
+
 final class ModuleDetailCollectionViewCell: UICollectionViewCell {
 
     static let itemSpacing: CGFloat = 10
@@ -29,7 +44,7 @@ final class ModuleDetailCollectionViewCell: UICollectionViewCell {
     }
 
     static func getHeight(forNumberOfSectionTypes numberOfSectionTypes: CGFloat) -> CGFloat {
-        let titleInfoViewHeight: CGFloat = 35.5 + itemSpacing
+        let titleInfoViewHeight: CGFloat = 36 + itemSpacing
         let titleInfoViewsHeight: CGFloat = titleInfoViewHeight * numberOfSectionTypes
         let cellBottomPadding: CGFloat = 20
         let stackViewTopAndBottomPadding: CGFloat = 30
@@ -38,24 +53,11 @@ final class ModuleDetailCollectionViewCell: UICollectionViewCell {
         return cellHeight
     }
 
-    private func getStringValue(for value: Any) -> String? {
-        if let stringValue = value as? String {
-            return stringValue
-        } else if let intValue = value as? Int {
-            return intValue.description
-        } else if let floatValue = value as? Float {
-            return floatValue.description
-        } else if let arrayFirstValue = (value as? [Any])?.first {
-            return getStringValue(for: arrayFirstValue)
-        }
-        return nil
-    }
-
     func populate(with data: [String: Any]) {
         stackView.removeAllArrangedSubviews()
 
         for key in data.keys {
-            if let value = data[key], let info = getStringValue(for: value) {
+            if let value = data[key], let info = StringFromValueFormatter.getString(from: value) {
                 let titleInfoView = TitleInfoView()
                 titleInfoView.setup(withTitle: key, info: info)
                 stackView.addArrangedSubview(titleInfoView)

@@ -13,6 +13,7 @@
 //
 
 import Foundation
+import os.log
 
 // MARK: - Key Name Constants
 
@@ -42,15 +43,24 @@ fileprivate let coordinatesKey = "coordinates"
 
 
 /// Event Types
-fileprivate let assetInfoType = "ambrosus.asset.info"
-fileprivate let locationType = "ambrosus.event.location"
-fileprivate let locationGeoType = "ambrosus.event.location.geo"
+fileprivate let eventTypePrefix = "ambrosus."
+fileprivate let assetInfoType = eventTypePrefix + "asset.info"
+fileprivate let locationType = eventTypePrefix + "event.location"
 
 /// An array of type [String: [String: Any]] useful for formatting complex AMB-Net Data
 /// to an easy to use Data Source for display, formattedSections are accessible from both assets and events
 public typealias AMBFormattedSections = [[String: [String: Any]]]
 
 private struct SectionFormatter {
+
+    static func getDescriptiveName(from dictionary: [String: Any]) -> String? {
+        guard let type = dictionary[typeKey] as? String,
+            type.contains(eventTypePrefix) else {
+                return nil
+        }
+
+        return type
+    }
 
     /// Recursively traverses the data for an AMBModel and extracts an array that can be used
     /// as a data source for display
@@ -67,8 +77,10 @@ private struct SectionFormatter {
         /// - Returns: The additional subdictionaries as formatted sections
         func fetchAdditionalSections(dictionary: inout [String: Any]) -> AMBFormattedSections {
             let additionalSections = getDictionaries(dictionary)
-            additionalSections.forEach {
-                $0.keys.forEach { dictionary.removeValue(forKey: $0)}
+            for additionalSection in additionalSections {
+                for key in additionalSection.keys {
+                    dictionary.removeValue(forKey: key)
+                }
             }
             return additionalSections
         }
@@ -77,7 +89,7 @@ private struct SectionFormatter {
             if var dictionary = formattedData[key] as? [String: Any] {
                 formattedData.removeValue(forKey: key)
                 sections.append(contentsOf: fetchAdditionalSections(dictionary: &dictionary))
-                let name = dictionary[typeKey] as? String ?? key
+                let name = getDescriptiveName(from: dictionary) ?? key
                 let dataSection = [name: dictionary]
                 sections.append(dataSection)
 
@@ -87,7 +99,7 @@ private struct SectionFormatter {
                     // index the dictionaries that belong to the same parent
                     sections.append(contentsOf: fetchAdditionalSections(dictionary: &dictionary))
                     let keyIndexed = i > 0 ? key + " \(i+1)" : key
-                    let name = dictionary[typeKey] as? String ?? keyIndexed
+                    let name = getDescriptiveName(from: dictionary) ?? keyIndexed
                     let dataSection = [name: dictionary]
                     sections.append(dataSection)
                 }

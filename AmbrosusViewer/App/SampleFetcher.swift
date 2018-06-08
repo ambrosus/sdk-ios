@@ -19,17 +19,18 @@ final class SampleFetcher {
     
     /// Fetches sample assets and events stored as JSON locally
     func fetch() {
-        // requestSampleJSON()
+        requestSampleJSON()
+        
         let assetId = "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae"
         AMBNetwork.requestAsset(fromId: assetId, completion: { (asset) in
             guard let asset = asset else {
-                print("asset failed to unwrap")
+                NSLog("asset failed to unwrap")
                 return
             }
             AMBDataStore.sharedInstance.assetStore.insert(asset)
             AMBNetwork.requestEvents(fromAssetId: assetId, completion: { (events) in
                 guard let events = events else {
-                    print("events failed to unwrap")
+                    NSLog("events failed to unwrap")
                     return
                 }
                 AMBDataStore.sharedInstance.eventStore.insert(events)
@@ -41,7 +42,6 @@ final class SampleFetcher {
         requestSamples(assetPath: "CowAsset", eventsPath: "CowEvents")
         requestSamples(assetPath: "PharmacyAsset", eventsPath: "PharmacyEvents")
         requestSamples(assetPath: "PharmacyAsset2", eventsPath: "PharmacyEvents2")
-        requestSamples(assetPath: "ChocolateAsset", eventsPath: "ChocolateEvents")
     }
     
     private func requestSamples(assetPath: String, eventsPath: String) {

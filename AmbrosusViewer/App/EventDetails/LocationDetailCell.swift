@@ -18,25 +18,10 @@ import AmbrosusSDK
 
 final class LocationDetailCell: UICollectionViewCell {
 
-    @IBOutlet weak var mapView: MKMapView!
-
-    var event: AMBEvent = AMBEvent() {
-        didSet {
-            guard let lattitude = event.lattitude?.doubleValue,
-                let longitude = event.longitude?.doubleValue else {
-                    return
-            }
-            let coordinates = CLLocationCoordinate2D(latitude: lattitude, longitude: longitude)
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = coordinates
-            annotation.title = event.locationName
-            
-            /// The lattitude and longitude delta, set lower to set map closer to the coordinates
-            let delta: Double = 0.0015
-            let zoomSpan = MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
-            let coordinateRegion = MKCoordinateRegion(center: coordinates, span: zoomSpan)
-            mapView.setRegion(coordinateRegion, animated: true)
-            mapView.addAnnotation(annotation)
+    func setupCell(mapView: MKMapView) {
+        if viewWithTag(10) == nil {
+            addSubview(mapView)
+            mapView.tag = 10
         }
     }
 

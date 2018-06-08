@@ -34,7 +34,7 @@ The interface layer which makes network requests to the Ambrosus API such as fet
 
 `AMBDataStore.swift`
 
-A singleton caching layer, you can insert assets into it using `AMBDataStore.sharedInstance.assetStore.insert(:)` or events using `AMBDataStore.sharedInstance.eventsStore.insert(:)`, saving assets and events in here will make them easy to fetch later, and also improve network performance when requesting already stored assets and events from AMBNetwork. It also will cache images downloaded using `AMBNetwork.requestImage(:)` calls.
+A singleton caching layer, you can insert assets into it using `AMBDataStore.sharedInstance.assetStore.insert(:)` or events using `AMBDataStore.sharedInstance.eventsStore.insert(_:)`, saving assets and events in here will make them easy to fetch later, and also improve network performance when requesting already stored assets and events from AMBNetwork. It also will cache images downloaded using `AMBNetwork.requestImage(_:)` calls.
 
 `AMBModels.swift`
 
@@ -52,7 +52,7 @@ To get back an asset from the API you can make a call like the following:
 ```swift
 AMBNetwork.requestAsset(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664", completion: { (asset) in
   guard let asset = asset else {
-    print("asset failed to unwrap")
+    NSLog("asset failed to unwrap")
     return
   }
   // Use unwrapped Asset here
@@ -64,7 +64,7 @@ A single Asset in the Ambrosus SDK has many events associated with it, to get ba
 ```swift
 AMBNetwork.requestEvents(fromAssetId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664") { (events) in
     guard let events = events else {
-        print("Failed to return events")
+        NSLog("Failed to return events")
         return
     }
     // Use unwrapped events here
@@ -76,7 +76,7 @@ To get back an asset along with all of its events, and store the information in 
 ```swift
 AMBNetwork.requestAsset(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664", completion: { (asset) in
     guard let asset = asset else {
-        print("asset failed to unwrap")
+        NSLog("asset failed to unwrap")
         return
     }
     AMBDataStore.sharedInstance.assetStore.insert(asset)

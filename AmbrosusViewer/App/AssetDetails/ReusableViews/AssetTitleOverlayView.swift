@@ -23,7 +23,6 @@ final class AssetTitleOverlayView: UICollectionReusableView {
         super.awakeFromNib()
 
         imageOverlay.isHidden = true
-        imageOverlay.heightAnchor.constraint(equalTo: imageOverlay.widthAnchor).isActive = true
     }
 
 }

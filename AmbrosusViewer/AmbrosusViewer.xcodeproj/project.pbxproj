@@ -31,8 +31,6 @@
 		0A35994C20BF704D001AE36F /* LocationDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35992720BF704D001AE36F /* LocationDetailCell.swift */; };
 		0A35994D20BF704D001AE36F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A35992820BF704D001AE36F /* Images.xcassets */; };
 		0A35994F20BF704D001AE36F /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35992A20BF704D001AE36F /* Interface.swift */; };
-		0A35995020BF704D001AE36F /* ChocolateAsset.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35992C20BF704D001AE36F /* ChocolateAsset.json */; };
-		0A35995120BF704D001AE36F /* ChocolateEvents.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35992D20BF704D001AE36F /* ChocolateEvents.json */; };
 		0A35995220BF704D001AE36F /* CowAsset.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35992E20BF704D001AE36F /* CowAsset.json */; };
 		0A35995320BF704D001AE36F /* CowEvents.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35992F20BF704D001AE36F /* CowEvents.json */; };
 		0A35995420BF704D001AE36F /* PharmacyAsset.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35993020BF704D001AE36F /* PharmacyAsset.json */; };
@@ -89,8 +87,6 @@
 		0A35992820BF704D001AE36F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A35992920BF704D001AE36F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A35992A20BF704D001AE36F /* Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
-		0A35992C20BF704D001AE36F /* ChocolateAsset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChocolateAsset.json; sourceTree = "<group>"; };
-		0A35992D20BF704D001AE36F /* ChocolateEvents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChocolateEvents.json; sourceTree = "<group>"; };
 		0A35992E20BF704D001AE36F /* CowAsset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CowAsset.json; sourceTree = "<group>"; };
 		0A35992F20BF704D001AE36F /* CowEvents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CowEvents.json; sourceTree = "<group>"; };
 		0A35993020BF704D001AE36F /* PharmacyAsset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PharmacyAsset.json; sourceTree = "<group>"; };
@@ -236,8 +232,6 @@
 		0A35992B20BF704D001AE36F /* JSONSamples */ = {
 			isa = PBXGroup;
 			children = (
-				0A35992C20BF704D001AE36F /* ChocolateAsset.json */,
-				0A35992D20BF704D001AE36F /* ChocolateEvents.json */,
 				0A35992E20BF704D001AE36F /* CowAsset.json */,
 				0A35992F20BF704D001AE36F /* CowEvents.json */,
 				0A35993020BF704D001AE36F /* PharmacyAsset.json */,
@@ -392,12 +386,10 @@
 				0A35994720BF704D001AE36F /* LaunchScreen.storyboard in Resources */,
 				6A79BC2D20684D2A0096E68F /* LICENSE-2.0.txt in Resources */,
 				0A35994620BF704D001AE36F /* TitleInfoView.xib in Resources */,
-				0A35995120BF704D001AE36F /* ChocolateEvents.json in Resources */,
 				0A35994820BF704D001AE36F /* Main.storyboard in Resources */,
 				0A35995220BF704D001AE36F /* CowAsset.json in Resources */,
 				0A35995420BF704D001AE36F /* PharmacyAsset.json in Resources */,
 				0A35995720BF704D001AE36F /* PharmacyEvents2.json in Resources */,
-				0A35995020BF704D001AE36F /* ChocolateAsset.json in Resources */,
 				0A35994020BF704D001AE36F /* HeroView.xib in Resources */,
 				0A35995320BF704D001AE36F /* CowEvents.json in Resources */,
 				0A35993D20BF704D001AE36F /* AssetTitleOverlayView.xib in Resources */,

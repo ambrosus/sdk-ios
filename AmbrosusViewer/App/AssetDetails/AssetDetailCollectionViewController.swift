@@ -235,10 +235,15 @@ extension AssetDetailCollectionViewController {
         if let cell = cell as? EventTimelineCollectionViewCell,
             let events = events {
                 let isLastCell = indexPath.row == events.count - 1
+
+                // Prevents the last cells timeline view from overflowing into the cell background
                 cell.timelineBorderViewBottomConstraint.constant = isLastCell ? 22 : -20
             
                 let isFirstCell = indexPath.row == 0
+
+                // Sets the starting line for the timeline
                 cell.timelineBorderViewTopConstraint.constant = isFirstCell ? 8 : 0
+
                 cell.event = events[indexPath.row]
         } else if let cell = cell as? ModuleDetailCollectionViewCell,
             let sectionValues = section.values.first as? [String: Any] {

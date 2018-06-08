@@ -14,21 +14,65 @@
 
 import UIKit
 import AmbrosusSDK
+import MapKit
 
 private let reuseIdentifier = "Cell"
 private let locationKey = "location"
 
-class EventDetailsCollectionViewController: UICollectionViewController {
+final class MapFormatter {
+
+    let region: MKCoordinateRegion
+    let annotation: MKPointAnnotation
+
+    init?(event: AMBEvent) {
+        guard let lattitude = event.lattitude?.doubleValue,
+            let longitude = event.longitude?.doubleValue else {
+                return nil
+        }
+        let coordinates = CLLocationCoordinate2D(latitude: lattitude, longitude: longitude)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinates
+        annotation.title = event.locationName
+        self.annotation = annotation
+
+        /// The lattitude and longitude delta, set lower to set map closer to the coordinates
+        let delta: Double = 0.0015
+        let zoomSpan = MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
+        let coordinateRegion = MKCoordinateRegion(center: coordinates, span: zoomSpan)
+        self.region = coordinateRegion
+    }
+
+}
+
+final class EventMapView: MKMapView {
+
+    init(mapFormatter: MapFormatter) {
+        super.init(frame: CGRect(x: 0, y: 0, width: Interface.screenWidth, height: Interface.screenWidth))
+        setRegion(mapFormatter.region, animated: false)
+        addAnnotation(mapFormatter.annotation)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+}
+
+final class EventDetailsCollectionViewController: UICollectionViewController {
 
     private let dataKey = "data"
     private let locationKey = "location"
 
+    var mapFormatter: MapFormatter?
+    var mapView: EventMapView?
+
     var event: AMBEvent = AMBEvent() {
         didSet {
             title = event.name ?? event.type
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
-                self.collectionView?.reloadData()
+            if let mapFormatter = MapFormatter(event: event) {
+                mapView = EventMapView(mapFormatter: mapFormatter)
             }
+            self.collectionView?.reloadData()
         }
     }
 
@@ -46,7 +90,7 @@ class EventDetailsCollectionViewController: UICollectionViewController {
     }
 
     fileprivate func isLocationSection(at section: Int) -> Bool {
-        return formattedSections[section].keys.first?.contains(locationKey) ?? false
+        return formattedSections[section].keys.first == "ambrosus.event.location"
     }
 
 }
@@ -75,8 +119,9 @@ extension EventDetailsCollectionViewController {
         if let cell = cell as? ModuleDetailCollectionViewCell,
             let sectionValues = section.values.first {
             cell.populate(with: sectionValues)
-        } else if let cell = cell as? LocationDetailCell {
-            cell.event = event
+        } else if let cell = cell as? LocationDetailCell,
+            let mapView = mapView {
+                cell.setupCell(mapView: mapView)
         }
         return cell
     }

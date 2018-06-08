@@ -47,20 +47,21 @@ final class EventTimelineCollectionViewCell: UICollectionViewCell {
             case .transport:
                 return ["transport", "redirection", "shipped"]
             case .lab:
-                return ["pressure", "humidity", "qualityControlled"]
+                return ["pressure", "humidity", "qualitycontrolled", "manufactured"]
             case .pin:
                 return ["location", "customs", "displayed", "arrived"]
             case .identification:
                 return ["identifier", "info"]
             case .harvest:
-                return ["harvested", "manufactured"]
+                return ["harvested"]
             }
         }
 
         static func getType(for event: AMBEvent) -> EventType {
+            let typeString = event.type.lowercased()
             for type in allTypes {
                 for field in type.fields {
-                    if event.type.contains(field) {
+                    if typeString.contains(field) {
                         return type
                     }
                 }
