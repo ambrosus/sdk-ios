@@ -90,6 +90,7 @@ internal let ambLog = OSLog(subsystem: "com.ambrosus.sdk", category: "ambrosus_s
     ///   - completion: The asset if available, nil if unavailable
     public static func requestAsset(fromId id: String, completion: @escaping (_ data: AMBAsset?) -> Void) {
         if let asset = AMBDataStore.sharedInstance.assetStore.fetch(withAssetId: id) {
+            os_log("%@", log: ambLog, type: .debug, "Asset already downloaded, fetching from data store")
             completion(asset)
             return
         }

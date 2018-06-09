@@ -11,6 +11,7 @@ Supports Xcode 9.0+
 * [Integration](#integration)
 * [Overview](#overview)
 * [Usage](#usage)
+* [Usage (Objective-C)](#usage-objective-c)
 * [Sample Application (Ambrosus Viewer)](#sample-application-ambrosus-viewer)
 * [Ambrosus Viewer Support](#ambrosus-viewer-support)
 * [Sample Symbologies](#sample-symbologies)
@@ -51,7 +52,7 @@ import AmbrosusSDK
 To get back an asset from the API you can make a call like the following:
 
 ```swift
-AMBNetwork.requestAsset(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664", completion: { (asset) in
+AMBNetwork.requestAsset(fromId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae", completion: { (asset) in
   guard let asset = asset else {
     NSLog("asset failed to unwrap")
     return
@@ -63,7 +64,7 @@ AMBNetwork.requestAsset(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f3
 A single Asset in the Ambrosus SDK has many events associated with it, to get back all events associated with an asset you can make a call like the following:
 
 ```swift
-AMBNetwork.requestEvents(fromAssetId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664") { (events) in
+AMBNetwork.requestEvents(fromAssetId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae") { (events) in
     guard let events = events else {
         NSLog("Failed to return events")
         return
@@ -75,7 +76,7 @@ AMBNetwork.requestEvents(fromAssetId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f
 To get back an asset along with all of its events, and store the information in the `AMBDataStore` this can be done as follows:
 
 ```swift
-AMBNetwork.requestAsset(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664", completion: { (asset) in
+AMBNetwork.requestAsset(fromId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae", completion: { (asset) in
     guard let asset = asset else {
         NSLog("asset failed to unwrap")
         return
@@ -94,7 +95,7 @@ AMBNetwork.requestAsset(fromId: "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f3
 
 Once the asset along with its events are stored in the `AMBDataStore` they can then be accessed like so:
 ```swift
-let assetId = "0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664"
+let assetId = "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae"
 let asset = AMBDataStore.sharedInstance.assetStore.fetch(withAssetId: assetId)
 let events = AMBDataStore.sharedInstance.eventStore.fetchEvents(forAssetId: assetId)
 ```
@@ -103,13 +104,13 @@ let events = AMBDataStore.sharedInstance.eventStore.fetchEvents(forAssetId: asse
 
 The Ambrosus SDK is also fully compatible with Objective-C, you can import the SDK by adding the following to the top of your implementation file:
 ```objective-c
-@import AmbrosusSDK
+@import AmbrosusSDK;
 ```
 
 To fetch an asset as well as its events in Objective-C and store the data in `AMBDataStore` you can do the following:
 
 ```objective-c
-NSString *assetId = @"0x74d3723909b15275791d1d0366c9627ee4c6e4f9982f31233d0dd6c054e5b664";
+NSString *assetId = @"0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae";
 [AMBNetwork requestAssetFromId:assetId completion:^(AMBAsset * _Nullable asset) {
     if (!asset) {
         return;
