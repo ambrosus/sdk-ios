@@ -39,7 +39,6 @@
 		0A35995720BF704D001AE36F /* PharmacyEvents2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35993320BF704D001AE36F /* PharmacyEvents2.json */; };
 		0A35995920BF704D001AE36F /* ModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35993520BF704D001AE36F /* ModuleView.swift */; };
 		0A35995A20BF704D001AE36F /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35993620BF704D001AE36F /* ScanViewController.swift */; };
-		0AEEF32C20CC3C88001E35A6 /* SampleFetcherObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEF32B20CC3C88001E35A6 /* SampleFetcherObjC.m */; };
 		583DD87A1E4AF413C53ED98F /* Pods_AmbrosusSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B23F1CB737AAC6561B4F6BF /* Pods_AmbrosusSDK_Example.framework */; };
 		6A4A0E5320C3662500DB803D /* SampleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A0E5220C3662500DB803D /* SampleFetcher.swift */; };
 		6A79BC2D20684D2A0096E68F /* LICENSE-2.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A79BC2A20684D2A0096E68F /* LICENSE-2.0.txt */; };
@@ -96,8 +95,6 @@
 		0A35993320BF704D001AE36F /* PharmacyEvents2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PharmacyEvents2.json; sourceTree = "<group>"; };
 		0A35993520BF704D001AE36F /* ModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleView.swift; sourceTree = "<group>"; };
 		0A35993620BF704D001AE36F /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
-		0AEEF32A20CC3C88001E35A6 /* SampleFetcherObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleFetcherObjC.h; sourceTree = "<group>"; };
-		0AEEF32B20CC3C88001E35A6 /* SampleFetcherObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleFetcherObjC.m; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AmbrosusViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmbrosusViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A4A0E5220C3662500DB803D /* SampleFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleFetcher.swift; sourceTree = "<group>"; };
 		6A5490180ED09ECFD3C82281 /* AmbrosusSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AmbrosusSDK.podspec; path = ../AmbrosusSDK.podspec; sourceTree = "<group>"; };
@@ -171,8 +168,6 @@
 				0A35992B20BF704D001AE36F /* JSONSamples */,
 				0A35993520BF704D001AE36F /* ModuleView.swift */,
 				6A4A0E5220C3662500DB803D /* SampleFetcher.swift */,
-				0AEEF32A20CC3C88001E35A6 /* SampleFetcherObjC.h */,
-				0AEEF32B20CC3C88001E35A6 /* SampleFetcherObjC.m */,
 				0A35993620BF704D001AE36F /* ScanViewController.swift */,
 			);
 			path = App;
@@ -473,7 +468,6 @@
 				0A35995920BF704D001AE36F /* ModuleView.swift in Sources */,
 				0A35994F20BF704D001AE36F /* Interface.swift in Sources */,
 				0A35994420BF704D001AE36F /* SectionHeaderView.swift in Sources */,
-				0AEEF32C20CC3C88001E35A6 /* SampleFetcherObjC.m in Sources */,
 				0A35994320BF704D001AE36F /* ModuleDetailCollectionViewCell.swift in Sources */,
 				0A35993E20BF704D001AE36F /* EventTimelineCollectionViewCell.swift in Sources */,
 				0A35993920BF704D001AE36F /* ParallaxHeroLayout.swift in Sources */,

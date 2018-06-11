@@ -1,9 +1,9 @@
 {
   "name": "AmbrosusSDK",
-  "version": "0.1.0",
-  "summary": "A short description of AmbrosusSDK.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/allgamesallfree/AmbrosusSDK",
+  "version": "1.0.0",
+  "summary": "The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the Ambrosus API (AMB-NET), and build their own interfaces for displaying Assets and Events.",
+  "description": "The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the Ambrosus API (AMB-NET), and build their own interfaces for displaying Assets and Events. The Ambrosus iOS SDK is written in Swift 4.0 and is compatible with Xcode 9.0+. Branches for newer versions of Swift will be added later on. Supports iOS 10+ Supports Objective-C and Swift 4.0+ Supports Xcode 9.0+",
+  "homepage": "https://github.com/ambrosus/sdk-ios",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "allgamesallfree": "max34563@gmail.com"
   },
   "source": {
-    "git": "https://github.com/allgamesallfree/AmbrosusSDK.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/ambrosus/sdk-ios.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "10.0"
