@@ -1,5 +1,9 @@
 # Ambrosus iOS SDK
 
+[![Version](https://img.shields.io/cocoapods/v/AmbrosusSDK.svg?style=flat)](http://cocoapods.org/pods/AmbrosusSDK)
+[![License](https://img.shields.io/cocoapods/l/AmbrosusSDK.svg?style=flat)](http://cocoapods.org/pods/AmbrosusSDK)
+[![Platform](https://img.shields.io/cocoapods/p/AmbrosusSDK.svg?style=flat)](http://cocoapods.org/pods/AmbrosusSDK)
+
 The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the [Ambrosus API](https://ambrosus.docs.apiary.io) (AMB-NET), and build their own interfaces for displaying Assets and Events.
 
 The Ambrosus iOS SDK is written in Swift 4.0 and is compatible with Xcode 9.0+. Branches for newer versions of Swift will be added later on.
@@ -21,7 +25,7 @@ Supports Xcode 9.0+
 To start using the SDK you can add the following to your Podfile:
 
 ```ruby
-pod AmbrosusSDK
+pod 'AmbrosusSDK'
 ```
 
 You can also download or clone this repository and import the AmbrosusSDK manually if not using Cocoapods, all of the code is contained in the top level "AmbrosusSDK" folder.
