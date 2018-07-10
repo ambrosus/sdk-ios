@@ -16,8 +16,7 @@ import Foundation
 import AmbrosusSDK
 
 final class SampleFetcher {
-    
-    /// Fetches sample assets and events stored as JSON locally
+
     func fetch() {
         requestSampleJSON()
     }

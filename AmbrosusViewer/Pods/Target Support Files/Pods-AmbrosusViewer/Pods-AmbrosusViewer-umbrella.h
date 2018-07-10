@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AmbrosusSDK_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AmbrosusSDK_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_AmbrosusViewerVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_AmbrosusViewerVersionString[];
 

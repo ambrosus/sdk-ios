@@ -39,7 +39,7 @@
 		0A35995720BF704D001AE36F /* PharmacyEvents2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35993320BF704D001AE36F /* PharmacyEvents2.json */; };
 		0A35995920BF704D001AE36F /* ModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35993520BF704D001AE36F /* ModuleView.swift */; };
 		0A35995A20BF704D001AE36F /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35993620BF704D001AE36F /* ScanViewController.swift */; };
-		583DD87A1E4AF413C53ED98F /* Pods_AmbrosusSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B23F1CB737AAC6561B4F6BF /* Pods_AmbrosusSDK_Example.framework */; };
+		3A6501E854914783EF6EDBF1 /* Pods_AmbrosusViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8E7EF491A52C1B578182CE /* Pods_AmbrosusViewer.framework */; };
 		6A4A0E5320C3662500DB803D /* SampleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A0E5220C3662500DB803D /* SampleFetcher.swift */; };
 		6A79BC2D20684D2A0096E68F /* LICENSE-2.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A79BC2A20684D2A0096E68F /* LICENSE-2.0.txt */; };
 		6A79BC2E20684D2A0096E68F /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A79BC2B20684D2A0096E68F /* CHANGELOG.txt */; };
@@ -115,14 +115,11 @@
 		6A79BC4620684D8F0096E68F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		6A79BC4820684D9A0096E68F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		6A79BC4A20684D9F0096E68F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		709F75A0183E6AFAD58BA7B5 /* Pods-AmbrosusSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmbrosusSDK_Example/Pods-AmbrosusSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		72809197197FACD19E19A9B1 /* Pods-AmbrosusSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmbrosusSDK_Example/Pods-AmbrosusSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9ADA6FC399ED631B1BAA5E79 /* Pods_AmbrosusSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbrosusSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B23F1CB737AAC6561B4F6BF /* Pods_AmbrosusSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbrosusSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA23BC10ECA5A682797006E /* Pods-AmbrosusViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		81F94995700DDB21853AB55F /* Pods-AmbrosusViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.release.xcconfig"; sourceTree = "<group>"; };
 		A070266F8FAE476168873E7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AA80AD270B8AC41C9DB67F52 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C6EE6EF831A6B17B71B0D7AA /* Pods-AmbrosusSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmbrosusSDK_Tests/Pods-AmbrosusSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F29EE39CAE8BCE1A17F18E3C /* Pods-AmbrosusSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmbrosusSDK_Tests/Pods-AmbrosusSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE8E7EF491A52C1B578182CE /* Pods_AmbrosusViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbrosusViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +141,8 @@
 				6A79BC3520684D4D0096E68F /* QuartzCore.framework in Frameworks */,
 				6A79BC3320684D450096E68F /* SystemConfiguration.framework in Frameworks */,
 				6A79BC3120684D3D0096E68F /* MediaPlayer.framework in Frameworks */,
-				583DD87A1E4AF413C53ED98F /* Pods_AmbrosusSDK_Example.framework in Frameworks */,
 				6A79BC2F20684D2A0096E68F /* ScanditBarcodeScanner.framework in Frameworks */,
+				3A6501E854914783EF6EDBF1 /* Pods_AmbrosusViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,13 +239,11 @@
 			path = JSONSamples;
 			sourceTree = "<group>";
 		};
-		0CACDB6E7174186125354CA5 /* Pods */ = {
+		0CCEBBE557439C25BEA68D54 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				72809197197FACD19E19A9B1 /* Pods-AmbrosusSDK_Example.debug.xcconfig */,
-				709F75A0183E6AFAD58BA7B5 /* Pods-AmbrosusSDK_Example.release.xcconfig */,
-				F29EE39CAE8BCE1A17F18E3C /* Pods-AmbrosusSDK_Tests.debug.xcconfig */,
-				C6EE6EF831A6B17B71B0D7AA /* Pods-AmbrosusSDK_Tests.release.xcconfig */,
+				6DA23BC10ECA5A682797006E /* Pods-AmbrosusViewer.debug.xcconfig */,
+				81F94995700DDB21853AB55F /* Pods-AmbrosusViewer.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -260,8 +255,8 @@
 				6A79BC2920684D2A0096E68F /* ScanditSDK */,
 				0A35990820BF704D001AE36F /* App */,
 				607FACD11AFB9204008FA782 /* Products */,
-				0CACDB6E7174186125354CA5 /* Pods */,
 				757CCF2A5EF08F55B8B5C36C /* Frameworks */,
+				0CCEBBE557439C25BEA68D54 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -310,8 +305,7 @@
 				6A79BC3420684D4D0096E68F /* QuartzCore.framework */,
 				6A79BC3220684D440096E68F /* SystemConfiguration.framework */,
 				6A79BC3020684D3D0096E68F /* MediaPlayer.framework */,
-				9B23F1CB737AAC6561B4F6BF /* Pods_AmbrosusSDK_Example.framework */,
-				9ADA6FC399ED631B1BAA5E79 /* Pods_AmbrosusSDK_Tests.framework */,
+				BE8E7EF491A52C1B578182CE /* Pods_AmbrosusViewer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -323,12 +317,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AmbrosusViewer" */;
 			buildPhases = (
-				642D3C234E6850FA0750DE30 /* [CP] Check Pods Manifest.lock */,
+				C00A04138C2D6988A2A9A8E6 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				FEEBA0407A79E9DBE6F6B273 /* [CP] Embed Pods Frameworks */,
-				67FDEA0011A4E8F989903F82 /* [CP] Copy Pods Resources */,
+				C90497C9AD8EA4A37ED1E031 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,7 +393,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		642D3C234E6850FA0750DE30 /* [CP] Check Pods Manifest.lock */ = {
+		C00A04138C2D6988A2A9A8E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,35 +404,20 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AmbrosusSDK_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AmbrosusViewer-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		67FDEA0011A4E8F989903F82 /* [CP] Copy Pods Resources */ = {
+		C90497C9AD8EA4A37ED1E031 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmbrosusSDK_Example/Pods-AmbrosusSDK_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FEEBA0407A79E9DBE6F6B273 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AmbrosusSDK_Example/Pods-AmbrosusSDK_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AmbrosusSDK/AmbrosusSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -448,7 +426,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmbrosusSDK_Example/Pods-AmbrosusSDK_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -606,7 +584,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72809197197FACD19E19A9B1 /* Pods-AmbrosusSDK_Example.debug.xcconfig */;
+			baseConfigurationReference = 6DA23BC10ECA5A682797006E /* Pods-AmbrosusViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -633,7 +611,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 709F75A0183E6AFAD58BA7B5 /* Pods-AmbrosusSDK_Example.release.xcconfig */;
+			baseConfigurationReference = 81F94995700DDB21853AB55F /* Pods-AmbrosusViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

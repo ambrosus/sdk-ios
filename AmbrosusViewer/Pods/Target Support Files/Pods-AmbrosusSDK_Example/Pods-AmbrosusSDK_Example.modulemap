@@ -1,6 +1,0 @@
-framework module Pods_AmbrosusSDK_Example {
-  umbrella header "Pods-AmbrosusSDK_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}
