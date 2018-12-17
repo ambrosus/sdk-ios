@@ -257,7 +257,7 @@ extension AssetDetailCollectionViewController {
             return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ParallaxHeroLayout.SectionType.header.id, for: indexPath)
         }
         switch kind {
-        case UICollectionElementKindSectionHeader:
+        case UICollectionView.elementKindSectionHeader:
             let supplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: String(describing: SectionHeaderView.self), for: indexPath)
             let section = formattedSections[indexPath.section]
             if let sectionHeaderView = supplementaryView as? SectionHeaderView,

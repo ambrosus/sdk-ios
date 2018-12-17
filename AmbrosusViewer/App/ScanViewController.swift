@@ -149,9 +149,9 @@ final class ScanViewController: UIViewController {
 
     private func setupScanner() {
         // Add the barcode picker as a child view controller
-        addChildViewController(barcodePicker)
+        addChild(barcodePicker)
         view.addSubview(barcodePicker.view)
-        barcodePicker.didMove(toParentViewController: self)
+        barcodePicker.didMove(toParent: self)
 
         // Set the allowed interface orientations. The value UIInterfaceOrientationMaskAll is the
         // default and is only shown here for completeness.

@@ -86,7 +86,7 @@ final class EventDetailsCollectionViewController: UICollectionViewController {
         view.backgroundColor = Colors.background
         let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.sectionHeadersPinToVisibleBounds = true
-        collectionView?.register(SectionHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: String(describing: SectionHeaderView.self))
+        collectionView?.register(SectionHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: String(describing: SectionHeaderView.self))
     }
 
     fileprivate func isLocationSection(at section: Int) -> Bool {
