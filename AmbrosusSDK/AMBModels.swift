@@ -356,7 +356,7 @@ fileprivate protocol AMBSharedFields: AnyObject {
 
         let locationContainerDictionary = dataDictionaries.filter { ($0[typeKey] as? String) == locationType }.first
         let locationDictionary = locationContainerDictionary?[locationKey] as? [String: Any]
-        let geoJsonDictionary = dataDictionaries.flatMap { $0[geoJsonKey] as? [String: Any] }.first
+        let geoJsonDictionary = dataDictionaries.compactMap { $0[geoJsonKey] as? [String: Any] }.first
         let geometryDictionary = locationDictionary?[geometryKey] as? [String: Any]
         let geoDictionary = geometryDictionary ?? geoJsonDictionary
         let coordinates = geoDictionary?[coordinatesKey] as? [NSNumber] ?? []

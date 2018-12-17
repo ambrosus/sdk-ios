@@ -33,7 +33,7 @@ final class BrowseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        heightConstraint = NSLayoutConstraint(item: moduleView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: 50)
+        heightConstraint = NSLayoutConstraint(item: moduleView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: 50)
         view.backgroundColor = Colors.background
         collectionView.backgroundColor = Colors.background
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)

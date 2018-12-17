@@ -92,8 +92,8 @@ struct Interface {
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barTintColor = Colors.darkElement1
         navigationBarAppearance.tintColor = Colors.navigationSectionContent
-        navigationBarAppearance.titleTextAttributes = [NSAttributedStringKey.foregroundColor: Colors.navigationSectionContent,
-                                                       NSAttributedStringKey.font: Fonts.navigationBarTitle]
+        navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Colors.navigationSectionContent,
+                                                       NSAttributedString.Key.font: Fonts.navigationBarTitle]
         navigationBarAppearance.isTranslucent = false
     }
     

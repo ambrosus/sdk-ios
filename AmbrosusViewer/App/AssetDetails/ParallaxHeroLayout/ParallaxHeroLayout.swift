@@ -101,7 +101,7 @@ extension ParallaxHeroLayout {
         layoutSectionType(size: titleOverlaySize, type: .menu, attributes: menuAttributes, isFirstSectionHeader: false)
 
         for section in 0 ..< collectionView.numberOfSections {
-            let sectionHeaderAttributes = ParallaxHeroLayoutAttributes(forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, with: IndexPath(item: 0, section: section))
+            let sectionHeaderAttributes = ParallaxHeroLayoutAttributes(forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, with: IndexPath(item: 0, section: section))
             let isFirstSectionHeader = section == 0
             layoutSectionType(size: sectionsHeaderSize, type: .sectionHeader, attributes: sectionHeaderAttributes, isFirstSectionHeader: isFirstSectionHeader)
             setupCells(in: section)
@@ -194,7 +194,7 @@ extension ParallaxHeroLayout {
     public override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
 
         switch elementKind {
-        case UICollectionElementKindSectionHeader:
+        case UICollectionView.elementKindSectionHeader:
             return elementAttributesCache[.sectionHeader]?[indexPath]
 
         case SectionType.header.kind:

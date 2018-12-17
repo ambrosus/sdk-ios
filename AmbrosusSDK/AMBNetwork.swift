@@ -114,7 +114,7 @@ internal let ambLog = OSLog(subsystem: "com.ambrosus.sdk", category: "ambrosus_s
                 completion(nil)
                 return
         }
-        let events = results.flatMap { AMBEvent(json: $0) }
+        let events = results.compactMap { AMBEvent(json: $0) }
         completion(events)
     }
     

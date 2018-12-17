@@ -37,7 +37,7 @@ final class SampleFetcher {
             let eventPairs = eventDictionaries["results"] as? [[String: Any]] else {
                 return
         }
-        let events = eventPairs.flatMap { AMBEvent(json: $0) }
+        let events = eventPairs.compactMap { AMBEvent(json: $0) }
         AMBDataStore.sharedInstance.eventStore.insert(events)
     }
     
