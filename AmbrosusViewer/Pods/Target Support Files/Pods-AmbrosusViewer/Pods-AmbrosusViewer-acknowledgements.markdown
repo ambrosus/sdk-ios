@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## AmbrosusSDK
 
-Copyright: Ambrosus Technologies GmbH
+Copyright: Ambrosus Inc.
 Email: tech@ambrosus.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
