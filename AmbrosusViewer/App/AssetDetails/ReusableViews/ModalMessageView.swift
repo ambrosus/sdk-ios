@@ -19,26 +19,26 @@ class ModalMessageView: UIView {
     private let animationDuration: TimeInterval = 0.3
     private let showMessageLength: TimeInterval = 2
     private let viewTag = 303
-    
+
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet var customView: UIView!
-    
+
     init() {
         super.init(frame: CGRect.zero)
         setup()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
-    
+
     private func setup() {
         Bundle.main.loadNibNamed(String(describing: ModalMessageView.self), owner: self, options: nil)
         addSubview(customView)
         tag = viewTag
         translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = Colors.darkElement2
+        backgroundColor = Colors.colorElement2
 
         layer.shadowRadius = 5
         layer.shadowOffset = .zero
@@ -46,7 +46,7 @@ class ModalMessageView: UIView {
         layer.shadowOpacity = 0.9
         messageLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
     }
-    
+
     func present(in view: UIView, withMessage message: NSAttributedString) {
         messageLabel.attributedText = message
         if let messageView = view.viewWithTag(tag) {
@@ -58,18 +58,18 @@ class ModalMessageView: UIView {
         widthAnchor.constraint(equalToConstant: Interface.screenWidth).isActive = true
         animateInView()
     }
-    
+
     private func animateInView() {
         alpha = 0
+
         UIView.animate(withDuration: animationDuration, animations: {
             self.alpha = 1
-        }) { (completed) in
+        }, completion: { _ in
             UIView.animate(withDuration: self.animationDuration, delay: self.showMessageLength, animations: {
                 self.alpha = 0
-            }, completion: { (completion) in
+            }, completion: { _ in
                 self.removeFromSuperview()
             })
-        }
+        })
     }
-
 }

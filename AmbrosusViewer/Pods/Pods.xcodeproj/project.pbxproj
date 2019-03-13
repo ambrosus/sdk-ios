@@ -7,212 +7,659 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		240A7A89DDC1E4967EC73909E7615B77 /* Pods-AmbrosusViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 768A4B3975D588E9657BA154D7131573 /* Pods-AmbrosusViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26907FE33676DB0F95C772E14C3D5D2A /* Pods-AmbrosusViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D49659B43112AD038C19E673AE157 /* Pods-AmbrosusViewer-dummy.m */; };
-		281B4710712A3F7E5B8B0167289BB6B1 /* AMBNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26228E53F17609CAA5233FBF01550360 /* AMBNetwork.swift */; };
-		2EFB3F853486B08354C3FCD1ABD22B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7242254E26685F1598C9AB27652ACCB4 /* AMBDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948FE78AA5F84CEC34872177A2B57E5 /* AMBDataStore.swift */; };
-		99C887C924ACBF4EDB5E6F30FC03884D /* AmbrosusSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D393F7DEAA2BA5719F2623569B6470 /* AmbrosusSDK-dummy.m */; };
-		BB89F73AA6748FCFD32083B6B42E2164 /* AmbrosusSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D59804DF6391EF5B50941B2BB2E7D3AE /* AmbrosusSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C707BA9D95523B40CCA7A778198EB83F /* AMBModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931F9E96B9B378B075820CE2247F041 /* AMBModels.swift */; };
-		DEB60573B45219D36B8E9AF16B8BD97D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0141B717288092260DCE46D1F0ED3666 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 4127E2244B727E7C2F6FFACDD1165DED /* aestab.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		06555CBCB6147A2AC65BBC7AD8E1DB67 /* InfuraProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BEC421C9E5B98749712DAE1AA39BBE /* InfuraProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		070959ADC8537302BF384C2D0ED75AF1 /* AMBNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E8963A737C70C98CF15A5EF533E359 /* AMBNetwork.swift */; };
+		080842223DDA695DE78B5EA1201F9CAD /* AMBWeb3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF558475B2F62B9C51A7F6D712EB77 /* AMBWeb3Manager.swift */; };
+		0C31D1059F624E461349F1D90CA88016 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 59840E3B61C614CE472E8061AEB3A6BA /* secp256k1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E71C16BD86C8682E7BA7F448ECA0167 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		11A666A4F52893AFBD9B6C2340741466 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A1744E3B555820D7B0A188A2BD36D1 /* ecdsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11F01D667B25EFB5295B508E05DB7C7D /* Provider.h in Headers */ = {isa = PBXBuildFile; fileRef = DC241E2961126D4AD900093309671AC1 /* Provider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1438BFD88B1CC9138EA54C6EC3984A0B /* RegEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 2238AFC4ACA0F5B942C7C49D1292EC27 /* RegEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1546A65607CFB3F53DDD0E30B7FDF50B /* curves.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F93AD3B1F2020B18C666856AE9FAD26 /* curves.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C12D848FE75CC171F8A52EFF3CD4D1F /* tommath_superclass.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0BD56FE299FB152396F612968A0F7D /* tommath_superclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22AD32EE98D5B255CF30D7756D27F998 /* AMBAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF07A15043F218AFB25FD90F1CAB5EE /* AMBAccount.swift */; };
+		22C3ABC06B24B4E23E03C1AAB986CB0B /* ethers.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C859106BB33C3BCC8FDA38C9B7B49B /* ethers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22FCF14F4FC8EB7004AF277A207E5096 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A12122D31A13D4B8930E65BB1AB8689D /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25639F693210DF93870AB31B44AF0C4D /* ApiProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 114771A56A1D60530250A778DE30AD7E /* ApiProvider.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		26D1071913E1A2DAC415BFB9F8307B76 /* InfuraProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB17BFCFFC89BF598E5A8857332B2F /* InfuraProvider.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		27A11F96AFA8E7DA06357A2F3AC3132B /* secp256k1.table in Sources */ = {isa = PBXBuildFile; fileRef = 7E57A3624D2CBABF79D234D9FD94DC6F /* secp256k1.table */; };
+		2947FBDA74C3D3E31BE16D9412017266 /* AMBDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1330F96917FDC78FCE0C72BC1D05F6 /* AMBDataStore.swift */; };
+		34ACBC8793C748F433EE7063C839AE6A /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = DE8DB772F193F1446615594C04430DA6 /* rand.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		35B3D6E9AD235343E77E31E503B18F71 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1304A246B3B81C35F7DF83956BE5891E /* aesopt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		365B6AA0DB5EE293210F691A5D9CC7B0 /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = B68E232071EDDC7A8CE28836CF638E1E /* ripemd160.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39631C30F26961A92FA6C7E965510AD1 /* Promise.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFB9A0C41586B75AFAC6C16473C0E7C /* Promise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A8D67F66B44EBF8E04EAB29641A1BF2 /* base58.c in Sources */ = {isa = PBXBuildFile; fileRef = E92CC5717582821A3F12FD933029C241 /* base58.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		3E5D6CEB0A5AD6C4E52ED013AA8AF458 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E6604552F24CF81AC1B6589876A7F652 /* Utilities.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		3F885D5447FD9B37D64D708913AC593D /* EtherscanProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5107A69B0DB3081EF06AC1B26F659C40 /* EtherscanProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41B35AB0EA48A1575A4AE7AC1A59EC4C /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10B338FD5A3CFEBED35E8715E5CC9B2B /* pbkdf2.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		47FAAB2595C9035F0B93624E56DED54D /* ecdsa.c in Sources */ = {isa = PBXBuildFile; fileRef = F427B4893DDB619DDD25C3F8E5E58168 /* ecdsa.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		4B7616EC32E8293F1604271DDD05DF8B /* scrypt_sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 49988A16CDA247CA685984FC81B08C35 /* scrypt_sha256.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		4DE9C23ED33F0C4AC7A6B9489C4EA560 /* bip32.c in Sources */ = {isa = PBXBuildFile; fileRef = 643DF0D4A7F9113F0F9AB8992349F125 /* bip32.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		4DFA25B2F9975494A500A0B7534A54D6 /* pbkdf2.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9D2FDCFE91938AEA6BFBF60C94925E /* pbkdf2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5022A7ED25E8C08EFC6CAF0169303109 /* bignum.c in Sources */ = {isa = PBXBuildFile; fileRef = 82DFBFA604FC8E46A227CFFDB43F6D09 /* bignum.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		50C6E883BF88946F4AEC4E3E6A2343E3 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 98EE6858D8F66C9D55EC231C510E9079 /* hmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51D423A3423CF3F33DDAE483AD98E813 /* EtherscanProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D83675CD5E341FA66E155283C620FD6 /* EtherscanProvider.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		52D9F65E6BF4F057B2E2E41F69065E8C /* scrypt_sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = B314757659C85EF2E4B9DCB8AA89126B /* scrypt_sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C5857AB46F17D32D87E36E65AD6869B /* sha3.h in Headers */ = {isa = PBXBuildFile; fileRef = D2984CB184D2F456135816E379C5B5A7 /* sha3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D0A255BE3CCE7ACD0F899DED0BF602B /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 269DEECB163140984779900FD33547E3 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		5D86F441D2859F28FA90553309509872 /* ripemd160.c in Sources */ = {isa = PBXBuildFile; fileRef = C5EB268FAA0D3E7BFD5D5E417F12F1E7 /* ripemd160.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		5E5C8885211111FB45CE387EB7A1B064 /* Transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D2C15E26758F0E8AA328EC59B79CBD /* Transaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EDE584241047BC579BC2D99E75B5FB0 /* bip32.h in Headers */ = {isa = PBXBuildFile; fileRef = 6358AC197A2D40C0B05B26E6A78B92B3 /* bip32.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F66CF154276E17026E912C17C4AD2F1 /* JsonRpcProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 27629461BFE6C4D3888C620A9C4224E2 /* JsonRpcProvider.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		60AB70DC7D67DDF963A6CCA26BD30B48 /* base58.h in Headers */ = {isa = PBXBuildFile; fileRef = 70C7B7C7268E7AB9129514611D08A5CC /* base58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60E392732D77C60E26DED0F9E310AF98 /* Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6498E5573A8D55817D42D3C68C7D2A /* Hash.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		6335698BF30A4B02CA2167C23671F2F6 /* AmbrosusSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C11666068048F4BFE52D03307A8CFB17 /* AmbrosusSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		633F26A1414AC7DD24A76869CA2E4F98 /* Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = D373958DADE85C2129E9DEB5A58755B6 /* Provider.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		656737A3D48A589050C2CC3DED81FD39 /* EtherchainProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A590037DD6C31B73F18EC2972AC857FC /* EtherchainProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65B47C74B9C07C844CCD126041C1A2A5 /* AMBErrorsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666920E13175E0AB3CC5B04E201F8BAC /* AMBErrorsHandler.swift */; };
+		69CCB7A77D11533B9FD07B6205C2E4E8 /* SecureData.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DC678AAC8E1707899A3EC40BEEC8FE /* SecureData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B4E448A79CA1BDDE631A1F038A9877B /* macros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E54832238F05953B54EF8C1FE930205 /* macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BB6676458DBAB608F6D5AE955C20DB5 /* bip39.c in Sources */ = {isa = PBXBuildFile; fileRef = C8735258319C8B453C6E30FEBED23429 /* bip39.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		6C4640AA5BEDFCD1E9FC06E80EFE5FB3 /* bip39_english.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B5662DB03E52E52F38CFD68B0B9DE6 /* bip39_english.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CED6B0BA91F17C439D689E553BC4C45 /* AMBModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376E08281B2DCED9E2B784AE322382D /* AMBModels.swift */; };
+		6D1D2576F433F0BF9BFA571A4495A834 /* AMBUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B44351F8F9B6782B2716D82C7393F73 /* AMBUserSession.swift */; };
+		6D7E8710054B2D7F1C6AB2E7F70F274D /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B05D7C6BB8DA1D3307D1AE48D3BCB32 /* rand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72053D842AB155011BBA7F9F1AF0FB11 /* tommath.h in Headers */ = {isa = PBXBuildFile; fileRef = C5EE2D114BC516ACF0E32192E90241F9 /* tommath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		741C009F9F93B40D555AC49E0E617785 /* tommath_class.h in Headers */ = {isa = PBXBuildFile; fileRef = ECAAB1EC938CE8FA9EC704AD67598257 /* tommath_class.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		749B3DAE54C1521A9FD20E1973EAF7AD /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = 653D49C57F28305E83E289498E0D8F9E /* aestab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B35AA9BFF73D466057C46AD106770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		7D836087D0384FF0CE949DBA2DBA10FE /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383A73973DD14AE2A4C7499BB76F40A /* Account.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		7E69D74482DDF27E194A7022A9739C3E /* Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = F333CA28CA809FC874B9E538A5AF5E77 /* Hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F318296CAC3DF7255C0304B7B328EB1 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EC8C56B227AC67948561D3BEA1D0A0 /* Transaction.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		8273365BE2E818D6A641A27B2B29E5E4 /* AMBScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FE5CDA4384D7B3A3C205365F5E408 /* AMBScanViewController.swift */; };
+		82C27359FD6D42E80E4D414418EB22A1 /* AMBDataHexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848230D8BA2BBD472A47A1E0AD300E0D /* AMBDataHexExtension.swift */; };
+		85FD5FC9DC3D195ABAF684AAB381F83A /* TransactionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FFB2951C1DED0F12C1213BD04437D7 /* TransactionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		881C70ADBA97AE5ED1F01D1113FA4AAD /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3898259FE444F7B97FB37009B1D598 /* Payment.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		8CA6E48A8032C85E203B97F7D7579609 /* RLPSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B341984B3300D60F63B4AF608C0A9C /* RLPSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		907BD4D06F8B3D998BD429134149D53F /* bignum.h in Headers */ = {isa = PBXBuildFile; fileRef = 75518F337656AE7A611BC51E3368B7E4 /* bignum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91B392F70C2879F0BB4DB037AA1B6B08 /* Signature.h in Headers */ = {isa = PBXBuildFile; fileRef = D7765C0A53F1CB514C90B2040DD5BB50 /* Signature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91F435BB9EF9431637A50CCF39354ABE /* FallbackProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B158F193E23E2A0D3F9BD63B7747A2BA /* FallbackProvider.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		92B6FC150B03C84E7D7B1E572CE42E55 /* crypto_scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 298CAFB03DEAF9ADF533E55F7F9FFD85 /* crypto_scrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9510D1A72F28B596C9965421B6E11C86 /* BlockInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F299DBA5000A4519321707A0C491E38 /* BlockInfo.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		95A21A83E3F0574926E6DF669A3ACAFE /* BigNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = C1A9EECA1333599A49B2B7D126D60FA9 /* BigNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BA791E1486524CA7512758A63F997EF /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CE246C9D8B6C5E606B7E299F20C324A /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D917172AA8A59FBA5DCB7376096EFE7 /* JsonRpcProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A6266FF29FC3231E0D84D01EB65CD4 /* JsonRpcProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DDC2EBAB518EA436E83B9E40E57BDD1 /* TransactionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AEA2557CA79B2430020C77FE88D6A1 /* TransactionInfo.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		A11C81B05AE1A76D857AAB3F9FC363B5 /* ccMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8F2C237649385885E0068C7B8BD0E2 /* ccMemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5EABE4DF0B3EF6CAFF1AD87F6C4A4A4 /* BlockInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 617C37FBC4A7837E3AF7E27B5E6FE7B5 /* BlockInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A607BAA4F1DB41D692660DA2535542B3 /* RLPSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2A455357B8EB88A3ED4DE84F4C7519 /* RLPSerialization.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		AB9251B27835AEF269DD90F1F259C361 /* AMBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F580EEC2A47589BA0996D6AB34FDB /* AMBConstants.swift */; };
+		AD374E21ACC587FFA32A7AF69ACE2F81 /* ApiProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1562D1C92C384CD1DD74D9CBC23943A5 /* ApiProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6E28B306CA0DDF39AFA0C5B5BFD209 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169951C5ADB79E0D4B6CB14AD153CD1 /* Promise.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		B20804B1CF4A06BFA852974251BBCA6A /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E57BD72C3CFF47930811B3C6A2C266E /* Address.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3A6168566984EEEE09B27EBFD608F9F /* Payment.h in Headers */ = {isa = PBXBuildFile; fileRef = 12717027FD8C8D1D282840EBC389C23D /* Payment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B747DCA576DDAC136E9EA0B87E2E0716 /* AMBBarCodeScanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A414BC22FC3ACEDAFC0763A3A90688F /* AMBBarCodeScanManager.swift */; };
+		B8154DF4DED3D5359E172A92092B8E0E /* RoundRobinProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D86D577CE4DDE0174A054BCB22FE27 /* RoundRobinProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8BFA642F1E9B43052647CB039314FE7 /* crypto_scrypt-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = 904C1E17C3318445588DB06EA2AC46DB /* crypto_scrypt-ref.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		BA356D426B186931596079BCCBB3870D /* BigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B429552374E088A98B7B7C4FE14781B3 /* BigNumber.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		BB46757A28C998305026BD8193C44017 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A65E3F3B59D5DA49D392F5EAC516D /* sha2.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		BDEBACE6F7B318EDF401D96316B74B35 /* sha3.c in Sources */ = {isa = PBXBuildFile; fileRef = AE5AD01DF825D5BD9ED178E8B4D0B8C3 /* sha3.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		BFAB236244E413786FA0223AB9D66E39 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 6611DD43A98B83EFB0369E2D56F8BC39 /* aeskey.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		BFEE26CA74E2A6FB9B2F313C4ED1CC99 /* Pods-AmbrosusViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92DF2FA7F20AE3ABCE3492C608AA66C /* Pods-AmbrosusViewer-dummy.m */; };
+		C2678E096F24223694DD858D4FA45905 /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DCF1C2F579156AD4224132BBC8F4934 /* sysendian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C485793752C7C95497F8575EED1A07E2 /* curves.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F545F21CF87C779CC6AC55D63C3CA /* curves.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CDB6CA3C01FA9B18D1106F0C93CF8B0A /* mpi.c in Sources */ = {isa = PBXBuildFile; fileRef = 642D8B24BA906F040ADE543FFD2F8456 /* mpi.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CFD9392EFCD2B7F12501BB8D5C1235AE /* aes_modes.c in Sources */ = {isa = PBXBuildFile; fileRef = 231A07C6617666C4F7057E3F2E39A279 /* aes_modes.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		D4A097E64C8534D2F60F6CF7A323D738 /* FallbackProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDEDD9F6C2A1CC4B4B96364D3305CBB /* FallbackProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5371DD5271667B1E5F905F7797D3A00 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = F72CA2C32DC05987CBE230C3EFDA49DF /* hmac.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		D55A24853B6BF6507851DBCD97EEA999 /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = 905042D0022D6EC335FE11B081CD40BC /* crypto_scrypt-nosse.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		D5D2B88B9842EFCA209CFD44DFF80781 /* Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 0872920BA737FA60C0F2F0F52FFED27E /* Signature.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		D9BD7898770EC061D955E791F8A09820 /* SecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = F944EC3AE8140B9CF16A00D5DCBB146B /* SecureData.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		DBE8CA2C8F9E1A187D3076BC2C65A4CC /* tommath_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 366B2625A15D8F960B92D2AE18762DD4 /* tommath_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC2367FA6DE7DA475F8235906706476F /* AmbrosusSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A36D9DEEC6D93551CF837A7DDF87DBBD /* AmbrosusSDK-dummy.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		E065CECD89812A014BFBA3070B19BF03 /* sha2.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D47D3BF957BE3FFC4F76012A862EC8 /* sha2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1A1A65D187D50AF6EA65F4410D6E73C /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 967868CA123D520B58813C2C8DD9C95A /* Address.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		E70C86B3B9F56DEC8DB0A764FAE2BF33 /* RoundRobinProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 459028088BD4381ABE8FB04057026B68 /* RoundRobinProvider.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		E911830EF37F22D97977C5B1DD5534FC /* Account.h in Headers */ = {isa = PBXBuildFile; fileRef = EF9ED5A504AB1EFBD030799B4B2151BB /* Account.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E95F379C5109D9DA2B26CFAF4D64CE79 /* Pods-AmbrosusViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B4D8ADD4E571AFAC541CF74879E265 /* Pods-AmbrosusViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAE7B3B17C06C8C663C3C36EB85F2349 /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 8594B9EBDC3275C5A0EADA507C8F2CE3 /* secp256k1.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		ECE6C77B0FF50806719DB177150B3D54 /* EtherchainProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F38C07274C3DADE3FC01CCCD932C7D /* EtherchainProvider.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		F2E9D768E941F9903560AE2922A91F37 /* bip39.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE40CD625AECCA63CA2DE02105E9092 /* bip39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4C025D72F2726507CEEFCCA98F71C12 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1EA78FCE89A8A0D4A4F755183B2301 /* options.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB23E8A976F754BC65919A91EAED6697 /* RegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C241870D68CA9B218608D88EF8D3EE7 /* RegEx.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1A2C8A2537D27ADCE48A6B816B35EF9B /* PBXContainerItemProxy */ = {
+		AF3E7596370BF2B824DFED7282E7D4C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 341B6E61A547CE0A8ABD6B6A2289523F;
+			remoteGlobalIDString = EAAF20AAF08E6D1B05E24399F1873788;
 			remoteInfo = AmbrosusSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17111B12032FD200321E47A6E215892E /* AmbrosusSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = AmbrosusSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		26228E53F17609CAA5233FBF01550360 /* AMBNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBNetwork.swift; path = AmbrosusSDK/AMBNetwork.swift; sourceTree = "<group>"; };
-		2870FED1C03BF9859FC713FE8BB60A25 /* Pods-AmbrosusViewer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AmbrosusViewer-resources.sh"; sourceTree = "<group>"; };
-		386B2F3A92529204D17310761819CC34 /* Pods-AmbrosusViewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AmbrosusViewer-frameworks.sh"; sourceTree = "<group>"; };
-		538B10DC540BB2610F21CE2216230BCD /* Pods-AmbrosusViewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusViewer-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C3D49659B43112AD038C19E673AE157 /* Pods-AmbrosusViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AmbrosusViewer-dummy.m"; sourceTree = "<group>"; };
-		60F857B310835011F9E9A00A06ACAA8B /* Pods-AmbrosusViewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AmbrosusViewer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6948FE78AA5F84CEC34872177A2B57E5 /* AMBDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBDataStore.swift; path = AmbrosusSDK/AMBDataStore.swift; sourceTree = "<group>"; };
-		6CBB3B6FFDB0D6C65D878E79DF2DC893 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		6F2F5CC4251DE1E983044D1EE717564E /* Pods-AmbrosusViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusViewer.debug.xcconfig"; sourceTree = "<group>"; };
-		768A4B3975D588E9657BA154D7131573 /* Pods-AmbrosusViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AmbrosusViewer-umbrella.h"; sourceTree = "<group>"; };
-		8931F9E96B9B378B075820CE2247F041 /* AMBModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBModels.swift; path = AmbrosusSDK/AMBModels.swift; sourceTree = "<group>"; };
-		92D1BA2BE203E040B52C108F8C0C2482 /* AmbrosusSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AmbrosusSDK.framework; path = AmbrosusSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA20AC0C06312D779B840E6B3402CCD7 /* AmbrosusSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AmbrosusSDK.modulemap; sourceTree = "<group>"; };
-		AC16070616CBB0CBAD7D49A3C78A5BA4 /* Pods_AmbrosusViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AmbrosusViewer.framework; path = "Pods-AmbrosusViewer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B510FDEBD408B63AC3F26D258D8BE513 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCFF4C546189B22A50C8B66EAEDF98A6 /* AmbrosusSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AmbrosusSDK-prefix.pch"; sourceTree = "<group>"; };
-		CEA56CEF2A8ECE993DADCB3A5AA618C1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		CEE61194AD7AA78F725A1D2DF68AEB98 /* Pods-AmbrosusViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AmbrosusViewer.modulemap"; sourceTree = "<group>"; };
-		D046357DD71667B3427C47F6B26DDB5A /* AmbrosusSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AmbrosusSDK.xcconfig; sourceTree = "<group>"; };
-		D59804DF6391EF5B50941B2BB2E7D3AE /* AmbrosusSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AmbrosusSDK-umbrella.h"; sourceTree = "<group>"; };
-		DCC25F4CEB716989886E661D8C651E33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3D393F7DEAA2BA5719F2623569B6470 /* AmbrosusSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AmbrosusSDK-dummy.m"; sourceTree = "<group>"; };
-		FD290501A0C2C75A67EDFBBBB22C9228 /* Pods-AmbrosusViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusViewer.release.xcconfig"; sourceTree = "<group>"; };
+		02D47D3BF957BE3FFC4F76012A862EC8 /* sha2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		0872920BA737FA60C0F2F0F52FFED27E /* Signature.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Signature.m; sourceTree = "<group>"; };
+		0AF07A15043F218AFB25FD90F1CAB5EE /* AMBAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBAccount.swift; path = AmbrosusSDK/AMBAccount.swift; sourceTree = "<group>"; };
+		0D1A65E3F3B59D5DA49D392F5EAC516D /* sha2.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sha2.c; sourceTree = "<group>"; };
+		0F299DBA5000A4519321707A0C491E38 /* BlockInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BlockInfo.m; sourceTree = "<group>"; };
+		10B338FD5A3CFEBED35E8715E5CC9B2B /* pbkdf2.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pbkdf2.c; sourceTree = "<group>"; };
+		114771A56A1D60530250A778DE30AD7E /* ApiProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ApiProvider.m; sourceTree = "<group>"; };
+		1169951C5ADB79E0D4B6CB14AD153CD1 /* Promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
+		12717027FD8C8D1D282840EBC389C23D /* Payment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Payment.h; sourceTree = "<group>"; };
+		1304A246B3B81C35F7DF83956BE5891E /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		1562D1C92C384CD1DD74D9CBC23943A5 /* ApiProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ApiProvider.h; sourceTree = "<group>"; };
+		1B1EA78FCE89A8A0D4A4F755183B2301 /* options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		1CBF54EDC30A0BCEF3A73658B9E29BE5 /* AmbrosusSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AmbrosusSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2238AFC4ACA0F5B942C7C49D1292EC27 /* RegEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RegEx.h; sourceTree = "<group>"; };
+		231A07C6617666C4F7057E3F2E39A279 /* aes_modes.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = aes_modes.c; sourceTree = "<group>"; };
+		24C859106BB33C3BCC8FDA38C9B7B49B /* ethers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ethers.h; sourceTree = "<group>"; };
+		2593AFF8D928F58942698A79C4B9D67E /* Pods_AmbrosusViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbrosusViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2626E9C1F4D3ECFF364431FCD9CBF3F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		269DEECB163140984779900FD33547E3 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		27629461BFE6C4D3888C620A9C4224E2 /* JsonRpcProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JsonRpcProvider.m; sourceTree = "<group>"; };
+		293D41B18C9958E326371DC1AACD7E12 /* AmbrosusSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AmbrosusSDK.modulemap; sourceTree = "<group>"; };
+		298CAFB03DEAF9ADF533E55F7F9FFD85 /* crypto_scrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt.h; sourceTree = "<group>"; };
+		29BEC421C9E5B98749712DAE1AA39BBE /* InfuraProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InfuraProvider.h; sourceTree = "<group>"; };
+		2B44351F8F9B6782B2716D82C7393F73 /* AMBUserSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBUserSession.swift; path = AmbrosusSDK/AMBUserSession.swift; sourceTree = "<group>"; };
+		2C241870D68CA9B218608D88EF8D3EE7 /* RegEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RegEx.m; sourceTree = "<group>"; };
+		2D83675CD5E341FA66E155283C620FD6 /* EtherscanProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EtherscanProvider.m; sourceTree = "<group>"; };
+		2E57BD72C3CFF47930811B3C6A2C266E /* Address.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		366B2625A15D8F960B92D2AE18762DD4 /* tommath_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = tommath_private.h; sourceTree = "<group>"; };
+		39A7E20A89210B4EAF10F70538D6C9FF /* Pods-AmbrosusViewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusViewer-Info.plist"; sourceTree = "<group>"; };
+		3C1330F96917FDC78FCE0C72BC1D05F6 /* AMBDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBDataStore.swift; path = AmbrosusSDK/AMBDataStore.swift; sourceTree = "<group>"; };
+		3DA4A8A1147052B7DD61D2CADCB47AB6 /* crypto_scrypt-sse.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-sse.c"; sourceTree = "<group>"; };
+		40A6266FF29FC3231E0D84D01EB65CD4 /* JsonRpcProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JsonRpcProvider.h; sourceTree = "<group>"; };
+		4127E2244B727E7C2F6FFACDD1165DED /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		459028088BD4381ABE8FB04057026B68 /* RoundRobinProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RoundRobinProvider.m; sourceTree = "<group>"; };
+		45E609942F79EFA1BF199BDE09E95832 /* Pods-AmbrosusViewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AmbrosusViewer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		487176A065B352E1D36DB1327ABFB535 /* Pods-AmbrosusViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AmbrosusViewer.modulemap"; sourceTree = "<group>"; };
+		49988A16CDA247CA685984FC81B08C35 /* scrypt_sha256.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = scrypt_sha256.c; sourceTree = "<group>"; };
+		4A5F545F21CF87C779CC6AC55D63C3CA /* curves.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = curves.c; sourceTree = "<group>"; };
+		4CDEDD9F6C2A1CC4B4B96364D3305CBB /* FallbackProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FallbackProvider.h; sourceTree = "<group>"; };
+		4CE246C9D8B6C5E606B7E299F20C324A /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		4DCF1C2F579156AD4224132BBC8F4934 /* sysendian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
+		5107A69B0DB3081EF06AC1B26F659C40 /* EtherscanProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EtherscanProvider.h; sourceTree = "<group>"; };
+		5383A73973DD14AE2A4C7499BB76F40A /* Account.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		59840E3B61C614CE472E8061AEB3A6BA /* secp256k1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		5990A84C7DA3AFFF990A1ABE3418B2AD /* AmbrosusSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AmbrosusSDK.xcconfig; sourceTree = "<group>"; };
+		60DC678AAC8E1707899A3EC40BEEC8FE /* SecureData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SecureData.h; sourceTree = "<group>"; };
+		617C37FBC4A7837E3AF7E27B5E6FE7B5 /* BlockInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BlockInfo.h; sourceTree = "<group>"; };
+		62EC8C56B227AC67948561D3BEA1D0A0 /* Transaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		6358AC197A2D40C0B05B26E6A78B92B3 /* bip32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bip32.h; sourceTree = "<group>"; };
+		642D8B24BA906F040ADE543FFD2F8456 /* mpi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = mpi.c; sourceTree = "<group>"; };
+		643DF0D4A7F9113F0F9AB8992349F125 /* bip32.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = bip32.c; sourceTree = "<group>"; };
+		653D49C57F28305E83E289498E0D8F9E /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		6611DD43A98B83EFB0369E2D56F8BC39 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		666920E13175E0AB3CC5B04E201F8BAC /* AMBErrorsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBErrorsHandler.swift; path = AmbrosusSDK/AMBErrorsHandler.swift; sourceTree = "<group>"; };
+		6F93AD3B1F2020B18C666856AE9FAD26 /* curves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = curves.h; sourceTree = "<group>"; };
+		70C7B7C7268E7AB9129514611D08A5CC /* base58.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = base58.h; sourceTree = "<group>"; };
+		70CF558475B2F62B9C51A7F6D712EB77 /* AMBWeb3Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBWeb3Manager.swift; path = AmbrosusSDK/AMBWeb3Manager.swift; sourceTree = "<group>"; };
+		75518F337656AE7A611BC51E3368B7E4 /* bignum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bignum.h; sourceTree = "<group>"; };
+		7B876C93F6E9FA10474C3E23D707DF49 /* Pods-AmbrosusViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		7E57A3624D2CBABF79D234D9FD94DC6F /* secp256k1.table */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = secp256k1.table; sourceTree = "<group>"; };
+		816C744293113E157C31BB073D715152 /* AmbrosusSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AmbrosusSDK-Info.plist"; sourceTree = "<group>"; };
+		82B5662DB03E52E52F38CFD68B0B9DE6 /* bip39_english.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bip39_english.h; sourceTree = "<group>"; };
+		82DFBFA604FC8E46A227CFFDB43F6D09 /* bignum.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = bignum.c; sourceTree = "<group>"; };
+		8376E08281B2DCED9E2B784AE322382D /* AMBModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBModels.swift; path = AmbrosusSDK/AMBModels.swift; sourceTree = "<group>"; };
+		848230D8BA2BBD472A47A1E0AD300E0D /* AMBDataHexExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBDataHexExtension.swift; path = AmbrosusSDK/AMBDataHexExtension.swift; sourceTree = "<group>"; };
+		8594B9EBDC3275C5A0EADA507C8F2CE3 /* secp256k1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = secp256k1.c; sourceTree = "<group>"; };
+		8A414BC22FC3ACEDAFC0763A3A90688F /* AMBBarCodeScanManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBBarCodeScanManager.swift; sourceTree = "<group>"; };
+		904C1E17C3318445588DB06EA2AC46DB /* crypto_scrypt-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-ref.c"; sourceTree = "<group>"; };
+		905042D0022D6EC335FE11B081CD40BC /* crypto_scrypt-nosse.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-nosse.c"; sourceTree = "<group>"; };
+		967868CA123D520B58813C2C8DD9C95A /* Address.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		98EE6858D8F66C9D55EC231C510E9079 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		99A1744E3B555820D7B0A188A2BD36D1 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		99FFB2951C1DED0F12C1213BD04437D7 /* TransactionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TransactionInfo.h; sourceTree = "<group>"; };
+		9B05D7C6BB8DA1D3307D1AE48D3BCB32 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		9B6498E5573A8D55817D42D3C68C7D2A /* Hash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Hash.m; sourceTree = "<group>"; };
+		9C9D2FDCFE91938AEA6BFBF60C94925E /* pbkdf2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pbkdf2.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E54832238F05953B54EF8C1FE930205 /* macros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		A12122D31A13D4B8930E65BB1AB8689D /* Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		A1D2C15E26758F0E8AA328EC59B79CBD /* Transaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		A36D9DEEC6D93551CF837A7DDF87DBBD /* AmbrosusSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AmbrosusSDK-dummy.m"; sourceTree = "<group>"; };
+		A590037DD6C31B73F18EC2972AC857FC /* EtherchainProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EtherchainProvider.h; sourceTree = "<group>"; };
+		A9D86D577CE4DDE0174A054BCB22FE27 /* RoundRobinProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RoundRobinProvider.h; sourceTree = "<group>"; };
+		AE5AD01DF825D5BD9ED178E8B4D0B8C3 /* sha3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sha3.c; sourceTree = "<group>"; };
+		B158F193E23E2A0D3F9BD63B7747A2BA /* FallbackProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FallbackProvider.m; sourceTree = "<group>"; };
+		B314757659C85EF2E4B9DCB8AA89126B /* scrypt_sha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = scrypt_sha256.h; sourceTree = "<group>"; };
+		B429552374E088A98B7B7C4FE14781B3 /* BigNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BigNumber.m; sourceTree = "<group>"; };
+		B68E232071EDDC7A8CE28836CF638E1E /* ripemd160.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
+		B6BB17BFCFFC89BF598E5A8857332B2F /* InfuraProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = InfuraProvider.m; sourceTree = "<group>"; };
+		B9789F5DB1B1C0B6C57F599085E6CAD4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB2A455357B8EB88A3ED4DE84F4C7519 /* RLPSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RLPSerialization.m; sourceTree = "<group>"; };
+		BC3898259FE444F7B97FB37009B1D598 /* Payment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Payment.m; sourceTree = "<group>"; };
+		BFFB9A0C41586B75AFAC6C16473C0E7C /* Promise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
+		C11666068048F4BFE52D03307A8CFB17 /* AmbrosusSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AmbrosusSDK-umbrella.h"; sourceTree = "<group>"; };
+		C1A9EECA1333599A49B2B7D126D60FA9 /* BigNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BigNumber.h; sourceTree = "<group>"; };
+		C2E8963A737C70C98CF15A5EF533E359 /* AMBNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBNetwork.swift; path = AmbrosusSDK/AMBNetwork.swift; sourceTree = "<group>"; };
+		C5EB268FAA0D3E7BFD5D5E417F12F1E7 /* ripemd160.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ripemd160.c; sourceTree = "<group>"; };
+		C5EE2D114BC516ACF0E32192E90241F9 /* tommath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = tommath.h; sourceTree = "<group>"; };
+		C7AEA2557CA79B2430020C77FE88D6A1 /* TransactionInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TransactionInfo.m; sourceTree = "<group>"; };
+		C8735258319C8B453C6E30FEBED23429 /* bip39.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = bip39.c; sourceTree = "<group>"; };
+		CB0BD56FE299FB152396F612968A0F7D /* tommath_superclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = tommath_superclass.h; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CDE40CD625AECCA63CA2DE02105E9092 /* bip39.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bip39.h; sourceTree = "<group>"; };
+		D2984CB184D2F456135816E379C5B5A7 /* sha3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
+		D373958DADE85C2129E9DEB5A58755B6 /* Provider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Provider.m; sourceTree = "<group>"; };
+		D38F580EEC2A47589BA0996D6AB34FDB /* AMBConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBConstants.swift; path = AmbrosusSDK/AMBConstants.swift; sourceTree = "<group>"; };
+		D4B341984B3300D60F63B4AF608C0A9C /* RLPSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RLPSerialization.h; sourceTree = "<group>"; };
+		D7765C0A53F1CB514C90B2040DD5BB50 /* Signature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Signature.h; sourceTree = "<group>"; };
+		D8B4D8ADD4E571AFAC541CF74879E265 /* Pods-AmbrosusViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AmbrosusViewer-umbrella.h"; sourceTree = "<group>"; };
+		D8F38C07274C3DADE3FC01CCCD932C7D /* EtherchainProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EtherchainProvider.m; sourceTree = "<group>"; };
+		DA8F2C237649385885E0068C7B8BD0E2 /* ccMemory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ccMemory.h; sourceTree = "<group>"; };
+		DC241E2961126D4AD900093309671AC1 /* Provider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Provider.h; sourceTree = "<group>"; };
+		DD3FE5CDA4384D7B3A3C205365F5E408 /* AMBScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBScanViewController.swift; sourceTree = "<group>"; };
+		DE8DB772F193F1446615594C04430DA6 /* rand.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = rand.c; sourceTree = "<group>"; };
+		E6604552F24CF81AC1B6589876A7F652 /* Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		E92CC5717582821A3F12FD933029C241 /* base58.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = base58.c; sourceTree = "<group>"; };
+		ECAAB1EC938CE8FA9EC704AD67598257 /* tommath_class.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = tommath_class.h; sourceTree = "<group>"; };
+		EF9ED5A504AB1EFBD030799B4B2151BB /* Account.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		F18FCD02A14EFF060DD5041B497578DC /* AmbrosusSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AmbrosusSDK-prefix.pch"; sourceTree = "<group>"; };
+		F1C0386F0F5860E3D55ECF5C17A01902 /* Pods-AmbrosusViewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AmbrosusViewer-frameworks.sh"; sourceTree = "<group>"; };
+		F333CA28CA809FC874B9E538A5AF5E77 /* Hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Hash.h; sourceTree = "<group>"; };
+		F427B4893DDB619DDD25C3F8E5E58168 /* ecdsa.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ecdsa.c; sourceTree = "<group>"; };
+		F4E3FA3DAA48FDC5967DAF97B629D582 /* Pods-AmbrosusViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusViewer.release.xcconfig"; sourceTree = "<group>"; };
+		F72CA2C32DC05987CBE230C3EFDA49DF /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		F92DF2FA7F20AE3ABCE3492C608AA66C /* Pods-AmbrosusViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AmbrosusViewer-dummy.m"; sourceTree = "<group>"; };
+		F944EC3AE8140B9CF16A00D5DCBB146B /* SecureData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SecureData.m; sourceTree = "<group>"; };
+		FB18D66CA5D65EF866A739F0407EDA08 /* AmbrosusSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmbrosusSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB28260B7B4A1926DA3DED1CEA3A6976 /* Pods-AmbrosusViewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusViewer-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		47545799EBF0819FCB08337239E435B2 /* Frameworks */ = {
+		B7D0A4306739DDE8869BBF9D6CF203CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEB60573B45219D36B8E9AF16B8BD97D /* Foundation.framework in Frameworks */,
+				7B8B35AA9BFF73D466057C46AD106770 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7CFFCF2682B5EE4F68ADBFB578B6B5F /* Frameworks */ = {
+		E3D49EF2337B2E2A7DF7A1DE6CFED471 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EFB3F853486B08354C3FCD1ABD22B8E /* Foundation.framework in Frameworks */,
+				0E71C16BD86C8682E7BA7F448ECA0167 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E9E16F66E743B8201426D715C32CD30 /* Pod */ = {
+		00581FD732307024FE3B3B56CB5CAA3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17111B12032FD200321E47A6E215892E /* AmbrosusSDK.podspec */,
-				CEA56CEF2A8ECE993DADCB3A5AA618C1 /* LICENSE */,
-				6CBB3B6FFDB0D6C65D878E79DF2DC893 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		27A1F67C69C0C811C9395FC18759B60C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				92D1BA2BE203E040B52C108F8C0C2482 /* AmbrosusSDK.framework */,
-				AC16070616CBB0CBAD7D49A3C78A5BA4 /* Pods_AmbrosusViewer.framework */,
+				FB18D66CA5D65EF866A739F0407EDA08 /* AmbrosusSDK.framework */,
+				2593AFF8D928F58942698A79C4B9D67E /* Pods_AmbrosusViewer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		355000BFA488E663C14A59179B09FDE4 /* AmbrosusSDK */ = {
+		00C3EA1136109AB41602C34C9DC06D6B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6948FE78AA5F84CEC34872177A2B57E5 /* AMBDataStore.swift */,
-				8931F9E96B9B378B075820CE2247F041 /* AMBModels.swift */,
-				26228E53F17609CAA5233FBF01550360 /* AMBNetwork.swift */,
-				0E9E16F66E743B8201426D715C32CD30 /* Pod */,
-				5957A1D35CDDFE43F84224E6ED18FE6D /* Support Files */,
-			);
-			name = AmbrosusSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		4D00A718653FC66F67F3D253552C2015 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				355000BFA488E663C14A59179B09FDE4 /* AmbrosusSDK */,
+				892568E842B9E7925578482E67C2BCF2 /* AmbrosusSDK */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		591173E68605F4BE7091C72796899AFD /* Pods-AmbrosusViewer */ = {
+		229C01B88361904536F8B8956BA61242 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				DCC25F4CEB716989886E661D8C651E33 /* Info.plist */,
-				CEE61194AD7AA78F725A1D2DF68AEB98 /* Pods-AmbrosusViewer.modulemap */,
-				60F857B310835011F9E9A00A06ACAA8B /* Pods-AmbrosusViewer-acknowledgements.markdown */,
-				538B10DC540BB2610F21CE2216230BCD /* Pods-AmbrosusViewer-acknowledgements.plist */,
-				5C3D49659B43112AD038C19E673AE157 /* Pods-AmbrosusViewer-dummy.m */,
-				386B2F3A92529204D17310761819CC34 /* Pods-AmbrosusViewer-frameworks.sh */,
-				2870FED1C03BF9859FC713FE8BB60A25 /* Pods-AmbrosusViewer-resources.sh */,
-				768A4B3975D588E9657BA154D7131573 /* Pods-AmbrosusViewer-umbrella.h */,
-				6F2F5CC4251DE1E983044D1EE717564E /* Pods-AmbrosusViewer.debug.xcconfig */,
-				FD290501A0C2C75A67EDFBBBB22C9228 /* Pods-AmbrosusViewer.release.xcconfig */,
+				C1A9EECA1333599A49B2B7D126D60FA9 /* BigNumber.h */,
+				B429552374E088A98B7B7C4FE14781B3 /* BigNumber.m */,
+				BFFB9A0C41586B75AFAC6C16473C0E7C /* Promise.h */,
+				1169951C5ADB79E0D4B6CB14AD153CD1 /* Promise.m */,
+				2238AFC4ACA0F5B942C7C49D1292EC27 /* RegEx.h */,
+				2C241870D68CA9B218608D88EF8D3EE7 /* RegEx.m */,
+				D4B341984B3300D60F63B4AF608C0A9C /* RLPSerialization.h */,
+				BB2A455357B8EB88A3ED4DE84F4C7519 /* RLPSerialization.m */,
+				60DC678AAC8E1707899A3EC40BEEC8FE /* SecureData.h */,
+				F944EC3AE8140B9CF16A00D5DCBB146B /* SecureData.m */,
+				A12122D31A13D4B8930E65BB1AB8689D /* Utilities.h */,
+				E6604552F24CF81AC1B6589876A7F652 /* Utilities.m */,
 			);
-			name = "Pods-AmbrosusViewer";
-			path = "Target Support Files/Pods-AmbrosusViewer";
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		5957A1D35CDDFE43F84224E6ED18FE6D /* Support Files */ = {
+		295CC6ABED029E4D03FEDC06761FB046 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				AA20AC0C06312D779B840E6B3402CCD7 /* AmbrosusSDK.modulemap */,
-				D046357DD71667B3427C47F6B26DDB5A /* AmbrosusSDK.xcconfig */,
-				F3D393F7DEAA2BA5719F2623569B6470 /* AmbrosusSDK-dummy.m */,
-				BCFF4C546189B22A50C8B66EAEDF98A6 /* AmbrosusSDK-prefix.pch */,
-				D59804DF6391EF5B50941B2BB2E7D3AE /* AmbrosusSDK-umbrella.h */,
-				B510FDEBD408B63AC3F26D258D8BE513 /* Info.plist */,
+				1CBF54EDC30A0BCEF3A73658B9E29BE5 /* AmbrosusSDK.podspec */,
+				2626E9C1F4D3ECFF364431FCD9CBF3F2 /* LICENSE */,
+				B9789F5DB1B1C0B6C57F599085E6CAD4 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2E3123F0F2F738BFAB7371C2574CCBBE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EF9ED5A504AB1EFBD030799B4B2151BB /* Account.h */,
+				5383A73973DD14AE2A4C7499BB76F40A /* Account.m */,
+				2E57BD72C3CFF47930811B3C6A2C266E /* Address.h */,
+				967868CA123D520B58813C2C8DD9C95A /* Address.m */,
+				617C37FBC4A7837E3AF7E27B5E6FE7B5 /* BlockInfo.h */,
+				0F299DBA5000A4519321707A0C491E38 /* BlockInfo.m */,
+				F333CA28CA809FC874B9E538A5AF5E77 /* Hash.h */,
+				9B6498E5573A8D55817D42D3C68C7D2A /* Hash.m */,
+				12717027FD8C8D1D282840EBC389C23D /* Payment.h */,
+				BC3898259FE444F7B97FB37009B1D598 /* Payment.m */,
+				D7765C0A53F1CB514C90B2040DD5BB50 /* Signature.h */,
+				0872920BA737FA60C0F2F0F52FFED27E /* Signature.m */,
+				A1D2C15E26758F0E8AA328EC59B79CBD /* Transaction.h */,
+				62EC8C56B227AC67948561D3BEA1D0A0 /* Transaction.m */,
+				99FFB2951C1DED0F12C1213BD04437D7 /* TransactionInfo.h */,
+				C7AEA2557CA79B2430020C77FE88D6A1 /* TransactionInfo.m */,
+				421C3A0645E569146B47454DE6254FC8 /* Providers */,
+				229C01B88361904536F8B8956BA61242 /* Utilities */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		2F94F52B94764E4698CA29C9CF2748CC /* scanner */ = {
+			isa = PBXGroup;
+			children = (
+				8A414BC22FC3ACEDAFC0763A3A90688F /* AMBBarCodeScanManager.swift */,
+				DD3FE5CDA4384D7B3A3C205365F5E408 /* AMBScanViewController.swift */,
+			);
+			name = scanner;
+			path = AmbrosusSDK/scanner;
+			sourceTree = "<group>";
+		};
+		33FF2145798439B758C0F6F60A64D368 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				941914FF1C680E298D7C08AEAE84722E /* Pods-AmbrosusViewer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		421C3A0645E569146B47454DE6254FC8 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEDD9F6C2A1CC4B4B96364D3305CBB /* FallbackProvider.h */,
+				B158F193E23E2A0D3F9BD63B7747A2BA /* FallbackProvider.m */,
+				DC241E2961126D4AD900093309671AC1 /* Provider.h */,
+				D373958DADE85C2129E9DEB5A58755B6 /* Provider.m */,
+				A9D86D577CE4DDE0174A054BCB22FE27 /* RoundRobinProvider.h */,
+				459028088BD4381ABE8FB04057026B68 /* RoundRobinProvider.m */,
+				5315707CD94FC5F84108E833668F6B85 /* ApiProviders */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		46ED9C71DA437888F5ED7D7B81A3059F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				293D41B18C9958E326371DC1AACD7E12 /* AmbrosusSDK.modulemap */,
+				5990A84C7DA3AFFF990A1ABE3418B2AD /* AmbrosusSDK.xcconfig */,
+				A36D9DEEC6D93551CF837A7DDF87DBBD /* AmbrosusSDK-dummy.m */,
+				816C744293113E157C31BB073D715152 /* AmbrosusSDK-Info.plist */,
+				F18FCD02A14EFF060DD5041B497578DC /* AmbrosusSDK-prefix.pch */,
+				C11666068048F4BFE52D03307A8CFB17 /* AmbrosusSDK-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "AmbrosusViewer/Pods/Target Support Files/AmbrosusSDK";
 			sourceTree = "<group>";
 		};
-		656E70C40D0C34423DA53CD0B07EFDBC /* Targets Support Files */ = {
+		47D23A447353A4DEDC30ED6B34A6685D /* scrypt-1.1.6 */ = {
 			isa = PBXGroup;
 			children = (
-				591173E68605F4BE7091C72796899AFD /* Pods-AmbrosusViewer */,
+				298CAFB03DEAF9ADF533E55F7F9FFD85 /* crypto_scrypt.h */,
+				905042D0022D6EC335FE11B081CD40BC /* crypto_scrypt-nosse.c */,
+				904C1E17C3318445588DB06EA2AC46DB /* crypto_scrypt-ref.c */,
+				3DA4A8A1147052B7DD61D2CADCB47AB6 /* crypto_scrypt-sse.c */,
+				49988A16CDA247CA685984FC81B08C35 /* scrypt_sha256.c */,
+				B314757659C85EF2E4B9DCB8AA89126B /* scrypt_sha256.h */,
+				4DCF1C2F579156AD4224132BBC8F4934 /* sysendian.h */,
 			);
-			name = "Targets Support Files";
+			path = "scrypt-1.1.6";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		5315707CD94FC5F84108E833668F6B85 /* ApiProviders */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				4D00A718653FC66F67F3D253552C2015 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				27A1F67C69C0C811C9395FC18759B60C /* Products */,
-				656E70C40D0C34423DA53CD0B07EFDBC /* Targets Support Files */,
+				1562D1C92C384CD1DD74D9CBC23943A5 /* ApiProvider.h */,
+				114771A56A1D60530250A778DE30AD7E /* ApiProvider.m */,
+				A590037DD6C31B73F18EC2972AC857FC /* EtherchainProvider.h */,
+				D8F38C07274C3DADE3FC01CCCD932C7D /* EtherchainProvider.m */,
+				5107A69B0DB3081EF06AC1B26F659C40 /* EtherscanProvider.h */,
+				2D83675CD5E341FA66E155283C620FD6 /* EtherscanProvider.m */,
+				29BEC421C9E5B98749712DAE1AA39BBE /* InfuraProvider.h */,
+				B6BB17BFCFFC89BF598E5A8857332B2F /* InfuraProvider.m */,
+				40A6266FF29FC3231E0D84D01EB65CD4 /* JsonRpcProvider.h */,
+				27629461BFE6C4D3888C620A9C4224E2 /* JsonRpcProvider.m */,
+			);
+			path = ApiProviders;
+			sourceTree = "<group>";
+		};
+		72671FAD6B7FCE3C9C07FD2A5762F4B7 /* BreadWallet */ = {
+			isa = PBXGroup;
+			children = (
+				DA8F2C237649385885E0068C7B8BD0E2 /* ccMemory.h */,
+			);
+			path = BreadWallet;
+			sourceTree = "<group>";
+		};
+		738D873D5B346DC48E91E135670C0D50 /* libtommath-1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				642D8B24BA906F040ADE543FFD2F8456 /* mpi.c */,
+				C5EE2D114BC516ACF0E32192E90241F9 /* tommath.h */,
+				ECAAB1EC938CE8FA9EC704AD67598257 /* tommath_class.h */,
+				366B2625A15D8F960B92D2AE18762DD4 /* tommath_private.h */,
+				CB0BD56FE299FB152396F612968A0F7D /* tommath_superclass.h */,
+			);
+			path = "libtommath-1.0";
+			sourceTree = "<group>";
+		};
+		892568E842B9E7925578482E67C2BCF2 /* AmbrosusSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0AF07A15043F218AFB25FD90F1CAB5EE /* AMBAccount.swift */,
+				D38F580EEC2A47589BA0996D6AB34FDB /* AMBConstants.swift */,
+				848230D8BA2BBD472A47A1E0AD300E0D /* AMBDataHexExtension.swift */,
+				3C1330F96917FDC78FCE0C72BC1D05F6 /* AMBDataStore.swift */,
+				666920E13175E0AB3CC5B04E201F8BAC /* AMBErrorsHandler.swift */,
+				8376E08281B2DCED9E2B784AE322382D /* AMBModels.swift */,
+				C2E8963A737C70C98CF15A5EF533E359 /* AMBNetwork.swift */,
+				2B44351F8F9B6782B2716D82C7393F73 /* AMBUserSession.swift */,
+				70CF558475B2F62B9C51A7F6D712EB77 /* AMBWeb3Manager.swift */,
+				C07C19A83A346F44A5961021F259EED9 /* ethers */,
+				295CC6ABED029E4D03FEDC06761FB046 /* Pod */,
+				2F94F52B94764E4698CA29C9CF2748CC /* scanner */,
+				46ED9C71DA437888F5ED7D7B81A3059F /* Support Files */,
+			);
+			name = AmbrosusSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		941914FF1C680E298D7C08AEAE84722E /* Pods-AmbrosusViewer */ = {
+			isa = PBXGroup;
+			children = (
+				487176A065B352E1D36DB1327ABFB535 /* Pods-AmbrosusViewer.modulemap */,
+				45E609942F79EFA1BF199BDE09E95832 /* Pods-AmbrosusViewer-acknowledgements.markdown */,
+				FB28260B7B4A1926DA3DED1CEA3A6976 /* Pods-AmbrosusViewer-acknowledgements.plist */,
+				F92DF2FA7F20AE3ABCE3492C608AA66C /* Pods-AmbrosusViewer-dummy.m */,
+				F1C0386F0F5860E3D55ECF5C17A01902 /* Pods-AmbrosusViewer-frameworks.sh */,
+				39A7E20A89210B4EAF10F70538D6C9FF /* Pods-AmbrosusViewer-Info.plist */,
+				D8B4D8ADD4E571AFAC541CF74879E265 /* Pods-AmbrosusViewer-umbrella.h */,
+				7B876C93F6E9FA10474C3E23D707DF49 /* Pods-AmbrosusViewer.debug.xcconfig */,
+				F4E3FA3DAA48FDC5967DAF97B629D582 /* Pods-AmbrosusViewer.release.xcconfig */,
+			);
+			name = "Pods-AmbrosusViewer";
+			path = "Target Support Files/Pods-AmbrosusViewer";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C07C19A83A346F44A5961021F259EED9 /* ethers */ = {
+			isa = PBXGroup;
+			children = (
+				24C859106BB33C3BCC8FDA38C9B7B49B /* ethers.h */,
+				2E3123F0F2F738BFAB7371C2574CCBBE /* src */,
+				FC48E96C8DC36DDFC6A1BFA40D4C8A67 /* ThirdParty */,
+			);
+			name = ethers;
+			path = AmbrosusSDK/ethers;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				00C3EA1136109AB41602C34C9DC06D6B /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				00581FD732307024FE3B3B56CB5CAA3C /* Products */,
+				33FF2145798439B758C0F6F60A64D368 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		D5B2D9662D975D27F84C2860A60750F2 /* trezor-crypto */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				4CE246C9D8B6C5E606B7E299F20C324A /* aes.h */,
+				231A07C6617666C4F7057E3F2E39A279 /* aes_modes.c */,
+				269DEECB163140984779900FD33547E3 /* aescrypt.c */,
+				6611DD43A98B83EFB0369E2D56F8BC39 /* aeskey.c */,
+				1304A246B3B81C35F7DF83956BE5891E /* aesopt.h */,
+				4127E2244B727E7C2F6FFACDD1165DED /* aestab.c */,
+				653D49C57F28305E83E289498E0D8F9E /* aestab.h */,
+				E92CC5717582821A3F12FD933029C241 /* base58.c */,
+				70C7B7C7268E7AB9129514611D08A5CC /* base58.h */,
+				82DFBFA604FC8E46A227CFFDB43F6D09 /* bignum.c */,
+				75518F337656AE7A611BC51E3368B7E4 /* bignum.h */,
+				643DF0D4A7F9113F0F9AB8992349F125 /* bip32.c */,
+				6358AC197A2D40C0B05B26E6A78B92B3 /* bip32.h */,
+				C8735258319C8B453C6E30FEBED23429 /* bip39.c */,
+				CDE40CD625AECCA63CA2DE02105E9092 /* bip39.h */,
+				82B5662DB03E52E52F38CFD68B0B9DE6 /* bip39_english.h */,
+				4A5F545F21CF87C779CC6AC55D63C3CA /* curves.c */,
+				6F93AD3B1F2020B18C666856AE9FAD26 /* curves.h */,
+				F427B4893DDB619DDD25C3F8E5E58168 /* ecdsa.c */,
+				99A1744E3B555820D7B0A188A2BD36D1 /* ecdsa.h */,
+				F72CA2C32DC05987CBE230C3EFDA49DF /* hmac.c */,
+				98EE6858D8F66C9D55EC231C510E9079 /* hmac.h */,
+				9E54832238F05953B54EF8C1FE930205 /* macros.h */,
+				1B1EA78FCE89A8A0D4A4F755183B2301 /* options.h */,
+				10B338FD5A3CFEBED35E8715E5CC9B2B /* pbkdf2.c */,
+				9C9D2FDCFE91938AEA6BFBF60C94925E /* pbkdf2.h */,
+				DE8DB772F193F1446615594C04430DA6 /* rand.c */,
+				9B05D7C6BB8DA1D3307D1AE48D3BCB32 /* rand.h */,
+				C5EB268FAA0D3E7BFD5D5E417F12F1E7 /* ripemd160.c */,
+				B68E232071EDDC7A8CE28836CF638E1E /* ripemd160.h */,
+				8594B9EBDC3275C5A0EADA507C8F2CE3 /* secp256k1.c */,
+				59840E3B61C614CE472E8061AEB3A6BA /* secp256k1.h */,
+				7E57A3624D2CBABF79D234D9FD94DC6F /* secp256k1.table */,
+				0D1A65E3F3B59D5DA49D392F5EAC516D /* sha2.c */,
+				02D47D3BF957BE3FFC4F76012A862EC8 /* sha2.h */,
+				AE5AD01DF825D5BD9ED178E8B4D0B8C3 /* sha3.c */,
+				D2984CB184D2F456135816E379C5B5A7 /* sha3.h */,
 			);
-			name = iOS;
+			path = "trezor-crypto";
+			sourceTree = "<group>";
+		};
+		FC48E96C8DC36DDFC6A1BFA40D4C8A67 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				72671FAD6B7FCE3C9C07FD2A5762F4B7 /* BreadWallet */,
+				738D873D5B346DC48E91E135670C0D50 /* libtommath-1.0 */,
+				47D23A447353A4DEDC30ED6B34A6685D /* scrypt-1.1.6 */,
+				D5B2D9662D975D27F84C2860A60750F2 /* trezor-crypto */,
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0D4B57BD344C7A7EEEC4CABB77CCD9D2 /* Headers */ = {
+		7E20951097089F81A0F97EBCF604A974 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB89F73AA6748FCFD32083B6B42E2164 /* AmbrosusSDK-umbrella.h in Headers */,
+				E911830EF37F22D97977C5B1DD5534FC /* Account.h in Headers */,
+				B20804B1CF4A06BFA852974251BBCA6A /* Address.h in Headers */,
+				9BA791E1486524CA7512758A63F997EF /* aes.h in Headers */,
+				35B3D6E9AD235343E77E31E503B18F71 /* aesopt.h in Headers */,
+				749B3DAE54C1521A9FD20E1973EAF7AD /* aestab.h in Headers */,
+				6335698BF30A4B02CA2167C23671F2F6 /* AmbrosusSDK-umbrella.h in Headers */,
+				AD374E21ACC587FFA32A7AF69ACE2F81 /* ApiProvider.h in Headers */,
+				60AB70DC7D67DDF963A6CCA26BD30B48 /* base58.h in Headers */,
+				907BD4D06F8B3D998BD429134149D53F /* bignum.h in Headers */,
+				95A21A83E3F0574926E6DF669A3ACAFE /* BigNumber.h in Headers */,
+				5EDE584241047BC579BC2D99E75B5FB0 /* bip32.h in Headers */,
+				F2E9D768E941F9903560AE2922A91F37 /* bip39.h in Headers */,
+				6C4640AA5BEDFCD1E9FC06E80EFE5FB3 /* bip39_english.h in Headers */,
+				A5EABE4DF0B3EF6CAFF1AD87F6C4A4A4 /* BlockInfo.h in Headers */,
+				A11C81B05AE1A76D857AAB3F9FC363B5 /* ccMemory.h in Headers */,
+				92B6FC150B03C84E7D7B1E572CE42E55 /* crypto_scrypt.h in Headers */,
+				1546A65607CFB3F53DDD0E30B7FDF50B /* curves.h in Headers */,
+				11A666A4F52893AFBD9B6C2340741466 /* ecdsa.h in Headers */,
+				656737A3D48A589050C2CC3DED81FD39 /* EtherchainProvider.h in Headers */,
+				22C3ABC06B24B4E23E03C1AAB986CB0B /* ethers.h in Headers */,
+				3F885D5447FD9B37D64D708913AC593D /* EtherscanProvider.h in Headers */,
+				D4A097E64C8534D2F60F6CF7A323D738 /* FallbackProvider.h in Headers */,
+				7E69D74482DDF27E194A7022A9739C3E /* Hash.h in Headers */,
+				50C6E883BF88946F4AEC4E3E6A2343E3 /* hmac.h in Headers */,
+				06555CBCB6147A2AC65BBC7AD8E1DB67 /* InfuraProvider.h in Headers */,
+				9D917172AA8A59FBA5DCB7376096EFE7 /* JsonRpcProvider.h in Headers */,
+				6B4E448A79CA1BDDE631A1F038A9877B /* macros.h in Headers */,
+				F4C025D72F2726507CEEFCCA98F71C12 /* options.h in Headers */,
+				B3A6168566984EEEE09B27EBFD608F9F /* Payment.h in Headers */,
+				4DFA25B2F9975494A500A0B7534A54D6 /* pbkdf2.h in Headers */,
+				39631C30F26961A92FA6C7E965510AD1 /* Promise.h in Headers */,
+				11F01D667B25EFB5295B508E05DB7C7D /* Provider.h in Headers */,
+				6D7E8710054B2D7F1C6AB2E7F70F274D /* rand.h in Headers */,
+				1438BFD88B1CC9138EA54C6EC3984A0B /* RegEx.h in Headers */,
+				365B6AA0DB5EE293210F691A5D9CC7B0 /* ripemd160.h in Headers */,
+				8CA6E48A8032C85E203B97F7D7579609 /* RLPSerialization.h in Headers */,
+				B8154DF4DED3D5359E172A92092B8E0E /* RoundRobinProvider.h in Headers */,
+				52D9F65E6BF4F057B2E2E41F69065E8C /* scrypt_sha256.h in Headers */,
+				0C31D1059F624E461349F1D90CA88016 /* secp256k1.h in Headers */,
+				69CCB7A77D11533B9FD07B6205C2E4E8 /* SecureData.h in Headers */,
+				E065CECD89812A014BFBA3070B19BF03 /* sha2.h in Headers */,
+				5C5857AB46F17D32D87E36E65AD6869B /* sha3.h in Headers */,
+				91B392F70C2879F0BB4DB037AA1B6B08 /* Signature.h in Headers */,
+				C2678E096F24223694DD858D4FA45905 /* sysendian.h in Headers */,
+				72053D842AB155011BBA7F9F1AF0FB11 /* tommath.h in Headers */,
+				741C009F9F93B40D555AC49E0E617785 /* tommath_class.h in Headers */,
+				DBE8CA2C8F9E1A187D3076BC2C65A4CC /* tommath_private.h in Headers */,
+				1C12D848FE75CC171F8A52EFF3CD4D1F /* tommath_superclass.h in Headers */,
+				5E5C8885211111FB45CE387EB7A1B064 /* Transaction.h in Headers */,
+				85FD5FC9DC3D195ABAF684AAB381F83A /* TransactionInfo.h in Headers */,
+				22FCF14F4FC8EB7004AF277A207E5096 /* Utilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6DDFE25ED814C4452DCBC11E7BFC61F /* Headers */ = {
+		F212784C0EA64C41AC9499CF72EA2B9B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				240A7A89DDC1E4967EC73909E7615B77 /* Pods-AmbrosusViewer-umbrella.h in Headers */,
+				E95F379C5109D9DA2B26CFAF4D64CE79 /* Pods-AmbrosusViewer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		341B6E61A547CE0A8ABD6B6A2289523F /* AmbrosusSDK */ = {
+		EAAF20AAF08E6D1B05E24399F1873788 /* AmbrosusSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20A3EF0A4D4DDE6C8CE0511702D3B713 /* Build configuration list for PBXNativeTarget "AmbrosusSDK" */;
+			buildConfigurationList = DD2F61441A1987457303D192290A4919 /* Build configuration list for PBXNativeTarget "AmbrosusSDK" */;
 			buildPhases = (
-				5E552A19B2BD6F7CAC35AB003B1E034C /* Sources */,
-				D7CFFCF2682B5EE4F68ADBFB578B6B5F /* Frameworks */,
-				0D4B57BD344C7A7EEEC4CABB77CCD9D2 /* Headers */,
+				7E20951097089F81A0F97EBCF604A974 /* Headers */,
+				DAC78BD05852892882D9E62BAEC49208 /* Sources */,
+				E3D49EF2337B2E2A7DF7A1DE6CFED471 /* Frameworks */,
+				79CE626EA83BB8CD9B63F0FD17A8B22D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -220,87 +667,228 @@
 			);
 			name = AmbrosusSDK;
 			productName = AmbrosusSDK;
-			productReference = 92D1BA2BE203E040B52C108F8C0C2482 /* AmbrosusSDK.framework */;
+			productReference = FB18D66CA5D65EF866A739F0407EDA08 /* AmbrosusSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D202FB9DE8AC832BB4805E3681F6950A /* Pods-AmbrosusViewer */ = {
+		EE689E63244060CED084CD2220D6BC9C /* Pods-AmbrosusViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEBB755FAD3028136532A5641527C696 /* Build configuration list for PBXNativeTarget "Pods-AmbrosusViewer" */;
+			buildConfigurationList = FE455036764E35F986EF90B78765A173 /* Build configuration list for PBXNativeTarget "Pods-AmbrosusViewer" */;
 			buildPhases = (
-				DE9385DB77D1D08FA15C5EADD5D19815 /* Sources */,
-				47545799EBF0819FCB08337239E435B2 /* Frameworks */,
-				A6DDFE25ED814C4452DCBC11E7BFC61F /* Headers */,
+				F212784C0EA64C41AC9499CF72EA2B9B /* Headers */,
+				760C83C671B5CE867B4CFEC299BF9355 /* Sources */,
+				B7D0A4306739DDE8869BBF9D6CF203CD /* Frameworks */,
+				E0040ED5F59A9AD47C00A5F0FB2C7BFE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BE9CEA6FA40C043B720CC20BF61642D1 /* PBXTargetDependency */,
+				68032E832C7639885E0DF485EC076171 /* PBXTargetDependency */,
 			);
 			name = "Pods-AmbrosusViewer";
 			productName = "Pods-AmbrosusViewer";
-			productReference = AC16070616CBB0CBAD7D49A3C78A5BA4 /* Pods_AmbrosusViewer.framework */;
+			productReference = 2593AFF8D928F58942698A79C4B9D67E /* Pods_AmbrosusViewer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 27A1F67C69C0C811C9395FC18759B60C /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 00581FD732307024FE3B3B56CB5CAA3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				341B6E61A547CE0A8ABD6B6A2289523F /* AmbrosusSDK */,
-				D202FB9DE8AC832BB4805E3681F6950A /* Pods-AmbrosusViewer */,
+				EAAF20AAF08E6D1B05E24399F1873788 /* AmbrosusSDK */,
+				EE689E63244060CED084CD2220D6BC9C /* Pods-AmbrosusViewer */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		5E552A19B2BD6F7CAC35AB003B1E034C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		79CE626EA83BB8CD9B63F0FD17A8B22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7242254E26685F1598C9AB27652ACCB4 /* AMBDataStore.swift in Sources */,
-				C707BA9D95523B40CCA7A778198EB83F /* AMBModels.swift in Sources */,
-				281B4710712A3F7E5B8B0167289BB6B1 /* AMBNetwork.swift in Sources */,
-				99C887C924ACBF4EDB5E6F30FC03884D /* AmbrosusSDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE9385DB77D1D08FA15C5EADD5D19815 /* Sources */ = {
+		E0040ED5F59A9AD47C00A5F0FB2C7BFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		760C83C671B5CE867B4CFEC299BF9355 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26907FE33676DB0F95C772E14C3D5D2A /* Pods-AmbrosusViewer-dummy.m in Sources */,
+				BFEE26CA74E2A6FB9B2F313C4ED1CC99 /* Pods-AmbrosusViewer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC78BD05852892882D9E62BAEC49208 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D836087D0384FF0CE949DBA2DBA10FE /* Account.m in Sources */,
+				E1A1A65D187D50AF6EA65F4410D6E73C /* Address.m in Sources */,
+				CFD9392EFCD2B7F12501BB8D5C1235AE /* aes_modes.c in Sources */,
+				5D0A255BE3CCE7ACD0F899DED0BF602B /* aescrypt.c in Sources */,
+				BFAB236244E413786FA0223AB9D66E39 /* aeskey.c in Sources */,
+				0141B717288092260DCE46D1F0ED3666 /* aestab.c in Sources */,
+				22AD32EE98D5B255CF30D7756D27F998 /* AMBAccount.swift in Sources */,
+				B747DCA576DDAC136E9EA0B87E2E0716 /* AMBBarCodeScanManager.swift in Sources */,
+				AB9251B27835AEF269DD90F1F259C361 /* AMBConstants.swift in Sources */,
+				82C27359FD6D42E80E4D414418EB22A1 /* AMBDataHexExtension.swift in Sources */,
+				2947FBDA74C3D3E31BE16D9412017266 /* AMBDataStore.swift in Sources */,
+				65B47C74B9C07C844CCD126041C1A2A5 /* AMBErrorsHandler.swift in Sources */,
+				6CED6B0BA91F17C439D689E553BC4C45 /* AMBModels.swift in Sources */,
+				070959ADC8537302BF384C2D0ED75AF1 /* AMBNetwork.swift in Sources */,
+				DC2367FA6DE7DA475F8235906706476F /* AmbrosusSDK-dummy.m in Sources */,
+				8273365BE2E818D6A641A27B2B29E5E4 /* AMBScanViewController.swift in Sources */,
+				6D1D2576F433F0BF9BFA571A4495A834 /* AMBUserSession.swift in Sources */,
+				080842223DDA695DE78B5EA1201F9CAD /* AMBWeb3Manager.swift in Sources */,
+				25639F693210DF93870AB31B44AF0C4D /* ApiProvider.m in Sources */,
+				3A8D67F66B44EBF8E04EAB29641A1BF2 /* base58.c in Sources */,
+				5022A7ED25E8C08EFC6CAF0169303109 /* bignum.c in Sources */,
+				BA356D426B186931596079BCCBB3870D /* BigNumber.m in Sources */,
+				4DE9C23ED33F0C4AC7A6B9489C4EA560 /* bip32.c in Sources */,
+				6BB6676458DBAB608F6D5AE955C20DB5 /* bip39.c in Sources */,
+				9510D1A72F28B596C9965421B6E11C86 /* BlockInfo.m in Sources */,
+				D55A24853B6BF6507851DBCD97EEA999 /* crypto_scrypt-nosse.c in Sources */,
+				B8BFA642F1E9B43052647CB039314FE7 /* crypto_scrypt-ref.c in Sources */,
+				C485793752C7C95497F8575EED1A07E2 /* curves.c in Sources */,
+				47FAAB2595C9035F0B93624E56DED54D /* ecdsa.c in Sources */,
+				ECE6C77B0FF50806719DB177150B3D54 /* EtherchainProvider.m in Sources */,
+				51D423A3423CF3F33DDAE483AD98E813 /* EtherscanProvider.m in Sources */,
+				91F435BB9EF9431637A50CCF39354ABE /* FallbackProvider.m in Sources */,
+				60E392732D77C60E26DED0F9E310AF98 /* Hash.m in Sources */,
+				D5371DD5271667B1E5F905F7797D3A00 /* hmac.c in Sources */,
+				26D1071913E1A2DAC415BFB9F8307B76 /* InfuraProvider.m in Sources */,
+				5F66CF154276E17026E912C17C4AD2F1 /* JsonRpcProvider.m in Sources */,
+				CDB6CA3C01FA9B18D1106F0C93CF8B0A /* mpi.c in Sources */,
+				881C70ADBA97AE5ED1F01D1113FA4AAD /* Payment.m in Sources */,
+				41B35AB0EA48A1575A4AE7AC1A59EC4C /* pbkdf2.c in Sources */,
+				AD6E28B306CA0DDF39AFA0C5B5BFD209 /* Promise.m in Sources */,
+				633F26A1414AC7DD24A76869CA2E4F98 /* Provider.m in Sources */,
+				34ACBC8793C748F433EE7063C839AE6A /* rand.c in Sources */,
+				FB23E8A976F754BC65919A91EAED6697 /* RegEx.m in Sources */,
+				5D86F441D2859F28FA90553309509872 /* ripemd160.c in Sources */,
+				A607BAA4F1DB41D692660DA2535542B3 /* RLPSerialization.m in Sources */,
+				E70C86B3B9F56DEC8DB0A764FAE2BF33 /* RoundRobinProvider.m in Sources */,
+				4B7616EC32E8293F1604271DDD05DF8B /* scrypt_sha256.c in Sources */,
+				EAE7B3B17C06C8C663C3C36EB85F2349 /* secp256k1.c in Sources */,
+				27A11F96AFA8E7DA06357A2F3AC3132B /* secp256k1.table in Sources */,
+				D9BD7898770EC061D955E791F8A09820 /* SecureData.m in Sources */,
+				BB46757A28C998305026BD8193C44017 /* sha2.c in Sources */,
+				BDEBACE6F7B318EDF401D96316B74B35 /* sha3.c in Sources */,
+				D5D2B88B9842EFCA209CFD44DFF80781 /* Signature.m in Sources */,
+				7F318296CAC3DF7255C0304B7B328EB1 /* Transaction.m in Sources */,
+				9DDC2EBAB518EA436E83B9E40E57BDD1 /* TransactionInfo.m in Sources */,
+				3E5D6CEB0A5AD6C4E52ED013AA8AF458 /* Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BE9CEA6FA40C043B720CC20BF61642D1 /* PBXTargetDependency */ = {
+		68032E832C7639885E0DF485EC076171 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AmbrosusSDK;
-			target = 341B6E61A547CE0A8ABD6B6A2289523F /* AmbrosusSDK */;
-			targetProxy = 1A2C8A2537D27ADCE48A6B816B35EF9B /* PBXContainerItemProxy */;
+			target = EAAF20AAF08E6D1B05E24399F1873788 /* AmbrosusSDK */;
+			targetProxy = AF3E7596370BF2B824DFED7282E7D4C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+		029CC7ED9B9CCCB7B05168F6E12F7E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B876C93F6E9FA10474C3E23D707DF49 /* Pods-AmbrosusViewer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		094355F7A6AA0E6A722F75A0C5B0A2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4E3FA3DAA48FDC5967DAF97B629D582 /* Pods-AmbrosusViewer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4CE281642D6EE9FAB113046B4B6328A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,8 +920,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -352,16 +938,20 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		343B0E67D70F326FC8C14FB3EF947805 /* Release */ = {
+		514371E7E106BB798976BE9AD8DE5F43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D046357DD71667B3427C47F6B26DDB5A /* AmbrosusSDK.xcconfig */;
+			baseConfigurationReference = 5990A84C7DA3AFFF990A1ABE3418B2AD /* AmbrosusSDK.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -373,7 +963,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/AmbrosusSDK/AmbrosusSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AmbrosusSDK/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/AmbrosusSDK/AmbrosusSDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -383,8 +973,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -392,10 +981,11 @@
 			};
 			name = Release;
 		};
-		3B79B1A4DD032C76FA9A974F519C53CB /* Debug */ = {
+		5524C72EA10DCC67ED4932A6A551AE21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D046357DD71667B3427C47F6B26DDB5A /* AmbrosusSDK.xcconfig */;
+			baseConfigurationReference = 5990A84C7DA3AFFF990A1ABE3418B2AD /* AmbrosusSDK.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -407,7 +997,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/AmbrosusSDK/AmbrosusSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AmbrosusSDK/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/AmbrosusSDK/AmbrosusSDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -417,51 +1007,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7390047DFBAEA2C1D380C29F094C52B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F2F5CC4251DE1E983044D1EE717564E /* Pods-AmbrosusViewer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AmbrosusViewer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+		6DFA1578582149B7E24AD55CBA30F07A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -493,8 +1046,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -515,82 +1066,49 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		C460519598964217AF8C41020EA6D2C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD290501A0C2C75A67EDFBBBB22C9228 /* Pods-AmbrosusViewer.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AmbrosusViewer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20A3EF0A4D4DDE6C8CE0511702D3B713 /* Build configuration list for PBXNativeTarget "AmbrosusSDK" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B79B1A4DD032C76FA9A974F519C53CB /* Debug */,
-				343B0E67D70F326FC8C14FB3EF947805 /* Release */,
+				6DFA1578582149B7E24AD55CBA30F07A /* Debug */,
+				4CE281642D6EE9FAB113046B4B6328A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		DD2F61441A1987457303D192290A4919 /* Build configuration list for PBXNativeTarget "AmbrosusSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
-				08638A96A528B1EC32DE62F8A728389D /* Release */,
+				5524C72EA10DCC67ED4932A6A551AE21 /* Debug */,
+				514371E7E106BB798976BE9AD8DE5F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEBB755FAD3028136532A5641527C696 /* Build configuration list for PBXNativeTarget "Pods-AmbrosusViewer" */ = {
+		FE455036764E35F986EF90B78765A173 /* Build configuration list for PBXNativeTarget "Pods-AmbrosusViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7390047DFBAEA2C1D380C29F094C52B2 /* Debug */,
-				C460519598964217AF8C41020EA6D2C9 /* Release */,
+				029CC7ED9B9CCCB7B05168F6E12F7E95 /* Debug */,
+				094355F7A6AA0E6A722F75A0C5B0A2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

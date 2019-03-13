@@ -24,5 +24,4 @@ final class LocationDetailCell: UICollectionViewCell {
             mapView.tag = 10
         }
     }
-
 }

@@ -78,6 +78,7 @@ final class EventTimelineCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var privacyLevel: UILabel!
+    @IBOutlet weak var moduleView: ModuleView!
 
     var event: AMBEvent = AMBEvent() {
         didSet {
@@ -85,7 +86,7 @@ final class EventTimelineCollectionViewCell: UICollectionViewCell {
                 return event.accessLevel == 0 ? "Public" : "Private"
             }()
             let timelineIcon: UIImage = EventType.getType(for: event).image
-            
+
             eventNameLabel.text = event.name ?? event.type
             locationLabel.text = event.locationName
             timeLabel.text = event.date
@@ -98,11 +99,11 @@ final class EventTimelineCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
 
         clipsToBounds = false
-        eventNameLabel.textColor = Colors.darkElement2
-        locationLabel.textColor = Colors.descriptionText
-        timeLabel.textColor = Colors.lightDescriptionText
-        privacyLevel.textColor = Colors.lightDescriptionText
-        eventTimelineIconView.backgroundColor = Colors.darkElement2
+        eventNameLabel.textColor = Colors.colorElement2
+        locationLabel.textColor = Colors.darkElement3
+        timeLabel.textColor = Colors.darkElement4
+        privacyLevel.textColor = Colors.darkElement4
+        eventTimelineIconView.backgroundColor = Colors.colorElement2
         eventTimelineBorderView.backgroundColor = eventTimelineIconView.backgroundColor
         eventTimelineIconView.layer.cornerRadius = 27 / 2
 
@@ -112,4 +113,11 @@ final class EventTimelineCollectionViewCell: UICollectionViewCell {
         privacyLevel.font = Fonts.cellLightDescription
     }
 
+    override var isHighlighted: Bool {
+        didSet {
+            UIView.animate(withDuration: 0.15) {
+                self.moduleView.backgroundColor = self.isHighlighted ? Colors.modulePressed : Colors.module
+            }
+        }
+    }
 }

@@ -25,12 +25,12 @@ final class ParallaxHeroLayoutAttributes: UICollectionViewLayoutAttributes {
     guard let copiedAttributes = super.copy(with: zone) as? ParallaxHeroLayoutAttributes else {
       return super.copy(with: zone)
     }
-    
+
     copiedAttributes.parallax = parallax
     copiedAttributes.initialOrigin = initialOrigin
     return copiedAttributes
   }
-  
+
   override func isEqual(_ object: Any?) -> Bool {
     guard let otherAttributes = object as? ParallaxHeroLayoutAttributes else {
       return false

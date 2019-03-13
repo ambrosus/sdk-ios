@@ -24,5 +24,4 @@ final class AssetTitleOverlayView: UICollectionReusableView {
 
         imageOverlay.isHidden = true
     }
-
 }

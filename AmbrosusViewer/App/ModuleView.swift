@@ -13,14 +13,14 @@
 //
 
 import Foundation
+import UIKit
 
 final class ModuleView: UIView {
-    
+
     init() {
         super.init(frame: CGRect.zero)
 
         stylizeView()
-
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -34,8 +34,8 @@ final class ModuleView: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         layer.shadowRadius = 3
         layer.shadowOffset = CGSize(width: 0, height: 1)
-        layer.shadowColor = Colors.shadowColor.cgColor
-        layer.shadowOpacity = 0.15
+        layer.shadowColor = Colors.shadowColor?.cgColor
+        layer.shadowOpacity = 1.0
         layer.zPosition = -1
     }
 
@@ -43,5 +43,4 @@ final class ModuleView: UIView {
         view.addSubview(self)
         leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
     }
-    
 }

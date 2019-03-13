@@ -1,0 +1,134 @@
+{
+    "results": [{
+                "content": {
+                "idData": {
+                "assetId": "0xfd4cf8dff45a84332fe0afb0ad417ad2e30b5ecad977b9d14eb86748fee76186d",
+                "createdBy": "0x7e2c15b34e3fc89e1b694cddc4211135322275cb3e1e46981232ef89501abd91",
+                "accessLevel": 0,
+                "timestamp": 1524580320,
+                "dataHash": "0x3780d5a0a546a4784830a478c47b19f7c486acacfb8b1a139ec869e518bebdba"
+                },
+                "data": [
+                         {
+                         "type": "ambrosus.asset.identifiers",
+                         "name": "Transported to Retailer",
+                         "identifiers": {
+                         "gtin": ["1043345532"],
+                         "ean13": ["6942507312009"]
+                         }
+                         },
+                         {
+                         "type": "ambrosus.event.location",
+                         "location": {
+                         "type": "Feature",
+                         "geoJson": {
+                         "type": "Point",
+                         "coordinates": [29.749539, -95.393235]
+                         },
+                         "assetId": "0xfd4cf8dff45a84332fe0afb0ad417ad2e30b5ecad977b9d14eb86748fee76186d",
+                         },
+                         "name": "Montrose",
+                         "city": "Houston, Texas",
+                         "country": "United States",
+                         "locationId":"21bc91c641b74cae1d82504594819285",
+                         "GLN":6401104921053
+                         }],
+                "signature": "0x68034a8dcf25e6391ce54376b366f9812792ad873683a9448f967e707cd946f009981a4c1171c56c8718e11880da53f2b2614e7f23a0772bf022c0d8e11c85f01b"
+                },
+                "eventId": "0x75a2ff320b7cfff1171d3a4589cf38b4fb084aae419e2690f6a6fde4cd676622",
+                "metadata": {
+                "bundleId": "0x6450279f3a76c060b697dbc83d1090da4f0c62847a256ee94b0f6977e23acdf3"
+                }
+                },
+                {
+                "content": {
+                "idData": {
+                "assetId": "0xfd4cf8dff45a84332fe0afb0ad417ad2e30b5ecad977b9d14eb86748fee76186d",
+                "createdBy": "0x7e2c15b34e3fc89e1b694cddc4211135322275cb3e1e46981232ef89501abd91",
+                "accessLevel": 1,
+                "timestamp": 1504280320,
+                "dataHash": "0x3780d5a0a546a4784830a478c47b19f7c486acacfb8b1a139ec869e518bebdba"
+                },
+                "data": [{
+                         "type": "ambrosus.asset.qualityControlled",
+                         "name": "Quality Control (post-production, pre-packaging)",
+                         "document": {
+                         "chemical-report": {
+                         "url": ""
+                         }
+                         },
+                         "Test Results": {
+                         "use": "Drink",
+                         "purchased-by-consumer": "no",
+                         "storage-temperature": "15-20°C",
+                         "age": "21 years",
+                         "alcohol-content": "40%",
+                         "manufacturer": "Old Bushmills Distillery, 2 Distillery Rd, Bushmills BT57 8XH, Ireland",
+                         "tracability-number": "CH-1208875.2144"
+                         }
+                         }, {
+                         "type": "ambrosus.event.location",
+                         "location": {
+                         "type": "Feature",
+                         "geoJson": {
+                         "type": "Point",
+                         "coordinates": [55.202829, -6.517248]
+                         },
+                         "assetId": "0xfd4cf8dff45a84332fe0afb0ad417ad2e30b5ecad977b9d14eb86748fee76186d",
+                         },
+                         "name": "Old Bushmills Distellery",
+                         "city": "Bushmills",
+                         "country": "Ireland",
+                         "locationId":"647b878721b74cae1d82504594819285",
+                         "GLN":3204231530003
+                         }],
+                "signature": "0x68034a8dcf25e6391ce54376b366f9812792ad873683a9448f967e707cd946f009981a4c1171c56c8718e11880da53f2b2614e7f23a0772bf022c0d8e11c85f01b"
+                },
+                "eventId": "0x75a2ff320b7cfff1171d3a4589cf38b4fb084aae419e2690f6a6fde4cd676622",
+                "metadata": {
+                "bundleId": "0x6450279f3a76c060b697dbc83d1090da4f0c62847a256ee94b0f6977e23acdf3"
+                }
+                },
+                {
+                "content": {
+                "idData": {
+                "assetId": "0xfd4cf8dff45a84332fe0afb0ad417ad2e30b5ecad977b9d14eb86748fee76186d",
+                "createdBy": "0x7e2c15b34e3fc89e1b694cddc4211135322275cb3e1e46981232ef89501abd91",
+                "accessLevel": 0,
+                "timestamp": 1494580320,
+                "dataHash": "0x3780d5a0a546a4784830a478c47b19f7c486acacfb8b1a139ec869e518bebdba"
+                },
+                "data": [{
+                         "type": "ambrosus.asset.info",
+                         "name": "Single Malt Irish Whiskey",
+                         "assetType": "ambrosus.assetTypes.batch",
+                         "images": {
+                         "default": {
+                         "url": "http://limitlessapps.net/images/AmberAssets/maltwhiskey.png"
+                         }
+                         },
+                         }, {
+                         "type": "ambrosus.event.location",
+                         "location": {
+                         "type": "Feature",
+                         "geoJson": {
+                         "type": "Point",
+                         "coordinates": [55.202829, -6.517248]
+                         },
+                         "assetId": "0xfd4cf8dff45a84332fe0afb0ad417ad2e30b5ecad977b9d14eb86748fee76186d",
+                         },
+                         "name": "Old Bushmills Distellery",
+                         "city": "Bushmills",
+                         "country": "Ireland",
+                         "locationId":"647b878721b74cae1d82504594819285",
+                         "GLN":3204231530003
+                         }],
+                "signature": "0x68034a8dcf25e6391ce54376b366f9812792ad873683a9448f967e707cd946f009981a4c1171c56c8718e11880da53f2b2614e7f23a0772bf022c0d8e11c85f01b"
+                },
+                "eventId": "0x75a2ff320b7cfff1171d3a4589cf38b4fb084aae419e2690f6a6fde4cd676622",
+                "metadata": {
+                "bundleId": "0x6450279f3a76c060b697dbc83d1090da4f0c62847a256ee94b0f6977e23acdf3"
+                }
+                }
+                ]
+}

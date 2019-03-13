@@ -13,6 +13,7 @@
 //
 
 import UIKit
+import AmbrosusSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,12 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
-        // In order to enable the scanner you need a key for Scandit SDK, you can sign up for a 30 day Scandit trial here:
-        // https://ssl.scandit.com/customers/new?p=test
-        let scanditAppKey = "[YOUR SCANDIT KEY HERE]"
-        SBSLicense.setAppKey(scanditAppKey)
-        
         UIApplication.shared.statusBarStyle = .lightContent
 
         Interface.applyNavigationBarTheme()
@@ -34,7 +29,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let sampleFetcher = SampleFetcher()
         sampleFetcher.fetch()
+
+        AccountManager.sharedInstance.start()
+        setPersistedData()
+
         return true
+    }
+
+    private func setPersistedData() {
+        // A user's session was stored
+        if let publicKey = AccountManager.sharedInstance.storedUserPublicKey,
+            let account = AMBDataStore.sharedInstance.accountsStore.fetchAccount(withPublicKey: publicKey) {
+            AMBUserSession.sharedInstance.signIn(account: account)
+        }
+
+        let endpointIndex = UserDefaults.standard.integer(forKey: EndpointManager.selectedEndpointUserDefaultsKey)
+        EndpointManager.shared.set(with: endpointIndex)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -58,7 +68,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-

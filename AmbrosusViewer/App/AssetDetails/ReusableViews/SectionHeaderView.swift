@@ -23,7 +23,7 @@ final class SectionHeaderView: UICollectionReusableView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
         stylizeView()
     }
 
@@ -41,7 +41,7 @@ final class SectionHeaderView: UICollectionReusableView {
         coloredSection.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         coloredSection.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         coloredSection.heightAnchor.constraint(equalToConstant: coloredSectionHeight).isActive = true
-        coloredSection.backgroundColor = Colors.darkElement2
+        coloredSection.backgroundColor = Colors.colorElement2
 
         titleLabel.font = Fonts.sectionHeaderTitle
         titleLabel.textColor = Colors.navigationSectionContent
@@ -55,5 +55,4 @@ final class SectionHeaderView: UICollectionReusableView {
     func set(title: String) {
         titleLabel.text = title.uppercased()
     }
-
 }
