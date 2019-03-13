@@ -14,19 +14,14 @@
 
 import UIKit
 
-fileprivate class StringFromValueFormatter {
+private class StringFromValueFormatter {
 
     static func getString(from value: Any) -> String? {
         if let value = value as? CustomStringConvertible {
-            var description = value.description
-            while let rangeToReplace = description.range(of: "\n") {
-                description.replaceSubrange(rangeToReplace, with: "")
-            }
-            return description
+            return value.description
         }
         return nil
     }
-
 }
 
 final class ModuleDetailCollectionViewCell: UICollectionViewCell {
@@ -43,12 +38,19 @@ final class ModuleDetailCollectionViewCell: UICollectionViewCell {
         stackView.distribution = .equalSpacing
     }
 
-    static func getHeight(forNumberOfSectionTypes numberOfSectionTypes: CGFloat) -> CGFloat {
-        let titleInfoViewHeight: CGFloat = 36 + itemSpacing
-        let titleInfoViewsHeight: CGFloat = titleInfoViewHeight * numberOfSectionTypes
+    static func getHeight(data: [String: Any]) -> CGFloat {
+        let titleInfoViewHeights: CGFloat = {
+            let heights = data.values.map({ value -> CGFloat in
+                let formattedValue = StringFromValueFormatter.getString(from: value) ?? ""
+                let height = formattedValue.height(withConstrainedWidth: TitleInfoView.desiredWidth, font: Fonts.detailInfo)
+                return 21 + itemSpacing + height
+            })
+            let combinedHeight = heights.reduce(0, +)
+            return combinedHeight
+        }()
         let cellBottomPadding: CGFloat = 20
         let stackViewTopAndBottomPadding: CGFloat = 30
-        let stackViewHeight = titleInfoViewsHeight + stackViewTopAndBottomPadding
+        let stackViewHeight = titleInfoViewHeights + stackViewTopAndBottomPadding
         let cellHeight = stackViewHeight + cellBottomPadding
         return cellHeight
     }
@@ -74,5 +76,4 @@ fileprivate extension UIStackView {
             subview.removeFromSuperview()
         }
     }
-
 }

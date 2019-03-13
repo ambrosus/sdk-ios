@@ -15,38 +15,6 @@
 import Foundation
 import os.log
 
-// MARK: - Key Name Constants
-
-fileprivate let contentKey = "content"
-fileprivate let metadataKey = "metadata"
-fileprivate let signatureKey = "signature"
-fileprivate let idDataKey = "idData"
-fileprivate let createdByKey = "createdBy"
-fileprivate let timestampKey = "timestamp"
-fileprivate let assetIdKey = "assetId"
-fileprivate let productImageKey = "productImage"
-fileprivate let nameKey = "name"
-fileprivate let typeKey = "type"
-fileprivate let accessLevelKey = "accessLevel"
-fileprivate let imagesKey = "images"
-fileprivate let defaultKey = "default"
-fileprivate let urlKey = "url"
-fileprivate let eventIdKey = "eventId"
-fileprivate let dataKey = "data"
-
-/// Location Keys
-fileprivate let locationKey = "location"
-fileprivate let geometryKey = "geometry"
-fileprivate let geoJsonKey = "geoJson"
-fileprivate let propertiesKey = "properties"
-fileprivate let coordinatesKey = "coordinates"
-
-
-/// Event Types
-fileprivate let eventTypePrefix = "ambrosus."
-fileprivate let assetInfoType = eventTypePrefix + "asset.info"
-fileprivate let locationType = eventTypePrefix + "event.location"
-
 /// An array of type [String: [String: Any]] useful for formatting complex AMB-Net Data
 /// to an easy to use Data Source for display, formattedSections are accessible from both assets and events
 public typealias AMBFormattedSections = [[String: [String: Any]]]
@@ -54,8 +22,8 @@ public typealias AMBFormattedSections = [[String: [String: Any]]]
 private struct SectionFormatter {
 
     static func getDescriptiveName(from dictionary: [String: Any]) -> String? {
-        guard let type = dictionary[typeKey] as? String,
-            type.contains(eventTypePrefix) else {
+        guard let type = dictionary[AMBConstants.typeKey] as? String,
+            type.contains(AMBConstants.eventTypePrefix) else {
                 return nil
         }
 
@@ -118,27 +86,24 @@ private struct SectionFormatter {
         }
         var sections = getDictionaries(data)
         for (i, section) in sections.enumerated() {
-            if var dictionary = section[contentKey] {
+            if var dictionary = section[AMBConstants.contentKey] {
                 for key in formattedData.keys {
                     dictionary[key] = formattedData[key]
                 }
                 sections.remove(at: i)
-                sections.append([contentKey: dictionary])
+                sections.append([AMBConstants.contentKey: dictionary])
             }
         }
         for (i, section) in sections.enumerated() {
-            for value in section.values {
-                if value.values.isEmpty {
-                    sections.remove(at: i)
-                }
+            for value in section.values where value.values.isEmpty {
+                sections.remove(at: i)
             }
         }
         return sections
     }
-
 }
 
-fileprivate class DateFetcher {
+private class DateFetcher {
 
     static func getDate(fromTimestamp timestamp: Double) -> String {
         let dateFormatter = DateFormatter()
@@ -151,10 +116,9 @@ fileprivate class DateFetcher {
         let dateString = dateFormatter.string(from: date)
         return dateString
     }
-
 }
 
-fileprivate protocol AMBSharedFields: AnyObject {
+private protocol AMBSharedFields: AnyObject {
     /// A signature unique to this instance, used to verify authenticity
     var signature: String { get }
 
@@ -203,12 +167,12 @@ fileprivate protocol AMBSharedFields: AnyObject {
     }
 
     public init?(json: [String: Any]) {
-        guard let content = json[contentKey] as? [String: Any],
-            let signature = content[signatureKey] as? String,
-            let idData = content[idDataKey] as? [String: Any],
-            let creator = idData[createdByKey] as? String,
-            let id = json[assetIdKey] as? String,
-            let timestamp = idData[timestampKey] as? Double else {
+        guard let content = json[AMBConstants.contentKey] as? [String: Any],
+            let signature = content[AMBConstants.signatureKey] as? String,
+            let idData = content[AMBConstants.idDataKey] as? [String: Any],
+            let creator = idData[AMBConstants.createdByKey] as? String,
+            let id = json[AMBConstants.assetIdKey] as? String,
+            let timestamp = idData[AMBConstants.timestampKey] as? Double else {
                 return nil
         }
 
@@ -220,42 +184,41 @@ fileprivate protocol AMBSharedFields: AnyObject {
         self.formattedSections = SectionFormatter.getFormattedSections(fromData: json)
         super.init()
     }
-     
+
     /// An array of events associated with this asset saved inside the AMBDataStore Event Store, if any
     public var events: [AMBEvent]? {
         return AMBDataStore.sharedInstance.eventStore.fetchEvents(forAssetId: id)
     }
-    
+
     fileprivate var assetInfo: AMBEvent.AssetInfo? {
-        return events?.filter { $0.assetInfo != nil }.first?.assetInfo
+        return events?.first { $0.assetInfo != nil }?.assetInfo
     }
-     
+
     /// A descriptive name of the asset, optional. Can fall back to using id if name is unavailable
     public var name: String? {
         return assetInfo?.name
     }
-    
+
     /// Finds an image if one is available for the asset
     public var imageURLString: String? {
         return assetInfo?.imagePath
     }
-
 }
 
 /// Events are anything that occured to an asset in the process of moving through the supply chain
 @objcMembers public class AMBEvent: NSObject, AMBSharedFields {
-    
+
     fileprivate struct AssetInfo {
         public let name: String
         public let imageDictionary: [String: Any]
         public let imagePath: String
-        
+
         init?(json: [String: Any]?) {
             guard let json = json,
-                let name = json[nameKey] as? String,
-                let imageDictionary = json[imagesKey] as? [String: Any],
-                let imagesDefaultDictionary = imageDictionary[defaultKey] as? [String: Any],
-                let imagePath = imagesDefaultDictionary[urlKey] as? String else {
+                let name = json[AMBConstants.nameKey] as? String,
+                let imageDictionary = json[AMBConstants.imagesKey] as? [String: Any],
+                let imagesDefaultDictionary = imageDictionary[AMBConstants.defaultKey] as? [String: Any],
+                let imagePath = imagesDefaultDictionary[AMBConstants.urlKey] as? String else {
                     return nil
             }
             self.name = name
@@ -293,7 +256,7 @@ fileprivate protocol AMBSharedFields: AnyObject {
 
     /// Formatted data sections, useful for displaying details about this instance in a table or collection view
     public let formattedSections: AMBFormattedSections
-    
+
     /// Contains asset info such as name and image
     fileprivate let assetInfo: AssetInfo?
 
@@ -325,16 +288,16 @@ fileprivate protocol AMBSharedFields: AnyObject {
     }
 
     public init?(json: [String: Any]) {
-        guard let id = json[eventIdKey] as? String,
-            let content = json[contentKey] as? [String: Any],
-            let idData = content[idDataKey] as? [String: Any],
-            let dataDictionaries = (content[dataKey] as? [[String: Any]]),
-            let signature = content[signatureKey] as? String,
-            let creator = idData[createdByKey] as? String,
-            let type = dataDictionaries.first?[typeKey] as? String,
-            let assetId = idData[assetIdKey] as? String,
-            let timestamp = idData[timestampKey] as? Double,
-            let accessLevel = idData[accessLevelKey] as? Int else {
+        guard let id = json[AMBConstants.eventIdKey] as? String,
+            let content = json[AMBConstants.contentKey] as? [String: Any],
+            let idData = content[AMBConstants.idDataKey] as? [String: Any],
+            let dataDictionaries = (content[AMBConstants.dataKey] as? [[String: Any]]),
+            let signature = content[AMBConstants.signatureKey] as? String,
+            let creator = idData[AMBConstants.createdByKey] as? String,
+            let type = dataDictionaries.first?[AMBConstants.typeKey] as? String,
+            let assetId = idData[AMBConstants.assetIdKey] as? String,
+            let timestamp = idData[AMBConstants.timestampKey] as? Double,
+            let accessLevel = idData[AMBConstants.accessLevelKey] as? Int else {
                 return nil
         }
 
@@ -348,24 +311,24 @@ fileprivate protocol AMBSharedFields: AnyObject {
         self.timestamp = timestamp
         self.date = DateFetcher.getDate(fromTimestamp: timestamp)
 
-        let nameDictionary = dataDictionaries.filter { $0[nameKey] != nil }.first
-        self.name = nameDictionary?[nameKey] as? String
+        let nameDictionary = dataDictionaries.first { $0[AMBConstants.nameKey] != nil }
+        self.name = nameDictionary?[AMBConstants.nameKey] as? String
 
-        let assetInfoDictionary = dataDictionaries.filter { ($0[typeKey] as? String) == assetInfoType }.first
+        let assetInfoDictionary = dataDictionaries.first { ($0[AMBConstants.typeKey] as? String) == AMBConstants.assetInfoType }
         self.assetInfo = AssetInfo(json: assetInfoDictionary)
 
-        let locationContainerDictionary = dataDictionaries.filter { ($0[typeKey] as? String) == locationType }.first
-        let locationDictionary = locationContainerDictionary?[locationKey] as? [String: Any]
-        let geoJsonDictionary = dataDictionaries.compactMap { $0[geoJsonKey] as? [String: Any] }.first
-        let geometryDictionary = locationDictionary?[geometryKey] as? [String: Any]
+        let locationContainerDictionary = dataDictionaries.first { ($0[AMBConstants.typeKey] as? String) == AMBConstants.locationType }
+        let locationDictionary = locationContainerDictionary?[AMBConstants.locationKey] as? [String: Any]
+        let geoJsonDictionary = dataDictionaries.compactMap { $0[AMBConstants.geoJsonKey] as? [String: Any] }.first
+        let geometryDictionary = locationDictionary?[AMBConstants.geometryKey] as? [String: Any]
         let geoDictionary = geometryDictionary ?? geoJsonDictionary
-        let coordinates = geoDictionary?[coordinatesKey] as? [NSNumber] ?? []
+        let coordinates = geoDictionary?[AMBConstants.coordinatesKey] as? [NSNumber] ?? []
         let hasCoordinates = coordinates.count > 1
         // Make sure lattitude longitude are available and have more than one value
         lattitude = hasCoordinates ? coordinates[0] : nil
         longitude = hasCoordinates ? coordinates[1] : nil
 
-        locationName = locationContainerDictionary?[nameKey] as? String
+        locationName = locationContainerDictionary?[AMBConstants.nameKey] as? String
 
         super.init()
     }

@@ -146,7 +146,7 @@ extension ParallaxHeroLayout {
         guard size != .zero else {
             return
         }
-        
+
         let headerXLocation: CGFloat = {
             if UIDevice.current.userInterfaceIdiom == .pad {
                 let headerSize = Interface.screenWidth / 2
@@ -174,7 +174,7 @@ extension ParallaxHeroLayout {
         elementAttributesCache[type]?[attributes.indexPath] = attributes
     }
 
-    private func updateZIndexes(){
+    private func updateZIndexes() {
         guard let sectionHeaders = elementAttributesCache[.sectionHeader] else {
             return
         }
@@ -188,7 +188,7 @@ extension ParallaxHeroLayout {
     }
 }
 
-//MARK: - Provide Collection View Attributes
+// MARK: - Provide Collection View Attributes
 extension ParallaxHeroLayout {
 
     public override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
@@ -220,7 +220,9 @@ extension ParallaxHeroLayout {
             for (indexPath, attributes) in elementInfos {
                 attributes.parallax = .identity
                 attributes.transform = .identity
-                updateSupplementaryViews(type, attributes: attributes,
+                updateSupplementaryViews(
+                    type,
+                    attributes: attributes,
                     collectionView: collectionView,
                     indexPath: indexPath)
                 if attributes.frame.intersects(rect) {
@@ -236,7 +238,6 @@ extension ParallaxHeroLayout {
             let itemHeight = settings.cellHeightInSection[indexPath.section]
             let upperLimit = CGFloat(collectionView.numberOfItems(inSection: indexPath.section)) * (itemHeight + settings.minimumLineSpacing)
             attributes.transform =  CGAffineTransform(translationX: 0, y: min(upperLimit, max(0, contentOffset.y - attributes.initialOrigin.y + AssetDetailsConstants.menuOverlayCompactHeight + AssetDetailsConstants.iPhoneXPadding + AssetDetailsConstants.iPhoneXSectionHeaderAdditionalPadding)))
-
         } else if type == .header {
             performHeaderParallax(in: collectionView, attributes: attributes)
         } else if type == .menu {
@@ -254,5 +255,4 @@ extension ParallaxHeroLayout {
             attributes.transform = scale.concatenating(translation)
         }
     }
-
 }

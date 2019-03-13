@@ -6,11 +6,11 @@
 
 The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the [Ambrosus API](https://ambrosus.docs.apiary.io) (AMB-NET), and build their own interfaces for displaying Assets and Events.
 
-The Ambrosus iOS SDK is written in Swift 4.0 and is compatible with Xcode 9.0+. Branches for newer versions of Swift will be added later on.
+The Ambrosus iOS SDK is written in Swift 4.2 and is compatible with Xcode 10.1+. Branches for newer versions of Swift will be added later on.
 
 Supports iOS 10+
-Supports Objective-C and Swift 4.0+
-Supports Xcode 9.0+
+Supports Objective-C and Swift 4.2+
+Supports Xcode 10.1+
 
 * [Integration](#integration)
 * [Overview](#overview)
@@ -104,6 +104,43 @@ let asset = AMBDataStore.sharedInstance.assetStore.fetch(withAssetId: assetId)
 let events = AMBDataStore.sharedInstance.eventStore.fetchEvents(forAssetId: assetId)
 ```
 
+To create assets and events, you must have an Ambrosus account with the `create_entity` permission and know your public key and private key. Your private key will be used for client-side signing. Start by configuring the `AMBWeb3Manager` with your private key:
+
+```swift
+let privateKey = "[YOUR_PRIVATE_KEY]"
+let publicKey = "[YOUR_PUBLIC_KEY]"
+AMBWeb3Manager.sharedInstance.setAccount(withPrivateKey: privateKey)
+```
+
+Once you have your private key set you can now create assets and events using `AMBNetwork`:
+```swift
+AMBNetwork.createAsset(createdBy: publicKey) { (asset, error) in
+    guard let assetId = asset?.id else {
+        NSLog(error ?? "Error, no Asset created")
+        return
+    }
+    let eventData = [
+        ["type": "ambrosus.asset.info",
+         "name": "Organic Figs (\(Int(arc4random_uniform(300))) count)",
+            "assetType": "ambrosus.assetTypes.batch",
+            "images": [
+                "default": ["url": "http://limitlessapps.net/images/AmberAssets/figs.png"]
+            ]
+        ]
+    ]
+
+    AMBNetwork.createEvent(assetId: assetId, createdBy: publicKey, data: eventData) { (event, error) in
+        guard let event = event else {
+            NSLog(error ?? "Error, no Event created")
+            return
+        }
+
+        // Do something with unwrapped event here
+        print(event.description)
+    }
+}
+```
+
 ## Usage (Objective-C)
 
 The Ambrosus SDK is also fully compatible with Objective-C, you can import the SDK by adding the following to the top of your implementation file:
@@ -133,14 +170,6 @@ NSString *assetId = @"0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6
 # Sample Application (Ambrosus Viewer)
 
 The included example application, Ambrosus Viewer includes a scanner that is capable of scanning 1d and 2d codes and displaying details about an associated asset and its events from AMB-NET. It comes packaged with several sample assets and events as well. The app also contains Asset Details and Event Details screens which demonstrate using the SDK to build a fully featured iOS application for viewing data stored on AMB-NET.
-
-To use the scanner in the Ambrosus Viewer you need a [Scandit](https://scandit.com) API key, you can sign up for a 30 day trial here:
-https://ssl.scandit.com/customers/new?p=test  
-
-The key can be replaced inside the `AppDelegate.swift` on line 27:
-```swift
-let scanditAppKey = "[YOUR SCANDIT KEY HERE]"
-```
 
 ## Ambrosus Viewer Support
 

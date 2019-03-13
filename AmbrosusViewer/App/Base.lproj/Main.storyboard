@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l6q-lP-FzH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l6q-lP-FzH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Scan View Controller-->
+        <!--Asset Scan View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ScanViewController" customModule="AmbrosusViewer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AssetScanViewController" customModule="AmbrosusViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815.20000000000005" y="133.5832083958021"/>
+            <point key="canvasLocation" x="814" y="-571"/>
         </scene>
         <!--Browse View Controller-->
         <scene sceneID="arn-Fk-ILj">
@@ -44,7 +45,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BrowseCollectionViewCell" id="pAo-Tu-fBa" customClass="BrowseCollectionViewCell" customModule="AmbrosusViewer" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StandardCollectionViewCell" id="pAo-Tu-fBa" customClass="StandardCollectionViewCell" customModule="AmbrosusViewer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="58" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -90,6 +91,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="LVh-MH-fMQ" id="wNQ-YU-bXE"/>
+                                            <outlet property="disclosureImageView" destination="ZpJ-Lv-622" id="e4X-QK-zpD"/>
                                             <outlet property="separatorView" destination="Y5B-P6-7Tp" id="3vu-ps-s1V"/>
                                             <outlet property="titleLabel" destination="p2P-YG-wpg" id="uqn-DR-fjS"/>
                                         </connections>
@@ -121,7 +123,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOk-ji-2I6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813.60000000000002" y="967.4662668665668"/>
+            <point key="canvasLocation" x="813.60000000000002" y="422.33883058470769"/>
+        </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="ag7-G5-WEl">
+            <objects>
+                <tableViewController id="Vgk-pQ-402" customClass="SettingsTableViewController" customModule="AmbrosusViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="f0d-8K-gWp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Account" id="hZE-PK-MF4">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="eJn-61-Zfl">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eJn-61-Zfl" id="AhL-3E-5Os">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="iDm-tU-KJU">
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iDm-tU-KJU" id="79o-Nb-TF7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="AMB-NET Endpoint" footerTitle="Configures the endpoint used when scanning Assets" id="79L-up-aHg">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="t3a-uo-wQK">
+                                        <rect key="frame" x="0.0" y="207" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t3a-uo-wQK" id="qfE-Z2-rXJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="E7i-WZ-o44">
+                                        <rect key="frame" x="0.0" y="251" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E7i-WZ-o44" id="6mf-03-QFC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Access Level Demo" footerTitle="Enables a set of demo accounts with different access levels" id="9dX-Wd-ugc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2RG-rG-1uM">
+                                        <rect key="frame" x="0.0" y="370.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2RG-rG-1uM" id="N6Q-5W-sbV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Vgk-pQ-402" id="Eaz-hP-jTS"/>
+                            <outlet property="delegate" destination="Vgk-pQ-402" id="yGb-bN-Ubs"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="Settings" selectedImage="Settings" id="BTx-UP-IIX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btN-Au-Jde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="1429.8350824587708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A40-Oq-3Lq">
@@ -155,6 +230,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="TQ3-3S-cUQ"/>
                         <segue destination="xMw-4Q-Rh6" kind="relationship" relationship="viewControllers" id="PeC-hH-5OO"/>
+                        <segue destination="Vgk-pQ-402" kind="relationship" relationship="viewControllers" id="hmM-5c-cHV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSo-lg-JQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -295,6 +371,7 @@
                                     <outlet property="eventTimelineBorderView" destination="cKK-hj-Cet" id="Whq-G7-It7"/>
                                     <outlet property="eventTimelineIconView" destination="LFe-W0-TUt" id="C31-JH-4SO"/>
                                     <outlet property="locationLabel" destination="Ivt-dy-xrs" id="Ahc-8s-TdA"/>
+                                    <outlet property="moduleView" destination="rv1-Be-upq" id="reT-A1-E4k"/>
                                     <outlet property="privacyLevel" destination="6H7-dW-sJo" id="qeA-rU-q66"/>
                                     <outlet property="timeLabel" destination="mL4-5g-wJf" id="r2z-Tf-HUD"/>
                                     <outlet property="timelineBorderViewBottomConstraint" destination="mRo-eR-5Aj" id="UMk-ZA-1t2"/>
@@ -316,7 +393,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czX-gV-sQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="967"/>
+            <point key="canvasLocation" x="1670" y="422"/>
         </scene>
         <!--Event Details Collection View Controller-->
         <scene sceneID="vQ3-02-8s5">
@@ -329,7 +406,7 @@
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JcW-1h-cQ4">
                             <size key="itemSize" width="300" height="250"/>
                             <size key="headerReferenceSize" width="375" height="58"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
@@ -380,6 +457,10 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VkS-Mf-33o">
+                            <rect key="frame" x="0.0" y="568" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="E1Y-E9-US2" id="Nzf-cO-icG"/>
                             <outlet property="delegate" destination="E1Y-E9-US2" id="5VA-WE-ORb"/>
@@ -388,7 +469,117 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QaD-dp-kwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2512.8000000000002" y="966.56671664167925"/>
+            <point key="canvasLocation" x="2513" y="422"/>
+        </scene>
+        <!--Accounts Collection View Controller-->
+        <scene sceneID="u82-bu-4Jo">
+            <objects>
+                <collectionViewController storyboardIdentifier="AccountsCollectionViewController" id="fLw-XQ-ry3" customClass="AccountsCollectionViewController" customModule="AmbrosusViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="oLd-PO-0nF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="JQI-Ka-nsd">
+                            <size key="itemSize" width="335" height="93"/>
+                            <size key="headerReferenceSize" width="50" height="102"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AccountCollectionViewCell" id="ZHU-Nq-Su6" customClass="AccountCollectionViewCell" customModule="AmbrosusViewer" customModuleProvider="target">
+                                <rect key="frame" x="20" y="102" width="335" height="93"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="93"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jrx-sZ-hws" customClass="ModuleView" customModule="AmbrosusViewer" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="93"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jUp-Qt-43G">
+                                            <rect key="frame" x="15" y="10" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jUp-Qt-43G" secondAttribute="height" multiplier="1:1" id="BOJ-vK-Kni"/>
+                                                <constraint firstAttribute="width" constant="50" id="GRa-dH-qKG"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Npp-Ue-QDe">
+                                            <rect key="frame" x="75" y="17" width="69" height="36.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1y-Gn-TIO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="69" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                    <color key="textColor" name="ColorElement2"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signed in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-zt-5Rx">
+                                                    <rect key="frame" x="0.0" y="23" width="52" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                    <color key="textColor" name="DarkElement1"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0x1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXf-SG-esM">
+                                            <rect key="frame" x="15" y="70" width="38.5" height="13"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                            <color key="textColor" name="DarkElement3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Jrx-sZ-hws" firstAttribute="leading" secondItem="ZHU-Nq-Su6" secondAttribute="leading" id="25E-Wu-Pjv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jrx-sZ-hws" secondAttribute="trailing" id="4Kn-ub-u5F"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jrx-sZ-hws" secondAttribute="bottom" id="65j-za-vwm"/>
+                                    <constraint firstItem="Jrx-sZ-hws" firstAttribute="top" secondItem="ZHU-Nq-Su6" secondAttribute="top" id="Htf-Dm-c74"/>
+                                    <constraint firstItem="jUp-Qt-43G" firstAttribute="top" secondItem="ZHU-Nq-Su6" secondAttribute="top" constant="10" id="Hzf-9w-VHB"/>
+                                    <constraint firstAttribute="bottom" secondItem="XXf-SG-esM" secondAttribute="bottom" constant="10" id="NtP-JY-2DQ"/>
+                                    <constraint firstItem="XXf-SG-esM" firstAttribute="top" secondItem="jUp-Qt-43G" secondAttribute="bottom" constant="10" id="OI3-0U-B1d"/>
+                                    <constraint firstItem="Npp-Ue-QDe" firstAttribute="centerY" secondItem="jUp-Qt-43G" secondAttribute="centerY" id="PlL-PO-lbk"/>
+                                    <constraint firstItem="jUp-Qt-43G" firstAttribute="leading" secondItem="ZHU-Nq-Su6" secondAttribute="leading" constant="15" id="XOw-3V-Yb1"/>
+                                    <constraint firstItem="Npp-Ue-QDe" firstAttribute="leading" secondItem="jUp-Qt-43G" secondAttribute="trailing" constant="10" id="kdt-XN-w1U"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XXf-SG-esM" secondAttribute="trailing" constant="5" id="o0H-qP-Khj"/>
+                                    <constraint firstItem="XXf-SG-esM" firstAttribute="leading" secondItem="jUp-Qt-43G" secondAttribute="leading" id="tMc-5O-Tgv"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="accountImageView" destination="jUp-Qt-43G" id="Ca3-K9-4v5"/>
+                                    <outlet property="accountNameLabel" destination="D1y-Gn-TIO" id="bUI-rj-Cne"/>
+                                    <outlet property="isSignedInLabel" destination="CUW-zt-5Rx" id="ikN-aw-BMG"/>
+                                    <outlet property="moduleView" destination="Jrx-sZ-hws" id="eUW-5i-2Ri"/>
+                                    <outlet property="publicKeyLabel" destination="XXf-SG-esM" id="j5o-0w-Fws"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="LargeActionButtonReusableView" id="45e-Tq-ndS" customClass="LargeActionButtonReusableView" customModule="AmbrosusViewer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="fLw-XQ-ry3" id="Ygs-xU-L3h"/>
+                            <outlet property="delegate" destination="fLw-XQ-ry3" id="70q-Ac-aUb"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYC-QB-wcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3268" y="420.53973013493254"/>
+        </scene>
+        <!--Account Scan View Controller-->
+        <scene sceneID="EvA-6S-LTT">
+            <objects>
+                <viewController storyboardIdentifier="AccountScanViewController" id="qOb-4k-8gV" customClass="AccountScanViewController" customModule="AmbrosusViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LWe-qg-M0w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OLb-W8-PCM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Y5-Hh-cDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4023" y="422"/>
         </scene>
     </scenes>
     <resources>
@@ -396,5 +587,15 @@
         <image name="Disclosure" width="8" height="13"/>
         <image name="Pin" width="9" height="14"/>
         <image name="Scan" width="27" height="27"/>
+        <image name="Settings" width="31" height="31"/>
+        <namedColor name="ColorElement2">
+            <color red="0.086000002920627594" green="0.16500000655651093" blue="0.49799999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkElement1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkElement3">
+            <color red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

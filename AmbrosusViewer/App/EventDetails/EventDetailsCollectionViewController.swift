@@ -26,7 +26,8 @@ final class MapFormatter {
 
     init?(event: AMBEvent) {
         guard let lattitude = event.lattitude?.doubleValue,
-            let longitude = event.longitude?.doubleValue else {
+            let longitude = event.longitude?.doubleValue,
+            lattitude > -90 && lattitude < 90 && longitude > -179 && longitude < 179 else {
                 return nil
         }
         let coordinates = CLLocationCoordinate2D(latitude: lattitude, longitude: longitude)
@@ -41,7 +42,6 @@ final class MapFormatter {
         let coordinateRegion = MKCoordinateRegion(center: coordinates, span: zoomSpan)
         self.region = coordinateRegion
     }
-
 }
 
 final class EventMapView: MKMapView {
@@ -55,7 +55,6 @@ final class EventMapView: MKMapView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }
 
 final class EventDetailsCollectionViewController: UICollectionViewController {
@@ -86,13 +85,13 @@ final class EventDetailsCollectionViewController: UICollectionViewController {
         view.backgroundColor = Colors.background
         let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.sectionHeadersPinToVisibleBounds = true
+        collectionView?.register(LargeActionButtonReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: String(describing: LargeActionButtonReusableView.self))
         collectionView?.register(SectionHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: String(describing: SectionHeaderView.self))
     }
 
     fileprivate func isLocationSection(at section: Int) -> Bool {
         return formattedSections[section].keys.first == "ambrosus.event.location"
     }
-
 }
 
 // MARK: UICollectionViewDataSource
@@ -126,39 +125,70 @@ extension EventDetailsCollectionViewController {
         return cell
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        let height: CGFloat = section == 0 ? 75 : 0
+        let size = CGSize(width: collectionView.bounds.width, height: height)
+        return size
+    }
+
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+//        let height: CGFloat = section == 0 ? 85 : SectionHeaderView.height
+//        let size = CGSize(width: collectionView.bounds.width, height: height)
+//        return size
+//    }
+
 }
 
 extension EventDetailsCollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: String(describing: SectionHeaderView.self), for: indexPath)
+        let shouldShowBlockchainVerification = indexPath.section == 0 && kind == UICollectionView.elementKindSectionFooter
+        let reusableViewClass = kind == UICollectionView.elementKindSectionFooter ? LargeActionButtonReusableView.self : SectionHeaderView.self
+        let reuseIdentifier = String(describing: reusableViewClass)
+        let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: reuseIdentifier, for: indexPath)
+
+        guard shouldShowBlockchainVerification || kind == UICollectionView.elementKindSectionHeader else {
+            return sectionHeaderView
+        }
+
         let section = formattedSections[indexPath.section]
         if let sectionHeaderView = sectionHeaderView as? SectionHeaderView,
             let title = section.first?.key {
                 sectionHeaderView.set(title: title)
+        } else if let largeActionView = sectionHeaderView as? LargeActionButtonReusableView {
+            largeActionView.set(title: "Blockchain Verification", image: #imageLiteral(resourceName: "Verified"))
+            largeActionView.button.widthAnchor.constraint(greaterThanOrEqualToConstant: 250).isActive = true
+            largeActionView.button.topAnchor.constraint(equalTo: largeActionView.topAnchor).isActive = true
+            largeActionView.buttonAction = { () -> Void in
+                let urlString = "https://ambrosus.github.io/app-checker/?eventId=\(self.event.id)"
+                guard let url = URL(string: urlString) else {
+                    return
+                }
+                UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
+            }
         }
+
         return sectionHeaderView
     }
-
 }
 
 extension EventDetailsCollectionViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let section = formattedSections[indexPath.section]
-        guard let key = section.first?.key,
-            let items = section[key] else {
-                return CGSize(width: Interface.screenWidth, height: 0)
-        }
-        let sectionCount = CGFloat(items.count)
         let height: CGFloat = {
             if isLocationSection(at: indexPath.section) {
-                return Interface.screenWidth
+                return Interface.screenWidth + 20
             } else {
-                return ModuleDetailCollectionViewCell.getHeight(forNumberOfSectionTypes: sectionCount)
+                let data = section.values.first ?? [:]
+                return ModuleDetailCollectionViewCell.getHeight(data: data)
             }
         }()
         return CGSize(width: Interface.screenWidth, height: height)
     }
+}
 
+// Helper function inserted by Swift 4.2 migrator.
+private func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value) })
 }

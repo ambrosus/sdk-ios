@@ -13,21 +13,33 @@
 //
 
 import UIKit
+import SafariServices
+
+extension String {
+    func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
+
+        return ceil(boundingBox.height)
+    }
+}
 
 class TitleInfoView: UIView {
 
     let titleLabel = UILabel()
     let infoLabel = UILabel()
 
+    static let desiredWidth = Interface.screenWidth - 40
+
     init() {
         super.init(frame: CGRect.zero)
         titleLabel.font = Fonts.detailTitle
         infoLabel.font = Fonts.detailInfo
 
-        titleLabel.textColor = Colors.detailTitleText
-        infoLabel.textColor = Colors.detailInfoText
+        titleLabel.textColor = Colors.darkElement1
+        infoLabel.textColor = Colors.darkElement2
         titleLabel.numberOfLines = 1
-        infoLabel.numberOfLines = 1
+        infoLabel.numberOfLines = 0
         titleLabel.setContentHuggingPriority(.fittingSizeLevel, for: .vertical)
         infoLabel.setContentHuggingPriority(.fittingSizeLevel, for: .vertical)
 
@@ -36,7 +48,7 @@ class TitleInfoView: UIView {
 
         setupAutoLayout()
         isUserInteractionEnabled = true
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(copyInfo(_:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tappedView(_:)))
         addGestureRecognizer(tapGestureRecognizer)
     }
 
@@ -45,8 +57,17 @@ class TitleInfoView: UIView {
     }
 
     func setup(withTitle title: String?, info: String?) {
-        titleLabel.text = title?.capitalized
+        titleLabel.text = title
         infoLabel.text = info
+        format(for: info)
+    }
+
+    func format(for info: String?) {
+        guard let info = info else {
+            return
+        }
+        infoLabel.font = isDictionary(info: info) ? UIFont.monospacedDigitSystemFont(ofSize: 12, weight: .regular) : Fonts.detailInfo
+        infoLabel.textColor = isURL(info: info) ? Colors.colorElement2 : Colors.darkElement2
     }
 
     override func updateConstraints() {
@@ -74,11 +95,39 @@ class TitleInfoView: UIView {
         setNeedsUpdateConstraints()
     }
 
-    @objc func copyInfo(_ sender: UITapGestureRecognizer) {
-        guard let infoText = infoLabel.text else {
+    private func isDictionary(info: String) -> Bool {
+        let height = info.height(withConstrainedWidth: TitleInfoView.desiredWidth, font: Fonts.detailInfo)
+        let isDictionary = height > 100
+        return isDictionary
+    }
+
+    private func isURL(info: String) -> Bool {
+        let isNotDictionary = !isDictionary(info: info)
+        return isNotDictionary && (info.contains("http") || info.contains("www."))
+    }
+
+    @objc func tappedView(_ sender: UITapGestureRecognizer) {
+        guard let info = infoLabel.text else {
             return
         }
-        UIPasteboard.general.string = infoText
+        if isURL(info: info) {
+            open(urlString: info)
+        } else {
+            copy(info: info)
+        }
+    }
+
+    private func open(urlString: String) {
+        guard let presentedViewController = UIApplication.shared.keyWindow?.rootViewController,
+            let url = URL(string: urlString) else {
+                return
+        }
+        let safariViewController = SFSafariViewController(url: url)
+        presentedViewController.present(safariViewController, animated: true, completion: nil)
+    }
+
+    private func copy(info: String) {
+        UIPasteboard.general.string = info
         guard let presentedViewController = UIApplication.shared.keyWindow?.rootViewController,
             let titleLabelText = titleLabel.text else {
                 return
@@ -87,5 +136,17 @@ class TitleInfoView: UIView {
         attributedString.append(NSAttributedString(string: "'\(titleLabelText)'!", attributes: [.font: UIFont.systemFont(ofSize: 22, weight: .regular)]))
         ModalMessageView().present(in: presentedViewController.view, withMessage: attributedString)
     }
+}
 
+extension SFSafariViewController {
+
+    override open func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        UIApplication.shared.statusBarStyle = .default
+    }
+
+    override open func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
 }

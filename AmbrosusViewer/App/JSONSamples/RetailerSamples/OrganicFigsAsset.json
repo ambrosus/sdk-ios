@@ -1,0 +1,15 @@
+{
+    "content": {
+        "idData": {
+            "createdBy": "0x35e1E89128B4AE62727e1Aa755ed1E5c14Cef241",
+            "timestamp": 1530884858,
+            "sequenceNumber": 0
+        },
+        "signature": "0x9ebb01d200d61d84b91450b68c710ff7a656230c5fc596e5b7facd3bfecaa21c732d35d134cc6548a1b31e0dcaa3dd9495ae663423ac1aa88007463951fe78f71b"
+    },
+    "assetId": "0x3d4e08dff45a84332fe0afb0ad417ad2e30b5ecad977b9d14eb86748fee76186d",
+    "metadata": {
+        "bundleId": "0xb0cc224746d90afc47b106a076d3795edd72128439c79a9385f51c6920d3bc72",
+        "entityUploadTimestamp": 1530884858
+    }
+}
