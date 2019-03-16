@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AmbrosusSDK'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'Fetches Assets and Events from the Ambrosus Network (AMB-NET) and makes it easy to build interfaces.'
 
 # This description is used to generate tags and improve search results.

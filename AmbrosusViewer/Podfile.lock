@@ -1,5 +1,5 @@
 PODS:
-  - AmbrosusSDK (1.2.0)
+  - AmbrosusSDK (1.2.1)
 
 DEPENDENCIES:
   - AmbrosusSDK (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AmbrosusSDK: d4c536855e7ced1dd09ee17fc8f1b371416959ef
+  AmbrosusSDK: 5f3931ce4c1587aafba42ac223993cadaa01fafd
 
 PODFILE CHECKSUM: ed9fc7676276b062abfeb3aa634b4b6796a73449
 
