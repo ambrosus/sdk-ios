@@ -5,11 +5,6 @@ target 'AmbrosusViewer' do
   pod 'AmbrosusSDK', :path => '../'
 end
 
-target 'CoffeeLoyaltyApp' do
-    pod 'AmbrosusSDK', :path => '../'
-    pod 'AmbrosusBlockchainSDK', :path => '../'
-    pod 'web3swift.pod', :git => 'https://github.com/bankex/web3swift.git', :branch => 'master', :modular_headers => true
-end
 
 target 'AmbrosusBlockchainSDKTests' do
     pod 'AmbrosusBlockchainSDK', :path => '../'

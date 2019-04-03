@@ -39,31 +39,17 @@
 		0A49CE032103F72300C820B9 /* AccountScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49CE022103F72300C820B9 /* AccountScanViewController.swift */; };
 		0A7A410C20D5C14500869299 /* AccountsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7A410B20D5C14500869299 /* AccountsCollectionViewController.swift */; };
 		0A95FDA4212A160500300A50 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FDA3212A160500300A50 /* EndpointManager.swift */; };
-		0AA6A1662253F22C0058D651 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35992A20BF704D001AE36F /* Interface.swift */; };
 		0ABEFA752128C31300FFB8ED /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABEFA742128C31300FFB8ED /* SettingsTableViewController.swift */; };
 		5140F1772242713300E2D15B /* CreationTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F1752242713300E2D15B /* CreationTextFieldTableViewCell.swift */; };
 		5140F1782242713300E2D15B /* CreationTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5140F1762242713300E2D15B /* CreationTextFieldTableViewCell.xib */; };
 		5140F17B2242714400E2D15B /* CreationButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F1792242714400E2D15B /* CreationButtonTableViewCell.swift */; };
 		5140F17C2242714400E2D15B /* CreationButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5140F17A2242714400E2D15B /* CreationButtonTableViewCell.xib */; };
-		517B51B92226A0ED00C6C273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B51B82226A0ED00C6C273 /* AppDelegate.swift */; };
-		517B51BB2226A0ED00C6C273 /* CoffeeScanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B51BA2226A0ED00C6C273 /* CoffeeScanerViewController.swift */; };
-		517B51BE2226A0ED00C6C273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517B51BC2226A0ED00C6C273 /* Main.storyboard */; };
-		517B51C02226A0EE00C6C273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517B51BF2226A0EE00C6C273 /* Assets.xcassets */; };
-		517B51C32226A0EE00C6C273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517B51C12226A0EE00C6C273 /* LaunchScreen.storyboard */; };
-		517B51CC2226B77C00C6C273 /* DialogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B51CB2226B77C00C6C273 /* DialogBuilder.swift */; };
-		51A7FCEB22411DDE00DCB4A1 /* AccountsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFA9F2223FE72100EBC0B1 /* AccountsManager.swift */; };
-		51A7FCEC22411DE300DCB4A1 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FDA3212A160500300A50 /* EndpointManager.swift */; };
-		51A7FCED22411DF800DCB4A1 /* SampleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A0E5220C3662500DB803D /* SampleFetcher.swift */; };
 		51A7FCEF224127B100DCB4A1 /* СreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A7FCEE224127B100DCB4A1 /* СreationViewController.swift */; };
 		51A7FCF122414E3C00DCB4A1 /* CreationWithCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A7FCF022414E3C00DCB4A1 /* CreationWithCodeViewController.swift */; };
 		51A7FCF422438DBB00DCB4A1 /* CreationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A7FCF322438DBB00DCB4A1 /* CreationHeaderView.swift */; };
-		51D480D92227D73D009F3E97 /* СoffeeRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D480D82227D73D009F3E97 /* СoffeeRewardViewController.swift */; };
-		51D480DE2229189D009F3E97 /* CoffeeProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D480DC2229189D009F3E97 /* CoffeeProductCollectionViewCell.swift */; };
-		51D480DF2229189D009F3E97 /* CoffeeProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D480DD2229189D009F3E97 /* CoffeeProductCollectionViewCell.xib */; };
 		51EFA9F1223BE1E400EBC0B1 /* DialogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B51CB2226B77C00C6C273 /* DialogBuilder.swift */; };
 		51EFA9F3223FE72100EBC0B1 /* AccountsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFA9F2223FE72100EBC0B1 /* AccountsManager.swift */; };
 		51FD7AFA2244F77500D497BC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FD7AF92244F77500D497BC /* StringExtension.swift */; };
-		51FD7AFB2244F77800D497BC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FD7AF92244F77500D497BC /* StringExtension.swift */; };
 		51FD7AFF2244F7B200D497BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51FD7B012244F7B200D497BC /* Localizable.strings */; };
 		65CF664F307E92F5F41C9A2A /* Pods_AmbrosusViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2742646D0BE12C009DEB977 /* Pods_AmbrosusViewer.framework */; };
 		6A04B2D420EFC269006905B8 /* CowAsset.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A04B2CD20EFC269006905B8 /* CowAsset.json */; };
@@ -103,18 +89,7 @@
 		6AE717A920F5931100549B13 /* GuernseyCalfEvents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AE717A720F5931000549B13 /* GuernseyCalfEvents.json */; };
 		6AED68D420F29041007F6328 /* DarkChocolateAsset.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AED68D220F29041007F6328 /* DarkChocolateAsset.json */; };
 		6AED68D520F29041007F6328 /* DarkChocolateEvents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AED68D320F29041007F6328 /* DarkChocolateEvents.json */; };
-		A03EDA0D1C56F5F853DA41B1 /* Pods_CoffeeLoyaltyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C309BF1D6496E3CF1BBCA7AE /* Pods_CoffeeLoyaltyApp.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6AE68A462245DC0E006006D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 517B51B52226A0ED00C6C273;
-			remoteInfo = CoffeeLoyaltyApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A01FC0E20DEC30400A56098 /* AccountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -155,27 +130,15 @@
 		5140F1762242713300E2D15B /* CreationTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreationTextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		5140F1792242714400E2D15B /* CreationButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationButtonTableViewCell.swift; sourceTree = "<group>"; };
 		5140F17A2242714400E2D15B /* CreationButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreationButtonTableViewCell.xib; sourceTree = "<group>"; };
-		517B51B62226A0ED00C6C273 /* CoffeeLoyaltyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeLoyaltyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		517B51B82226A0ED00C6C273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		517B51BA2226A0ED00C6C273 /* CoffeeScanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeScanerViewController.swift; sourceTree = "<group>"; };
-		517B51BD2226A0ED00C6C273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		517B51BF2226A0EE00C6C273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		517B51C22226A0EE00C6C273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		517B51C42226A0EE00C6C273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		517B51CB2226B77C00C6C273 /* DialogBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBuilder.swift; sourceTree = "<group>"; };
 		51A7FCEE224127B100DCB4A1 /* СreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreationViewController.swift"; sourceTree = "<group>"; };
 		51A7FCF022414E3C00DCB4A1 /* CreationWithCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationWithCodeViewController.swift; sourceTree = "<group>"; };
 		51A7FCF322438DBB00DCB4A1 /* CreationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationHeaderView.swift; sourceTree = "<group>"; };
-		51D480D82227D73D009F3E97 /* СoffeeRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СoffeeRewardViewController.swift"; sourceTree = "<group>"; };
-		51D480DC2229189D009F3E97 /* CoffeeProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeProductCollectionViewCell.swift; sourceTree = "<group>"; };
-		51D480DD2229189D009F3E97 /* CoffeeProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		51EFA9F2223FE72100EBC0B1 /* AccountsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsManager.swift; sourceTree = "<group>"; };
 		51FD7AF92244F77500D497BC /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		51FD7B002244F7B200D497BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		51FD7B022244F7C400D497BC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		51FD7B032244F7C400D497BC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		51FD7B042244F7C400D497BC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		51FD7B052244F7C500D497BC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		51FD7B062244F7C500D497BC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AmbrosusViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmbrosusViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A04B2CD20EFC269006905B8 /* CowAsset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CowAsset.json; sourceTree = "<group>"; };
@@ -231,14 +194,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		517B51B32226A0ED00C6C273 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A03EDA0D1C56F5F853DA41B1 /* Pods_CoffeeLoyaltyApp.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,21 +327,6 @@
 			path = "Сells";
 			sourceTree = "<group>";
 		};
-		517B51B72226A0ED00C6C273 /* CoffeeLoyaltyApp */ = {
-			isa = PBXGroup;
-			children = (
-				51D480DA22291875009F3E97 /* Views */,
-				517B51B82226A0ED00C6C273 /* AppDelegate.swift */,
-				517B51BA2226A0ED00C6C273 /* CoffeeScanerViewController.swift */,
-				51D480D82227D73D009F3E97 /* СoffeeRewardViewController.swift */,
-				517B51BC2226A0ED00C6C273 /* Main.storyboard */,
-				517B51C12226A0EE00C6C273 /* LaunchScreen.storyboard */,
-				517B51BF2226A0EE00C6C273 /* Assets.xcassets */,
-				517B51C42226A0EE00C6C273 /* Info.plist */,
-			);
-			path = CoffeeLoyaltyApp;
-			sourceTree = "<group>";
-		};
 		517B51CA2226B76D00C6C273 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,23 +358,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		51D480DA22291875009F3E97 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				51D480DB2229187C009F3E97 /* Cells */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		51D480DB2229187C009F3E97 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				51D480DC2229189D009F3E97 /* CoffeeProductCollectionViewCell.swift */,
-				51D480DD2229189D009F3E97 /* CoffeeProductCollectionViewCell.xib */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		51FD7AFC2244F78B00D497BC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,7 +373,6 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				517B51CA2226B76D00C6C273 /* Tools */,
 				0A35990820BF704D001AE36F /* AmbrosusViewer */,
-				517B51B72226A0ED00C6C273 /* CoffeeLoyaltyApp */,
 				6AE68A422245DC0E006006D0 /* AmbrosusBlockchainSDKTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				757CCF2A5EF08F55B8B5C36C /* Frameworks */,
@@ -462,7 +384,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* AmbrosusViewer.app */,
-				517B51B62226A0ED00C6C273 /* CoffeeLoyaltyApp.app */,
 				6AE68A412245DC0E006006D0 /* AmbrosusBlockchainSDKTests.xctest */,
 			);
 			name = Products;
@@ -579,26 +500,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		517B51B52226A0ED00C6C273 /* CoffeeLoyaltyApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 517B51C72226A0EE00C6C273 /* Build configuration list for PBXNativeTarget "CoffeeLoyaltyApp" */;
-			buildPhases = (
-				E45DD796FECC0C98640BBFBF /* [CP] Check Pods Manifest.lock */,
-				517B51B22226A0ED00C6C273 /* Sources */,
-				517B51B32226A0ED00C6C273 /* Frameworks */,
-				517B51B42226A0ED00C6C273 /* Resources */,
-				517B51CE2226C99000C6C273 /* ShellScript */,
-				8C2E614D250A81CBA5451729 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CoffeeLoyaltyApp;
-			productName = CoffeeLoyaltyApp;
-			productReference = 517B51B62226A0ED00C6C273 /* CoffeeLoyaltyApp.app */;
-			productType = "com.apple.product-type.application";
-		};
 		607FACCF1AFB9204008FA782 /* AmbrosusViewer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AmbrosusViewer" */;
@@ -632,7 +533,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6AE68A472245DC0E006006D0 /* PBXTargetDependency */,
 			);
 			name = AmbrosusBlockchainSDKTests;
 			productName = AmbrosusBlockchainSDKTests;
@@ -650,11 +550,6 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Ambrosus Inc.";
 				TargetAttributes = {
-					517B51B52226A0ED00C6C273 = {
-						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = N3K2N7UN59;
-						ProvisioningStyle = Automatic;
-					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = WM74Y4A96J;
@@ -684,24 +579,12 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* AmbrosusViewer */,
-				517B51B52226A0ED00C6C273 /* CoffeeLoyaltyApp */,
 				6AE68A402245DC0E006006D0 /* AmbrosusBlockchainSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		517B51B42226A0ED00C6C273 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51D480DF2229189D009F3E97 /* CoffeeProductCollectionViewCell.xib in Resources */,
-				517B51C32226A0EE00C6C273 /* LaunchScreen.storyboard in Resources */,
-				517B51C02226A0EE00C6C273 /* Assets.xcassets in Resources */,
-				517B51BE2226A0ED00C6C273 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -824,83 +707,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmbrosusBlockchainSDKTests/Pods-AmbrosusBlockchainSDKTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		517B51CE2226C99000C6C273 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		8C2E614D250A81CBA5451729 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CoffeeLoyaltyApp/Pods-CoffeeLoyaltyApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AmbrosusSDK/AmbrosusSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/AmbrosusBlockchainSDK/AmbrosusBlockchainSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
-				"${BUILT_PRODUCTS_DIR}/keccak.c/keccak.framework",
-				"${BUILT_PRODUCTS_DIR}/scrypt.c/scrypt.framework",
-				"${BUILT_PRODUCTS_DIR}/secp256k1.c/secp256k1.framework",
-				"${BUILT_PRODUCTS_DIR}/web3swift.pod/web3swift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AmbrosusSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AmbrosusBlockchainSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/keccak.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scrypt.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoffeeLoyaltyApp/Pods-CoffeeLoyaltyApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E45DD796FECC0C98640BBFBF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CoffeeLoyaltyApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EB34860009AC35B399434EF3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -948,23 +754,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		517B51B22226A0ED00C6C273 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				517B51CC2226B77C00C6C273 /* DialogBuilder.swift in Sources */,
-				0AA6A1662253F22C0058D651 /* Interface.swift in Sources */,
-				51A7FCED22411DF800DCB4A1 /* SampleFetcher.swift in Sources */,
-				51FD7AFB2244F77800D497BC /* StringExtension.swift in Sources */,
-				51A7FCEB22411DDE00DCB4A1 /* AccountsManager.swift in Sources */,
-				51A7FCEC22411DE300DCB4A1 /* EndpointManager.swift in Sources */,
-				517B51BB2226A0ED00C6C273 /* CoffeeScanerViewController.swift in Sources */,
-				51D480DE2229189D009F3E97 /* CoffeeProductCollectionViewCell.swift in Sources */,
-				51D480D92227D73D009F3E97 /* СoffeeRewardViewController.swift in Sources */,
-				517B51B92226A0ED00C6C273 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1017,14 +806,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		6AE68A472245DC0E006006D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 517B51B52226A0ED00C6C273 /* CoffeeLoyaltyApp */;
-			targetProxy = 6AE68A462245DC0E006006D0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		0A35991E20BF704D001AE36F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -1044,24 +825,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		517B51BC2226A0ED00C6C273 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				517B51BD2226A0ED00C6C273 /* Base */,
-				51FD7B042244F7C400D497BC /* ru */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		517B51C12226A0EE00C6C273 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				517B51C22226A0EE00C6C273 /* Base */,
-				51FD7B052244F7C500D497BC /* ru */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		51FD7B012244F7B200D497BC /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1074,61 +837,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		517B51C52226A0EE00C6C273 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F95C0148AAD05C48F699E9D9 /* Pods-CoffeeLoyaltyApp.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = N3K2N7UN59;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CoffeeLoyaltyApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Ambrosus-Inc..CoffeeLoyaltyApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		517B51C62226A0EE00C6C273 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E50EA3E074502313B1D993E /* Pods-CoffeeLoyaltyApp.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N3K2N7UN59;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CoffeeLoyaltyApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Ambrosus-Inc..CoffeeLoyaltyApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1345,15 +1053,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		517B51C72226A0EE00C6C273 /* Build configuration list for PBXNativeTarget "CoffeeLoyaltyApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				517B51C52226A0EE00C6C273 /* Debug */,
-				517B51C62226A0EE00C6C273 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AmbrosusViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
