@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		045E7CF79D7FF0D711160ADF /* Pods_AmbrosusBlockchainSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50684354AE543DBE04D2898A /* Pods_AmbrosusBlockchainSDKTests.framework */; };
 		0A01FC0F20DEC30400A56098 /* AccountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01FC0E20DEC30400A56098 /* AccountCollectionViewCell.swift */; };
 		0A35993720BF704D001AE36F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35990B20BF704D001AE36F /* AppDelegate.swift */; };
 		0A35993820BF704D001AE36F /* AssetDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35990D20BF704D001AE36F /* AssetDetailCollectionViewController.swift */; };
@@ -47,11 +46,9 @@
 		51A7FCEF224127B100DCB4A1 /* СreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A7FCEE224127B100DCB4A1 /* СreationViewController.swift */; };
 		51A7FCF122414E3C00DCB4A1 /* CreationWithCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A7FCF022414E3C00DCB4A1 /* CreationWithCodeViewController.swift */; };
 		51A7FCF422438DBB00DCB4A1 /* CreationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A7FCF322438DBB00DCB4A1 /* CreationHeaderView.swift */; };
-		51EFA9F1223BE1E400EBC0B1 /* DialogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B51CB2226B77C00C6C273 /* DialogBuilder.swift */; };
 		51EFA9F3223FE72100EBC0B1 /* AccountsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFA9F2223FE72100EBC0B1 /* AccountsManager.swift */; };
 		51FD7AFA2244F77500D497BC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FD7AF92244F77500D497BC /* StringExtension.swift */; };
 		51FD7AFF2244F7B200D497BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51FD7B012244F7B200D497BC /* Localizable.strings */; };
-		65CF664F307E92F5F41C9A2A /* Pods_AmbrosusViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2742646D0BE12C009DEB977 /* Pods_AmbrosusViewer.framework */; };
 		6A04B2D420EFC269006905B8 /* CowAsset.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A04B2CD20EFC269006905B8 /* CowAsset.json */; };
 		6A04B2D520EFC269006905B8 /* CowEvents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A04B2CE20EFC269006905B8 /* CowEvents.json */; };
 		6A04B2D620EFC269006905B8 /* IbuprofenAsset.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A04B2D020EFC269006905B8 /* IbuprofenAsset.json */; };
@@ -82,6 +79,7 @@
 		6A79BC4720684D8F0096E68F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A79BC4620684D8F0096E68F /* libc++.tbd */; };
 		6A79BC4920684D9A0096E68F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A79BC4820684D9A0096E68F /* libiconv.tbd */; };
 		6A79BC4B20684D9F0096E68F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A79BC4A20684D9F0096E68F /* libz.tbd */; };
+		6A91185B2254FB9700D24FDB /* DialogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A91185A2254FB9700D24FDB /* DialogBuilder.swift */; };
 		6AE68A442245DC0E006006D0 /* AmbrosusBlockchainServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE68A432245DC0E006006D0 /* AmbrosusBlockchainServiceTests.swift */; };
 		6AE717A420F5867D00549B13 /* BananasAsset.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AE717A220F5867C00549B13 /* BananasAsset.json */; };
 		6AE717A520F5867D00549B13 /* BananasEvents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AE717A320F5867C00549B13 /* BananasEvents.json */; };
@@ -89,6 +87,8 @@
 		6AE717A920F5931100549B13 /* GuernseyCalfEvents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AE717A720F5931000549B13 /* GuernseyCalfEvents.json */; };
 		6AED68D420F29041007F6328 /* DarkChocolateAsset.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AED68D220F29041007F6328 /* DarkChocolateAsset.json */; };
 		6AED68D520F29041007F6328 /* DarkChocolateEvents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AED68D320F29041007F6328 /* DarkChocolateEvents.json */; };
+		CDE6AFA50807D71F13391492 /* Pods_AmbrosusBlockchainSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAD2F0A9DDDB13445CCCF9A /* Pods_AmbrosusBlockchainSDKTests.framework */; };
+		FCB82095DA98CA0D1947F8B8 /* Pods_AmbrosusViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7941941124E17C3D7714473B /* Pods_AmbrosusViewer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,12 +125,11 @@
 		0A7A410B20D5C14500869299 /* AccountsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsCollectionViewController.swift; sourceTree = "<group>"; };
 		0A95FDA3212A160500300A50 /* EndpointManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointManager.swift; sourceTree = "<group>"; };
 		0ABEFA742128C31300FFB8ED /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		50684354AE543DBE04D2898A /* Pods_AmbrosusBlockchainSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbrosusBlockchainSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2306E9B3346E21FB97D89752 /* Pods-AmbrosusViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusViewer.release.xcconfig"; path = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.release.xcconfig"; sourceTree = "<group>"; };
 		5140F1752242713300E2D15B /* CreationTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationTextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		5140F1762242713300E2D15B /* CreationTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreationTextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		5140F1792242714400E2D15B /* CreationButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationButtonTableViewCell.swift; sourceTree = "<group>"; };
 		5140F17A2242714400E2D15B /* CreationButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreationButtonTableViewCell.xib; sourceTree = "<group>"; };
-		517B51CB2226B77C00C6C273 /* DialogBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBuilder.swift; sourceTree = "<group>"; };
 		51A7FCEE224127B100DCB4A1 /* СreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreationViewController.swift"; sourceTree = "<group>"; };
 		51A7FCF022414E3C00DCB4A1 /* CreationWithCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationWithCodeViewController.swift; sourceTree = "<group>"; };
 		51A7FCF322438DBB00DCB4A1 /* CreationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationHeaderView.swift; sourceTree = "<group>"; };
@@ -172,6 +171,7 @@
 		6A79BC4620684D8F0096E68F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		6A79BC4820684D9A0096E68F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		6A79BC4A20684D9F0096E68F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6A91185A2254FB9700D24FDB /* DialogBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DialogBuilder.swift; path = AmbrosusViewer/DialogBuilder.swift; sourceTree = SOURCE_ROOT; };
 		6AE68A412245DC0E006006D0 /* AmbrosusBlockchainSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmbrosusBlockchainSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE68A432245DC0E006006D0 /* AmbrosusBlockchainServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbrosusBlockchainServiceTests.swift; sourceTree = "<group>"; };
 		6AE68A452245DC0E006006D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,16 +181,13 @@
 		6AE717A720F5931000549B13 /* GuernseyCalfEvents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GuernseyCalfEvents.json; sourceTree = "<group>"; };
 		6AED68D220F29041007F6328 /* DarkChocolateAsset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DarkChocolateAsset.json; sourceTree = "<group>"; };
 		6AED68D320F29041007F6328 /* DarkChocolateEvents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DarkChocolateEvents.json; sourceTree = "<group>"; };
-		6E50EA3E074502313B1D993E /* Pods-CoffeeLoyaltyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeLoyaltyApp.release.xcconfig"; path = "Target Support Files/Pods-CoffeeLoyaltyApp/Pods-CoffeeLoyaltyApp.release.xcconfig"; sourceTree = "<group>"; };
-		73D8A88A911F05AC446F6CE9 /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusBlockchainSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-AmbrosusBlockchainSDKTests/Pods-AmbrosusBlockchainSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9C379C8FB1CA82D39BD7843C /* Pods-AmbrosusViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusViewer.debug.xcconfig"; path = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		6CAD2F0A9DDDB13445CCCF9A /* Pods_AmbrosusBlockchainSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbrosusBlockchainSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7941941124E17C3D7714473B /* Pods_AmbrosusViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbrosusViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5233F577FAB1E01D8E5F3C /* Pods-AmbrosusViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusViewer.debug.xcconfig"; path = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		8CE4E991DCAAC202C45E20A2 /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusBlockchainSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-AmbrosusBlockchainSDKTests/Pods-AmbrosusBlockchainSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A070266F8FAE476168873E7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AA80AD270B8AC41C9DB67F52 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B2742646D0BE12C009DEB977 /* Pods_AmbrosusViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbrosusViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C309BF1D6496E3CF1BBCA7AE /* Pods_CoffeeLoyaltyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeLoyaltyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D35E453696CDE77962DEB285 /* Pods-AmbrosusViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusViewer.release.xcconfig"; path = "Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer.release.xcconfig"; sourceTree = "<group>"; };
-		D4BBA035D56E6845FEE9EFAF /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusBlockchainSDKTests.release.xcconfig"; path = "Target Support Files/Pods-AmbrosusBlockchainSDKTests/Pods-AmbrosusBlockchainSDKTests.release.xcconfig"; sourceTree = "<group>"; };
-		F95C0148AAD05C48F699E9D9 /* Pods-CoffeeLoyaltyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeLoyaltyApp.debug.xcconfig"; path = "Target Support Files/Pods-CoffeeLoyaltyApp/Pods-CoffeeLoyaltyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E13154C1AB508F36A55CC161 /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbrosusBlockchainSDKTests.release.xcconfig"; path = "Target Support Files/Pods-AmbrosusBlockchainSDKTests/Pods-AmbrosusBlockchainSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +209,7 @@
 				6A79BC3520684D4D0096E68F /* QuartzCore.framework in Frameworks */,
 				6A79BC3320684D450096E68F /* SystemConfiguration.framework in Frameworks */,
 				6A79BC3120684D3D0096E68F /* MediaPlayer.framework in Frameworks */,
-				65CF664F307E92F5F41C9A2A /* Pods_AmbrosusViewer.framework in Frameworks */,
+				FCB82095DA98CA0D1947F8B8 /* Pods_AmbrosusViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +217,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045E7CF79D7FF0D711160ADF /* Pods_AmbrosusBlockchainSDKTests.framework in Frameworks */,
+				CDE6AFA50807D71F13391492 /* Pods_AmbrosusBlockchainSDKTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +327,7 @@
 		517B51CA2226B76D00C6C273 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				517B51CB2226B77C00C6C273 /* DialogBuilder.swift */,
+				6A91185A2254FB9700D24FDB /* DialogBuilder.swift */,
 				51EFA9F2223FE72100EBC0B1 /* AccountsManager.swift */,
 				0A95FDA3212A160500300A50 /* EndpointManager.swift */,
 				6A4A0E5220C3662500DB803D /* SampleFetcher.swift */,
@@ -477,9 +474,8 @@
 				6A79BC3420684D4D0096E68F /* QuartzCore.framework */,
 				6A79BC3220684D440096E68F /* SystemConfiguration.framework */,
 				6A79BC3020684D3D0096E68F /* MediaPlayer.framework */,
-				50684354AE543DBE04D2898A /* Pods_AmbrosusBlockchainSDKTests.framework */,
-				B2742646D0BE12C009DEB977 /* Pods_AmbrosusViewer.framework */,
-				C309BF1D6496E3CF1BBCA7AE /* Pods_CoffeeLoyaltyApp.framework */,
+				6CAD2F0A9DDDB13445CCCF9A /* Pods_AmbrosusBlockchainSDKTests.framework */,
+				7941941124E17C3D7714473B /* Pods_AmbrosusViewer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -487,12 +483,10 @@
 		8FC93EBE632827C93EFEB284 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				73D8A88A911F05AC446F6CE9 /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */,
-				D4BBA035D56E6845FEE9EFAF /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */,
-				9C379C8FB1CA82D39BD7843C /* Pods-AmbrosusViewer.debug.xcconfig */,
-				D35E453696CDE77962DEB285 /* Pods-AmbrosusViewer.release.xcconfig */,
-				F95C0148AAD05C48F699E9D9 /* Pods-CoffeeLoyaltyApp.debug.xcconfig */,
-				6E50EA3E074502313B1D993E /* Pods-CoffeeLoyaltyApp.release.xcconfig */,
+				8CE4E991DCAAC202C45E20A2 /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */,
+				E13154C1AB508F36A55CC161 /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */,
+				7B5233F577FAB1E01D8E5F3C /* Pods-AmbrosusViewer.debug.xcconfig */,
+				2306E9B3346E21FB97D89752 /* Pods-AmbrosusViewer.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -504,12 +498,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AmbrosusViewer" */;
 			buildPhases = (
-				23476B00283250616754EF2D /* [CP] Check Pods Manifest.lock */,
+				D5ACA4D9B0247E1A2AEBAB11 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				0A1C69492226825F00097C5B /* ShellScript */,
-				F4531FA78C379B7261D12E46 /* [CP] Embed Pods Frameworks */,
+				A93CA8BBE2FA518143AD5899 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -524,11 +518,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AE68A4A2245DC0E006006D0 /* Build configuration list for PBXNativeTarget "AmbrosusBlockchainSDKTests" */;
 			buildPhases = (
-				EB34860009AC35B399434EF3 /* [CP] Check Pods Manifest.lock */,
+				F3A14AD4276FC2264A474983 /* [CP] Check Pods Manifest.lock */,
 				6AE68A3D2245DC0E006006D0 /* Sources */,
 				6AE68A3E2245DC0E006006D0 /* Frameworks */,
 				6AE68A3F2245DC0E006006D0 /* Resources */,
-				414D063F9C5EF488C2CEEF3C /* [CP] Embed Pods Frameworks */,
+				11C81A0A818DEB69DFCF284B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -569,6 +563,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				ru,
@@ -649,29 +644,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		23476B00283250616754EF2D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AmbrosusViewer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		414D063F9C5EF488C2CEEF3C /* [CP] Embed Pods Frameworks */ = {
+		11C81A0A818DEB69DFCF284B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -707,29 +680,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmbrosusBlockchainSDKTests/Pods-AmbrosusBlockchainSDKTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB34860009AC35B399434EF3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AmbrosusBlockchainSDKTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F4531FA78C379B7261D12E46 /* [CP] Embed Pods Frameworks */ = {
+		A93CA8BBE2FA518143AD5899 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -751,6 +702,50 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmbrosusViewer/Pods-AmbrosusViewer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D5ACA4D9B0247E1A2AEBAB11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmbrosusViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3A14AD4276FC2264A474983 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmbrosusBlockchainSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -767,6 +762,7 @@
 				0A35994A20BF704D001AE36F /* BrowseViewController.swift in Sources */,
 				0A35994920BF704D001AE36F /* StandardCollectionViewCell.swift in Sources */,
 				0A35995A20BF704D001AE36F /* AssetScanViewController.swift in Sources */,
+				6A91185B2254FB9700D24FDB /* DialogBuilder.swift in Sources */,
 				0A35994C20BF704D001AE36F /* LocationDetailCell.swift in Sources */,
 				0A01FC0F20DEC30400A56098 /* AccountCollectionViewCell.swift in Sources */,
 				0A35993B20BF704D001AE36F /* ParallaxHeroLayoutSettings.swift in Sources */,
@@ -778,7 +774,6 @@
 				5140F17B2242714400E2D15B /* CreationButtonTableViewCell.swift in Sources */,
 				0A35994320BF704D001AE36F /* ModuleDetailCollectionViewCell.swift in Sources */,
 				51A7FCF422438DBB00DCB4A1 /* CreationHeaderView.swift in Sources */,
-				51EFA9F1223BE1E400EBC0B1 /* DialogBuilder.swift in Sources */,
 				0A35993E20BF704D001AE36F /* EventTimelineCollectionViewCell.swift in Sources */,
 				0ABEFA752128C31300FFB8ED /* SettingsTableViewController.swift in Sources */,
 				0A35993920BF704D001AE36F /* ParallaxHeroLayout.swift in Sources */,
@@ -946,7 +941,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C379C8FB1CA82D39BD7843C /* Pods-AmbrosusViewer.debug.xcconfig */;
+			baseConfigurationReference = 7B5233F577FAB1E01D8E5F3C /* Pods-AmbrosusViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -971,7 +966,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D35E453696CDE77962DEB285 /* Pods-AmbrosusViewer.release.xcconfig */;
+			baseConfigurationReference = 2306E9B3346E21FB97D89752 /* Pods-AmbrosusViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -995,7 +990,7 @@
 		};
 		6AE68A482245DC0E006006D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73D8A88A911F05AC446F6CE9 /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */;
+			baseConfigurationReference = 8CE4E991DCAAC202C45E20A2 /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1019,13 +1014,13 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeLoyaltyApp.app/CoffeeLoyaltyApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmbrosusViewer.app/AmbrosusViewer";
 			};
 			name = Debug;
 		};
 		6AE68A492245DC0E006006D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4BBA035D56E6845FEE9EFAF /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */;
+			baseConfigurationReference = E13154C1AB508F36A55CC161 /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1046,7 +1041,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeLoyaltyApp.app/CoffeeLoyaltyApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmbrosusViewer.app/AmbrosusViewer";
 			};
 			name = Release;
 		};

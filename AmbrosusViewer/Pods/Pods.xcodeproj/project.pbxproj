@@ -81,7 +81,6 @@
 		31158797D571FC00162C8E59275E817D /* scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C22E50FED6B562438A2D2EF431C7E /* scrypt.swift */; };
 		317BF2520C9A341A048C760D707DE90B /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B94B44EA252401BD46AF6BEC26D2D2C /* LogEvent.swift */; };
 		319FFA825FFDC5AE06150EE0B43311F7 /* InfuraProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B950C2DE493511267807649ABF8D29 /* InfuraProvider.m */; };
-		3212683FA1AD8BB86529B27FAA8D1F83 /* Pods-CoffeeLoyaltyApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA9218DDFE91471E635AF987067152 /* Pods-CoffeeLoyaltyApp-dummy.m */; };
 		329031F5D8E4FD0C7AFC587C0D363EAA /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F098E31D16B112F5AA8E74E38D9C12 /* when.m */; };
 		329562DD452539509BFC1A01A5C9929D /* Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E28D0F2677C9D1F36C09979B5D09E /* Subtraction.swift */; };
 		32BAF6D39D3C507D731AF9DAE208A11F /* EthereumAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2651F613349FBD3F702A8EEAB7D3B801 /* EthereumAddress.swift */; };
@@ -154,7 +153,7 @@
 		579635DC4742DAC8EE6F7F0E4E76E142 /* Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0ECF3633B470B5571F832E58BCA44D /* Provider.m */; };
 		57F766AC54BDC231E4271D78B1D0EBFC /* NSRegularExpressionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277556FA409015E6992D097D4EEA0A66 /* NSRegularExpressionExtension.swift */; };
 		5853826FDB6B8D0E48135EF359BFFA98 /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0A5A2BF080D2787A91E1C7FB2FFC8 /* keccak.c */; };
-		58E88A0D6E3D47E512AEB6CB78D673C3 /* Pods-AmbrosusBlockchainSDKTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F07F14F234338A82EDB8330AA9FF99A0 /* Pods-AmbrosusBlockchainSDKTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58E88A0D6E3D47E512AEB6CB78D673C3 /* Pods-AmbrosusBlockchainSDKTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3950D76CF291EF1B868F2FE6FE3EB2ED /* Pods-AmbrosusBlockchainSDKTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59305E2292F881A807AEFC5093791AA8 /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 80DB6F477885A0E2CB1505E1C37A8915 /* pbkdf2.c */; };
 		59C145150751739740CA0CAF50B0C189 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9195D8CD633E97F544ECDD8D0688CE /* Random.swift */; };
 		5A230155D6F3EC9D93DFAA237768DA93 /* readpass.c in Sources */ = {isa = PBXBuildFile; fileRef = BFF3016F50E2249A3053DEB3E0CBE600 /* readpass.c */; };
@@ -316,7 +315,7 @@
 		BE948CF7A4382DA11ED89083AA39ACF8 /* keccak.c-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 838924817A7B7A37325ED34E9087F915 /* keccak.c-dummy.m */; };
 		BEADA7593EC0F89A19E43052CE2D6AA9 /* ecmult_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = D8E486D4427BA5159E03AEF79CC36644 /* ecmult_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BFDDC25622EB376D389B796E72BFCF47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A556BD2B424B818804466392A04203C /* Foundation.framework */; };
-		BFEE26CA74E2A6FB9B2F313C4ED1CC99 /* Pods-AmbrosusViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A94F6100A6C66223A4F464C992E3F87 /* Pods-AmbrosusViewer-dummy.m */; };
+		BFEE26CA74E2A6FB9B2F313C4ED1CC99 /* Pods-AmbrosusViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3360B6C720027B333BA98743F1C36AC8 /* Pods-AmbrosusViewer-dummy.m */; };
 		BFFD499039D0C1EFCC47CB5A57EB3BBB /* W3Web3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402A7473E81B3D4678F3ACA1A9FB5439 /* W3Web3.swift */; };
 		C0543E6D2440818B43F709F32C164E8F /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6CAA6A3BE4EE0886A9C1A9917B0F55 /* Promise.swift */; };
 		C1D540A5E8FB94F9B964F80E0918F390 /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = 791D44B3A46871AE17B9843FB0045979 /* aestab.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -343,7 +342,6 @@
 		CEE1D362B14DC10FAFFCB80B3BCF12D8 /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 296557E0FB5443599C9D9406BA0EBB04 /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEE59071D945DCD8BAFAD827422C953E /* Web3+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5298EE2FABC7363EDB1E9CCEAB6A8 /* Web3+Options.swift */; };
 		CF872C62922914E6438D4FE2E7E94706 /* crypto_scrypt_smix.h in Headers */ = {isa = PBXBuildFile; fileRef = 7640F04BCF9C7762F4F8FB589959EAF2 /* crypto_scrypt_smix.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CFCDCF4D64F62A30F9352B0947D3BB0F /* Pods-CoffeeLoyaltyApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E750817A84D4865ADF845AA2596619E3 /* Pods-CoffeeLoyaltyApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D143B6390234A17B708F6454923743BF /* ecdsa_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 6815C07FB722E1144AC4FC28C23DB5AD /* ecdsa_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D182DC77AB59C2FC5DFAAC733D992F1B /* num_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2231506EC04E1D9B9DE3DF0D7B9114B0 /* num_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D1D045BDFAF4F52CB59C88CE4D4781C9 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B08CCDABA5F3B1AB96D837DCE548B8B /* Promise.m */; };
@@ -379,13 +377,13 @@
 		E7FF9C2A268AC830B5163A7E82D15488 /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C66099BB77E1ADC9EAA06A7FECE18 /* afterlife.swift */; };
 		E825030A75573B77593D6FD3D28F8E92 /* BigInt-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E90984A8D661B81B66234C025947C9 /* BigInt-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E93191F46FB682A9A6DDFD7FC62A4CB6 /* Web3+Infura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0633B603BF9677F9F05AEEB5596F87BB /* Web3+Infura.swift */; };
-		E95F379C5109D9DA2B26CFAF4D64CE79 /* Pods-AmbrosusViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9FAA8409DC0103FF9AB8643022FD73 /* Pods-AmbrosusViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E95F379C5109D9DA2B26CFAF4D64CE79 /* Pods-AmbrosusViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA4C15386FEDF404010796D72193B7E /* Pods-AmbrosusViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9C4028874295841606B0BCBC818EF7F /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = C35EA4962BB174C28C6BBEF07A2DA70C /* AnyPromise.m */; };
 		EA1CE4AFA4B6AA3DE79DE17DE8C296F0 /* Web3+TransactionIntermediate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688C62DC198B27DA5C66123794E448F /* Web3+TransactionIntermediate.swift */; };
 		EAD5C4DD5A3C17C8C9D016AA94E45721 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A556BD2B424B818804466392A04203C /* Foundation.framework */; };
 		EB4958788A8EE901419B6BC152952F34 /* ERC888.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69387F053A9956FEFE48839E1E71E1 /* ERC888.swift */; };
 		EBD9CA81600EA7344EF6C66DDDE6F55A /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = E4ED568868FB6DE212C2AB2027D3EC89 /* sysendian.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EBF583C4A6A2C5E3CE915FBB57EAD425 /* Pods-AmbrosusBlockchainSDKTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 971ADA1A0FB18B2CE4056507AC9087C8 /* Pods-AmbrosusBlockchainSDKTests-dummy.m */; };
+		EBF583C4A6A2C5E3CE915FBB57EAD425 /* Pods-AmbrosusBlockchainSDKTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FF3862C0358AA8CB575557CCA60D5 /* Pods-AmbrosusBlockchainSDKTests-dummy.m */; };
 		EC4D7E0D13F711F86D7C7FF7912D2C88 /* crypto_scrypt_smix_sse2.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F7DC27B3FBF9CC37D2EEE87C810E19 /* crypto_scrypt_smix_sse2.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EC5C9DE56FE177B4E4458D4701477BE9 /* Provider.h in Headers */ = {isa = PBXBuildFile; fileRef = FC88DD34629C1EB53767340E66295D2E /* Provider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE6C4EFCE862F8B21197D1C1B1A7B81A /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13EBE3034C92BE4809810DE55D17C01 /* Hashable.swift */; };
@@ -394,7 +392,6 @@
 		EEED413F61A1E88824607AAF77750D4B /* base58.h in Headers */ = {isa = PBXBuildFile; fileRef = 923E24553E8EF00FF5508DDABC832030 /* base58.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF4DD5B853945DDC09A0637A819301FA /* SipHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A31CA46AE6C22B06835212EF0E918F /* SipHash-dummy.m */; };
 		EF5BA3A7B0AB27AD239736A1806EF5AE /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = 9115ACB45DB654010AEA03CD99CDAC24 /* ripemd160.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF963F7F5D17E5A247B019F995592C70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A556BD2B424B818804466392A04203C /* Foundation.framework */; };
 		EFC3D2DADBE909E2304FF6A21BC6A539 /* scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7356363F1CA799363BFD3BD785BC030C /* scrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFE9AF74369C4EDD44249BCA709299F1 /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927C34279B03846C932FD2EB939B895 /* IBAN.swift */; };
 		F09D919CEFBB6572E1C03687C2991060 /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8CF1CB4218CCCC2F451545B8EB79B8 /* sysendian.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -431,26 +428,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1003398F950E50A5A7B9855C63596DEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F1A01565254D60C276C790F42E037F2D;
-			remoteInfo = PromiseKit;
-		};
 		4940056B0C6EC3314890618A7CA9B113 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4621A6BFD739BF525B6FF777A5F4110C;
 			remoteInfo = keccak.c;
-		};
-		502F1AB31B5F14608B308B8A4D14E5E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6B77C4AB0D35BECF71E28C8718C0A54F;
-			remoteInfo = SipHash;
 		};
 		53A11899AAFBFFAC56476440E69A0E2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -459,27 +442,6 @@
 			remoteGlobalIDString = 2C4DF1F795F5187F6EF15DCCB353526F;
 			remoteInfo = BigInt;
 		};
-		5CE7D2172666E1ABD85D306EA1EF114A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F4191B95A668344607E998CABB1FCF72;
-			remoteInfo = AmbrosusSDK;
-		};
-		5FB9FFB09E7B3229F686C16EF0604A1A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 474601A20D2713226AAFB1B1CA939A2E;
-			remoteInfo = scrypt.c;
-		};
-		7C33D2909D6E232F68A60692E79F8108 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F7A141E71F069C3CD3694536D9A11703;
-			remoteInfo = web3swift.pod;
-		};
 		7F342E5DF99491F21A239A17BD0EBFB8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -487,26 +449,12 @@
 			remoteGlobalIDString = 6B77C4AB0D35BECF71E28C8718C0A54F;
 			remoteInfo = SipHash;
 		};
-		917D8FD3F48A841DC0BE23CFCBFC5005 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3EA7B164A3D671F11BE8902D5EAD9CF5;
-			remoteInfo = AmbrosusBlockchainSDK;
-		};
 		9A5FE3A5CCDA3ED2E69FEB3AC4D335F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4621A6BFD739BF525B6FF777A5F4110C;
 			remoteInfo = keccak.c;
-		};
-		A2168AEF12DF5AD2A7886F94ABA6F2A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C4DF1F795F5187F6EF15DCCB353526F;
-			remoteInfo = BigInt;
 		};
 		A2C055FD42B8EE96C800D88FF8663342 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -557,13 +505,6 @@
 			remoteGlobalIDString = 6B77C4AB0D35BECF71E28C8718C0A54F;
 			remoteInfo = SipHash;
 		};
-		CE5B30284FDB6D633BFD2FEC93EF43DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4621A6BFD739BF525B6FF777A5F4110C;
-			remoteInfo = keccak.c;
-		};
 		CE85780D509EC8C96FE9D551F2E612F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -572,13 +513,6 @@
 			remoteInfo = PromiseKit;
 		};
 		D92A01F105A69A4BA6E680D6158CB46E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 01265FC2476B536809D6E8F6C5787F7F;
-			remoteInfo = secp256k1.c;
-		};
-		DE3367561BFA6EA06AFB8E700BD73213 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -620,8 +554,8 @@
 		04B7AEA8C2F7E98CCA78D73F25B83D7D /* Web3+HttpProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+HttpProvider.swift"; path = "Sources/web3swift/Web3/Web3+HttpProvider.swift"; sourceTree = "<group>"; };
 		05141391BA455D1938C43BC356A76CCD /* EthereumKeystoreV3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EthereumKeystoreV3.swift; path = Sources/web3swift/KeystoreManager/EthereumKeystoreV3.swift; sourceTree = "<group>"; };
 		0633B603BF9677F9F05AEEB5596F87BB /* Web3+Infura.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+Infura.swift"; path = "Sources/web3swift/Web3/Web3+Infura.swift"; sourceTree = "<group>"; };
-		070E21AF6716206E2C0DB1BB764678C0 /* Pods_AmbrosusBlockchainSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AmbrosusBlockchainSDKTests.framework; path = "Pods-AmbrosusBlockchainSDKTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		071EB377155D2E00A2F6C38579038C96 /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
+		073DF335C14F5E2A5131EE2B89674E1F /* Pods-AmbrosusViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusViewer.release.xcconfig"; sourceTree = "<group>"; };
 		0795A8D13F95996493A44228ECEF31AB /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
 		0881AE3D5163D21A3D2D50D7AB713320 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
 		088C48AAB2C0AD015BFFDBF7569E8EB8 /* Web3+Instance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+Instance.swift"; path = "Sources/web3swift/Web3/Web3+Instance.swift"; sourceTree = "<group>"; };
@@ -630,7 +564,6 @@
 		0A5775A6013424FB17C2135B0344A75C /* BigInt-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BigInt-prefix.pch"; sourceTree = "<group>"; };
 		0A774066192E308EB92CC0747D3D7444 /* sha256.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha256.c; path = scrypt/sha256.c; sourceTree = "<group>"; };
 		0B148251C8F51452AF31B50563B71C7B /* TransactionInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TransactionInfo.m; sourceTree = "<group>"; };
-		0C474CD4BA062F755F40793BF19DEBCB /* Pods-AmbrosusViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AmbrosusViewer.modulemap"; sourceTree = "<group>"; };
 		0C67FA630E966CE4F935CFCD370B019E /* SecureData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SecureData.m; sourceTree = "<group>"; };
 		0C6BE7CB02483288F7CF284C72338552 /* crypto_scrypt_smix_sse2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypto_scrypt_smix_sse2.c; path = scrypt/crypto_scrypt_smix_sse2.c; sourceTree = "<group>"; };
 		0CC6C57679CE0EF824DBCA123FFEF10F /* AMBBarCodeScanManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBBarCodeScanManager.swift; sourceTree = "<group>"; };
@@ -638,6 +571,7 @@
 		0DD9CD8E67E22099CBF584C6364D3074 /* secp256k1.c-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "secp256k1.c-Info.plist"; sourceTree = "<group>"; };
 		0E4A19552EE60B93F83ECA71522DD1D8 /* RoundRobinProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RoundRobinProvider.h; sourceTree = "<group>"; };
 		0F9F02CDDFE42BAB7AF7608DDD553698 /* SipHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SipHash-umbrella.h"; sourceTree = "<group>"; };
+		0FBB8A92BCDEEF47158AAA800E8086C8 /* Pods-AmbrosusBlockchainSDKTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AmbrosusBlockchainSDKTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0FFFEA449460564D9BA150FB7FFC9BD8 /* Multiplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Multiplication.swift; path = sources/Multiplication.swift; sourceTree = "<group>"; };
 		101703F71712499391223ED40D69EDB9 /* AmbrosusSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AmbrosusSDK-dummy.m"; sourceTree = "<group>"; };
 		106A5B5A17041128AAA13D4A35B389AA /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
@@ -650,6 +584,7 @@
 		15F7DC27B3FBF9CC37D2EEE87C810E19 /* crypto_scrypt_smix_sse2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_scrypt_smix_sse2.h; path = scrypt/crypto_scrypt_smix_sse2.h; sourceTree = "<group>"; };
 		1644DBCF1C667B52B67B5AB800C3232B /* ripemd160.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ripemd160.c; sourceTree = "<group>"; };
 		17104725B4B7A7BDF150A0EC82CF1B57 /* ApiProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ApiProvider.m; sourceTree = "<group>"; };
+		17B7346848D981BD845915705D386CCC /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1833D73BFBF02D0FB5E2EBFE5AAB3250 /* web3swift.pod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = web3swift.pod.xcconfig; sourceTree = "<group>"; };
 		1841992F87D5DD60AC0DDA7C297415B9 /* ecdsa.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ecdsa.c; sourceTree = "<group>"; };
 		1851F6C7E435903E95449E2FCCC3F78B /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
@@ -660,7 +595,6 @@
 		1B15148E01BF3FB8826572A576F5FAE7 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aescrypt.c; sourceTree = "<group>"; };
 		1BDE4C7A3C590C4CD80B95DE8E448B71 /* scrypt.c-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "scrypt.c-Info.plist"; sourceTree = "<group>"; };
 		1BFEE4406CBD39AFF6FB5D0F890AF72C /* web3swift.pod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "web3swift.pod-dummy.m"; sourceTree = "<group>"; };
-		1CD3E67FB4625DE7EF4AB6B06EC39A12 /* AmbrosusSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AmbrosusSDK.framework; path = AmbrosusSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5061846225BAB8D1BEB4FE94779B59 /* Addition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Addition.swift; path = sources/Addition.swift; sourceTree = "<group>"; };
 		1EEDCAE772B2E8C88EFC398A272B829C /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = entropy.c; path = scrypt/entropy.c; sourceTree = "<group>"; };
 		1F200821DD22081B86D5BCB3889E6C15 /* crypto_scrypt_smix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypto_scrypt_smix.c; path = scrypt/crypto_scrypt_smix.c; sourceTree = "<group>"; };
@@ -673,9 +607,9 @@
 		2231506EC04E1D9B9DE3DF0D7B9114B0 /* num_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = num_impl.h; path = secp256k1/num_impl.h; sourceTree = "<group>"; };
 		249608F15B6D7748FCAC06FB0A7F1BB1 /* W3Eth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3Eth.swift; path = Sources/web3swift/ObjectiveC/W3Eth.swift; sourceTree = "<group>"; };
 		2527963BC1DD2444BDAA44296D021E5C /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
+		25D818C9EF0FF4D3758472B56515745E /* AmbrosusBlockchainSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AmbrosusBlockchainSDK.framework; path = AmbrosusBlockchainSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2651F613349FBD3F702A8EEAB7D3B801 /* EthereumAddress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EthereumAddress.swift; path = Sources/web3swift/KeystoreManager/EthereumAddress.swift; sourceTree = "<group>"; };
-		2669C5AACAD1BAE927EB9EC27C18EB39 /* Pods_CoffeeLoyaltyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoffeeLoyaltyApp.framework; path = "Pods-CoffeeLoyaltyApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		267E8C44FDE44EA3921918CD3CBA4E5D /* Pods-AmbrosusBlockchainSDKTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AmbrosusBlockchainSDKTests.modulemap"; sourceTree = "<group>"; };
+		2691F18A3A5980F5A6AF86C61D3C9731 /* keccak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = keccak.framework; path = keccak.c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F1245BF543B3B1D92294E5CE2EC448 /* Signature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Signature.h; sourceTree = "<group>"; };
 		270B971B32D0D91599D29E7B385ABD97 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Sources/web3swift/Encryption/Cryptor/Utilities.swift; sourceTree = "<group>"; };
 		277556FA409015E6992D097D4EEA0A66 /* NSRegularExpressionExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSRegularExpressionExtension.swift; path = Sources/web3swift/Convenience/NSRegularExpressionExtension.swift; sourceTree = "<group>"; };
@@ -693,7 +627,6 @@
 		2EAB1064AF2A650C41591F388345BDC4 /* secp256k1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1.h; path = secp256k1/include/secp256k1.h; sourceTree = "<group>"; };
 		2EDA8AF408BAEF48C8DEAD0A8932507C /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Random.swift; path = Sources/web3swift/Encryption/Cryptor/Random.swift; sourceTree = "<group>"; };
 		2F953E784EA485D4A3B0B16B231CDAC5 /* Web3+JsonRpcRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+JsonRpcRequest.swift"; path = "Sources/web3swift/Web3/Web3+JsonRpcRequest.swift"; sourceTree = "<group>"; };
-		2F9FAA8409DC0103FF9AB8643022FD73 /* Pods-AmbrosusViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AmbrosusViewer-umbrella.h"; sourceTree = "<group>"; };
 		3044387EDBCE3AF11B06CE5237621A0D /* EthereumApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EthereumApi.swift; path = Sources/web3swift/Ethereum/EthereumApi.swift; sourceTree = "<group>"; };
 		3081A76429B33C81B4F1EB63EFDF7589 /* bip32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bip32.h; sourceTree = "<group>"; };
 		30FDC724A69FD84CEE78FB6507DC5893 /* group_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = group_impl.h; path = secp256k1/group_impl.h; sourceTree = "<group>"; };
@@ -701,9 +634,9 @@
 		31A1C3863BEF75CA70D1D1268C21E5EC /* RIPEMD160+StackOveflow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RIPEMD160+StackOveflow.swift"; path = "Sources/web3swift/Convenience/RIPEMD160+StackOveflow.swift"; sourceTree = "<group>"; };
 		32C0FD6DE445F667A133CEBA9E25A81F /* BigInt-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BigInt-dummy.m"; sourceTree = "<group>"; };
 		32F70A97320CB5174F3B6C94158B7122 /* Web3+Personal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+Personal.swift"; path = "Sources/web3swift/Web3/Web3+Personal.swift"; sourceTree = "<group>"; };
+		3360B6C720027B333BA98743F1C36AC8 /* Pods-AmbrosusViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AmbrosusViewer-dummy.m"; sourceTree = "<group>"; };
 		3442ADDD1A7E177931F4D51A091693C8 /* ecmult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult.h; path = secp256k1/ecmult.h; sourceTree = "<group>"; };
 		34C4FDD583C6903E8F95E22244BA159A /* web3swift.pod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "web3swift.pod-Info.plist"; sourceTree = "<group>"; };
-		34FD5F1BE19DBF42632CA97DFFDFF63E /* Pods-CoffeeLoyaltyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoffeeLoyaltyApp.release.xcconfig"; sourceTree = "<group>"; };
 		35F1904A33FA11A6CAA088DBEC89B05D /* CryptoExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoExtensions.swift; path = Sources/web3swift/Convenience/CryptoExtensions.swift; sourceTree = "<group>"; };
 		3667FD96E1941A78191902EDFD5090A8 /* secp256k1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
 		37056B1CC85A09276E95A6D422CCBFB9 /* crypto_scrypt-nosse.c */ = {isa = PBXFileReference; includeInIndex = 1; path = "crypto_scrypt-nosse.c"; sourceTree = "<group>"; };
@@ -712,17 +645,22 @@
 		38BE5044BEA1B134B2CBA4205E9D5DDB /* AMBMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBMetadata.swift; sourceTree = "<group>"; };
 		38DA6B0F700818D2434420295687FC86 /* scrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = scrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		394EC3241F727752A26FC83828E0213C /* BIP32Keystore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BIP32Keystore.swift; path = Sources/web3swift/KeystoreManager/BIP32Keystore.swift; sourceTree = "<group>"; };
+		3950D76CF291EF1B868F2FE6FE3EB2ED /* Pods-AmbrosusBlockchainSDKTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AmbrosusBlockchainSDKTests-umbrella.h"; sourceTree = "<group>"; };
 		39A91FD343C92B4FB2DB3646A351A715 /* W3Keystore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3Keystore.swift; path = Sources/web3swift/ObjectiveC/W3Keystore.swift; sourceTree = "<group>"; };
 		3A0CE12AF21004F69C1C4E28291420B2 /* FallbackProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FallbackProvider.m; sourceTree = "<group>"; };
 		3ABF09D33B84135D4BCC7481EE341637 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/web3swift/Encryption/Cryptor/HMAC.swift; sourceTree = "<group>"; };
+		3C04AFC33E2752812770FF62839391C0 /* SipHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SipHash.framework; path = SipHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C2FF3862C0358AA8CB575557CCA60D5 /* Pods-AmbrosusBlockchainSDKTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AmbrosusBlockchainSDKTests-dummy.m"; sourceTree = "<group>"; };
 		3C36B11D16BBB4CC876A1E6BA092E9E0 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aeskey.c; sourceTree = "<group>"; };
+		3CE24832B4519F62247C728FCCF1F988 /* Pods-AmbrosusBlockchainSDKTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AmbrosusBlockchainSDKTests-frameworks.sh"; sourceTree = "<group>"; };
 		3D7289486C267512E9D7E3751BDF4B4E /* Primitive Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Primitive Types.swift"; path = "SipHash/Primitive Types.swift"; sourceTree = "<group>"; };
 		3D929610839D3F14DEC749583E6171D6 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		3DA4C15386FEDF404010796D72193B7E /* Pods-AmbrosusViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AmbrosusViewer-umbrella.h"; sourceTree = "<group>"; };
 		3E42790D64BAEF857FB7B401D70227D0 /* secp256k1.table */ = {isa = PBXFileReference; includeInIndex = 1; path = secp256k1.table; sourceTree = "<group>"; };
 		3E760CBF9E45B227B0461DD5C4A9D464 /* ABIv2ParameterTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ABIv2ParameterTypes.swift; path = Sources/web3swift/ABIv2/ABIv2ParameterTypes.swift; sourceTree = "<group>"; };
 		3FE9A5FB6D0D3186AD96D3013295CFE0 /* SecureData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SecureData.h; sourceTree = "<group>"; };
 		402A7473E81B3D4678F3ACA1A9FB5439 /* W3Web3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3Web3.swift; path = Sources/web3swift/ObjectiveC/W3Web3.swift; sourceTree = "<group>"; };
-		4084A2427CB9C0E66C2F7AEBA3EFA64A /* Pods-AmbrosusViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusViewer.release.xcconfig"; sourceTree = "<group>"; };
+		407A7D04DB288B3CE322156A221A93CD /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BigInt.framework; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D77A98ACF926DFFA9ECF25C75F1B3E /* bignum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bignum.h; sourceTree = "<group>"; };
 		41ECAB611FF675CA138DAC888CE2EBF9 /* Address.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
 		41F2788F44FEE273B4A8F3AA6CC664A4 /* AMBDataHexExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBDataHexExtension.swift; path = AmbrosusSDK/AMBDataHexExtension.swift; sourceTree = "<group>"; };
@@ -733,16 +671,18 @@
 		436B0FFC713DFD4538BA6A85CC1C1B72 /* W3TransactionIntermediate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3TransactionIntermediate.swift; path = Sources/web3swift/ObjectiveC/W3TransactionIntermediate.swift; sourceTree = "<group>"; };
 		43C6596EC205AE0A6CB5C184E569F1E0 /* scalar_8x32_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_8x32_impl.h; path = secp256k1/scalar_8x32_impl.h; sourceTree = "<group>"; };
 		448A93B038AC9E19F06CEBF35E7A73F8 /* humansize.c */ = {isa = PBXFileReference; includeInIndex = 1; name = humansize.c; path = scrypt/humansize.c; sourceTree = "<group>"; };
+		4686CD113024A7F17CB8F5B655A8DFDD /* web3swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = web3swift.framework; path = web3swift.pod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B442A13046BB6DA86921A92A1ECCB8 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
 		4711D14C09AA6A56A6E74B52B2F69BEE /* scalar_low_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_low_impl.h; path = secp256k1/scalar_low_impl.h; sourceTree = "<group>"; };
 		4724F72DD290029B58B8F208ACE652DB /* hang.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = hang.swift; path = Sources/hang.swift; sourceTree = "<group>"; };
+		485047AE5036ECE752DF52FA94BFB61F /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusBlockchainSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		487DE5868333AA96DF88DC5342A3CCD2 /* Bitwise Ops.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bitwise Ops.swift"; path = "sources/Bitwise Ops.swift"; sourceTree = "<group>"; };
 		48F098E31D16B112F5AA8E74E38D9C12 /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
 		4A556BD2B424B818804466392A04203C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4A6968D2425658282EBF9FB7D870D0DA /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
-		4A94F6100A6C66223A4F464C992E3F87 /* Pods-AmbrosusViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AmbrosusViewer-dummy.m"; sourceTree = "<group>"; };
 		4B94B44EA252401BD46AF6BEC26D2D2C /* LogEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogEvent.swift; path = Sources/LogEvent.swift; sourceTree = "<group>"; };
 		4BBB4F6F77C126C710C0ECB07FA2A7D1 /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
+		4BC5FF42313BAD6EEE6CB3E51115C3F1 /* Pods-AmbrosusViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AmbrosusViewer.modulemap"; sourceTree = "<group>"; };
 		4C094D91BC555ECC00990525C0263081 /* Floating Point Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Floating Point Conversion.swift"; path = "sources/Floating Point Conversion.swift"; sourceTree = "<group>"; };
 		4C694C394FBD3021736CD397138B7238 /* AMBDataParserHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBDataParserHelper.swift; sourceTree = "<group>"; };
 		4CD42DAA6FD0FF6CDB50A33DF3801FF6 /* keccak.c-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "keccak.c-Info.plist"; sourceTree = "<group>"; };
@@ -753,12 +693,12 @@
 		4EF7DEA047084F3224D8B00AC19A2848 /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = secp256k1/hash.h; sourceTree = "<group>"; };
 		4F18E8EB1C9E8C9C3E0C8EF47C6E4208 /* Hash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Hash.m; sourceTree = "<group>"; };
 		4F1C7B6368975421973CAC6323F136DE /* num_gmp_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = num_gmp_impl.h; path = secp256k1/num_gmp_impl.h; sourceTree = "<group>"; };
+		50D624C7D29BF83C87E8AD8E7FFF8525 /* Pods-AmbrosusViewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AmbrosusViewer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		514089A4EE25654CEFC7FCF33001E167 /* crypto_scrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt.h; sourceTree = "<group>"; };
 		52D9AE7FF294B97AE2267B1E343FAF86 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromiseKit.modulemap; sourceTree = "<group>"; };
 		53011753DC17D4EBEAED86AEAE45E132 /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = Sources/fwd.h; sourceTree = "<group>"; };
 		54255FAD5517273A30C8499FBFBAF752 /* aes_modes.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aes_modes.c; sourceTree = "<group>"; };
 		550F2CC7AB1AE84A1AC243EE6C79E856 /* Web3+BrowserFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+BrowserFunctions.swift"; path = "Sources/web3swift/HookedFunctions/Web3+BrowserFunctions.swift"; sourceTree = "<group>"; };
-		5553EC67F58099AA79917016343CCD64 /* Pods-CoffeeLoyaltyApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoffeeLoyaltyApp-Info.plist"; sourceTree = "<group>"; };
 		55AD6E4D7A70A0C0FB558C0A56480CF2 /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
 		55EFBFC01395BCA111DFD7004E4E41ED /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = Sources/web3swift/Migration.swift; sourceTree = "<group>"; };
 		56CE55BE51DBE9BD8D1DBD8E778AEA7A /* AMBDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBDataStore.swift; path = AmbrosusSDK/AMBDataStore.swift; sourceTree = "<group>"; };
@@ -787,7 +727,6 @@
 		5F7BC64F2473C9859C68453FB2AC4AAF /* BlockInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BlockInfo.m; sourceTree = "<group>"; };
 		602ABD737E898496F5A5664C85F1C0C6 /* AMBLocationModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBLocationModel.swift; sourceTree = "<group>"; };
 		6102E3279EE2B4E29FE738B7DA1DA8AD /* UInt256.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt256.swift; path = Sources/web3swift/Convenience/UInt256.swift; sourceTree = "<group>"; };
-		6179F1425D92B3FB97B3CD9F5F08B918 /* Pods-AmbrosusViewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AmbrosusViewer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		62650BE22443D8756794330D54AB4415 /* base58.c */ = {isa = PBXFileReference; includeInIndex = 1; path = base58.c; sourceTree = "<group>"; };
 		62E4FD405EC26BD47449DEE5B85422BD /* Web3+Wallet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+Wallet.swift"; path = "Sources/web3swift/HookedFunctions/Web3+Wallet.swift"; sourceTree = "<group>"; };
 		63612C5C46888C3587954ECD0333D1F1 /* InfuraProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InfuraProvider.h; sourceTree = "<group>"; };
@@ -796,8 +735,8 @@
 		649C2FC8B14C1138BE557764CA09234D /* field_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_impl.h; path = secp256k1/field_impl.h; sourceTree = "<group>"; };
 		64F7886E0A9043EEAF1F6747802E12EE /* asprintf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asprintf.h; path = scrypt/asprintf.h; sourceTree = "<group>"; };
 		65003AD01EAF0C86C3F49D162F520E27 /* BigNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BigNumber.h; sourceTree = "<group>"; };
+		65B9E28CDB87C0E6EDEAD91EBB72F503 /* AmbrosusSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AmbrosusSDK.framework; path = AmbrosusSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6615D72086464CFA44A23D3F17959262 /* scalar_4x64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_4x64.h; path = secp256k1/scalar_4x64.h; sourceTree = "<group>"; };
-		661D09A916E60B2EFE80E24378F58A14 /* scrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = scrypt.framework; path = scrypt.c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6626329373FDAE26950B3C5D3CE8B6FF /* AMBScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBScanViewController.swift; sourceTree = "<group>"; };
 		66684654CDFCEAD39812D95D0274AAF4 /* W3Wallet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3Wallet.swift; path = Sources/web3swift/ObjectiveC/W3Wallet.swift; sourceTree = "<group>"; };
 		67457D7BE2D130E7F712814A32104FE9 /* secp256k1.c */ = {isa = PBXFileReference; includeInIndex = 1; path = secp256k1.c; sourceTree = "<group>"; };
@@ -815,6 +754,7 @@
 		6DB8E01520212E3CF9DFEB63B0F5355A /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
 		6E4C66099BB77E1ADC9EAA06A7FECE18 /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
 		6E75FA5C3B4072D5BB194AC67509282D /* Web3+EventParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+EventParser.swift"; path = "Sources/web3swift/Web3/Web3+EventParser.swift"; sourceTree = "<group>"; };
+		6F02E49758A9E594E0277173842DA67E /* scrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = scrypt.framework; path = scrypt.c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F06D8C2D57986A50061D90B6B486B81 /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
 		6F7A6889E9B4390BAF660C5B47CECCFA /* Account.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		6FC126ABC2AF54A523E1A6FE744FA95C /* ecmult_const_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_const_impl.h; path = secp256k1/ecmult_const_impl.h; sourceTree = "<group>"; };
@@ -836,6 +776,7 @@
 		791D44B3A46871AE17B9843FB0045979 /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
 		79CEAED9FDAECCFD936471A1E8B07A22 /* Batching.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Batching.swift; path = Sources/web3swift/Web3/Batching.swift; sourceTree = "<group>"; };
 		79E9D2F0D9FA9BF1DA0B0E7F8A282F57 /* ABIv2Decoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ABIv2Decoding.swift; path = Sources/web3swift/ABIv2/ABIv2Decoding.swift; sourceTree = "<group>"; };
+		79EBA2FCD36C505D28129A56C4EE2438 /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusBlockchainSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A4C9E77439201B6CD5A7A4CF5E62207 /* AmbrosusSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AmbrosusSDK.xcconfig; sourceTree = "<group>"; };
 		7A75DB45E7A138F43F9A98795BBDA020 /* BigInt-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BigInt-Info.plist"; sourceTree = "<group>"; };
 		7B08CCDABA5F3B1AB96D837DCE548B8B /* Promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
@@ -844,8 +785,6 @@
 		7C2E7E123F736F7A675A85BD84D18729 /* AccountsGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccountsGenerator.swift; path = AmbrosusBlockchainSDK/Blockchain/AccountsGenerator.swift; sourceTree = "<group>"; };
 		7CF277A5ED931E8440CAA6F5A3E77B96 /* Promise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
 		7D412571696B874FDF7A1B581DD4A817 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/web3swift/Convenience/Array+Extension.swift"; sourceTree = "<group>"; };
-		7D575C7DCA2154BAE1270ABC81FF9216 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D88408663F23FC490C27B65638428A9 /* Pods-CoffeeLoyaltyApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoffeeLoyaltyApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7DC55842504C146BECD182060FA6B138 /* Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Codable.swift; path = sources/Codable.swift; sourceTree = "<group>"; };
 		7DECF88E592DE4FA07ED4625CECC5400 /* FallbackProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FallbackProvider.h; sourceTree = "<group>"; };
 		7E19A4C5D4171B8C1B4BB8D84A562280 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
@@ -855,6 +794,7 @@
 		800A91B486AD893441355BAE9173FCA9 /* W3Provider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3Provider.swift; path = Sources/web3swift/ObjectiveC/W3Provider.swift; sourceTree = "<group>"; };
 		8035F86C4AE7DBBFA73AAEFD709FE3B6 /* keccak.c-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "keccak.c-umbrella.h"; sourceTree = "<group>"; };
 		8079DCA32AC0764AEFEBE21A2A17B0F2 /* BigInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BigInt.swift; path = sources/BigInt.swift; sourceTree = "<group>"; };
+		809B037B505F4B63213CEE7AB7F3B7B2 /* Pods_AmbrosusViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AmbrosusViewer.framework; path = "Pods-AmbrosusViewer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DB6F477885A0E2CB1505E1C37A8915 /* pbkdf2.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pbkdf2.c; sourceTree = "<group>"; };
 		824E6C284EDA1B5825C23F3F3E57816E /* field_5x52.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52.h; path = secp256k1/field_5x52.h; sourceTree = "<group>"; };
 		82F92CF12955B518F2DF2DD6841214D3 /* BloomFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BloomFilter.swift; path = Sources/web3swift/Transaction/BloomFilter.swift; sourceTree = "<group>"; };
@@ -869,18 +809,16 @@
 		88974E4608E1B753EC106FDE630CC0A1 /* bip39.c */ = {isa = PBXFileReference; includeInIndex = 1; path = bip39.c; sourceTree = "<group>"; };
 		8926222B2CB098F0B2F74EB681EA2B87 /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
 		895DEB488E2EA65003F6EFC2BB895A67 /* Division.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Division.swift; path = sources/Division.swift; sourceTree = "<group>"; };
-		89FD4DF1850FC1BA86C97F7A67471A00 /* secp256k1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = secp256k1.framework; path = secp256k1.c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89EADCF2442264B917C4009059598FBD /* Pods-AmbrosusViewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusViewer-Info.plist"; sourceTree = "<group>"; };
 		8AE7C764FD2536434BB7A21D26AFE9D1 /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
 		8B1A555EA339B971E28B4FD1F65187B8 /* Transaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
 		8C35FBA1DF2206C994681582ED875C9D /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
 		8C49417C54BF3F438A9276B70B958C55 /* sha3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sha3.c; sourceTree = "<group>"; };
-		8C54675A4B1E1FAFD3E5CB9748B4F6F2 /* Pods-AmbrosusViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		8CA0E5E28A26ADFCD300D3E33B2AF1FB /* AmbrosusBlockchainSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AmbrosusBlockchainSDK-prefix.pch"; sourceTree = "<group>"; };
 		8D6FA379225415CB7C4183DB676E3043 /* BIP39.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BIP39.swift; path = Sources/web3swift/KeystoreManager/BIP39.swift; sourceTree = "<group>"; };
 		8D701EE2B94E9793AAE563B690FFCD34 /* AmbrosusBlockchainSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AmbrosusBlockchainSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8F8A2CF4EE2F4BE475541881271B2A0C /* RandomUInt64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomUInt64.swift; path = SipHash/RandomUInt64.swift; sourceTree = "<group>"; };
 		8FC958CFEBA9067ABAF0890041F78749 /* secp256k1_main.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1_main.h; path = secp256k1/secp256k1_main.h; sourceTree = "<group>"; };
-		8FCA9218DDFE91471E635AF987067152 /* Pods-CoffeeLoyaltyApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoffeeLoyaltyApp-dummy.m"; sourceTree = "<group>"; };
 		9115ACB45DB654010AEA03CD99CDAC24 /* ripemd160.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
 		91FEB603F352700179335527834C78F5 /* pbkdf2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pbkdf2.h; sourceTree = "<group>"; };
 		923E24553E8EF00FF5508DDABC832030 /* base58.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = base58.h; sourceTree = "<group>"; };
@@ -888,7 +826,6 @@
 		9477373973517B0AF4F03E9263F5F1DD /* BlockExplorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockExplorer.swift; path = Sources/web3swift/Deprecated/BlockExplorer.swift; sourceTree = "<group>"; };
 		94D4FFE116154E3A56D69C93A6A09FB0 /* warnp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = warnp.h; path = scrypt/warnp.h; sourceTree = "<group>"; };
 		9642626AA6CBCE12554F2C21CBF2C836 /* AmbrosusBlockchainService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmbrosusBlockchainService.swift; path = AmbrosusBlockchainSDK/Blockchain/AmbrosusBlockchainService.swift; sourceTree = "<group>"; };
-		971ADA1A0FB18B2CE4056507AC9087C8 /* Pods-AmbrosusBlockchainSDKTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AmbrosusBlockchainSDKTests-dummy.m"; sourceTree = "<group>"; };
 		97DCF9D6084D23A57C2632908922E139 /* DerivedKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DerivedKey.swift; path = Sources/web3swift/Encryption/DerivedKey.swift; sourceTree = "<group>"; };
 		97FAC82426B1035F0E0DBB1F61A9E597 /* sha3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
 		98DF63BD5D70713D25A4828FF795FC5E /* AbstractKeystore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AbstractKeystore.swift; path = Sources/web3swift/KeystoreManager/AbstractKeystore.swift; sourceTree = "<group>"; };
@@ -898,11 +835,8 @@
 		999FDEAF9B326DA0CB6036E46FDE8D0C /* SolidityTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolidityTypes.swift; path = Sources/web3swift/Transactions/SolidityTypes.swift; sourceTree = "<group>"; };
 		99C9B2A17E4E84D23935B297C1229035 /* secp256k1.c-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "secp256k1.c-dummy.m"; sourceTree = "<group>"; };
 		9A773A19522FA8698237001E1A3EC18A /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
-		9A8C4529978B4C6F9467E33806CACFC8 /* Pods-CoffeeLoyaltyApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CoffeeLoyaltyApp.modulemap"; sourceTree = "<group>"; };
-		9AFB5CFEE144E07ADD9D4990F2A8B7C5 /* Pods-CoffeeLoyaltyApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoffeeLoyaltyApp-frameworks.sh"; sourceTree = "<group>"; };
 		9B0ECF3633B470B5571F832E58BCA44D /* Provider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Provider.m; sourceTree = "<group>"; };
 		9B341148046E8A7F18E8272C445A23A7 /* field_10x26_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_10x26_impl.h; path = secp256k1/field_10x26_impl.h; sourceTree = "<group>"; };
-		9B3A7B2DF69FF6183CC42C13D3A3A475 /* Pods-AmbrosusViewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AmbrosusViewer-frameworks.sh"; sourceTree = "<group>"; };
 		9B6CAA6A3BE4EE0886A9C1A9917B0F55 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
 		9CF21FB181383C5F24E18F4CB0B17EB0 /* secp256k1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = secp256k1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D16ADDBE1BD86C4064CF6D193DA818C /* sha2.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sha2.c; sourceTree = "<group>"; };
@@ -919,7 +853,6 @@
 		A3574960DD329AC3E44E69FBA7FF7025 /* scrypt.c-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "scrypt.c-prefix.pch"; sourceTree = "<group>"; };
 		A369611414A27DFF66F7CA25EAD0F75A /* AMBAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBAsset.swift; sourceTree = "<group>"; };
 		A374EEF56664FD6480453EC26293F080 /* LibSecp256k1Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LibSecp256k1Extension.swift; path = Sources/web3swift/Convenience/LibSecp256k1Extension.swift; sourceTree = "<group>"; };
-		A3F7799FBBA43776CDDB536B8F7D6D0B /* Pods-CoffeeLoyaltyApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoffeeLoyaltyApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		A40115C00519DF95495938C4BA39C734 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
 		A41B225D78439FB3C9EE892AFDFA7435 /* rand.c */ = {isa = PBXFileReference; includeInIndex = 1; path = rand.c; sourceTree = "<group>"; };
 		A4CF560F565185048180EFB49A92F941 /* Int+Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Sequence.swift"; path = "Sources/web3swift/Convenience/Int+Sequence.swift"; sourceTree = "<group>"; };
@@ -960,7 +893,6 @@
 		BA5B1488B250BC35402E7F5304B92F72 /* BigInt.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BigInt.modulemap; sourceTree = "<group>"; };
 		BB3F9B97C6F7264839D102C330ADED8E /* EIP681.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EIP681.swift; path = Sources/web3swift/Utils/EIP681.swift; sourceTree = "<group>"; };
 		BB5675BB400CBB58500E3A3CD5553EE7 /* SipHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SipHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB82A5B48E5D65A89C35BF865ACEC5B9 /* Pods-AmbrosusBlockchainSDKTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusBlockchainSDKTests-Info.plist"; sourceTree = "<group>"; };
 		BBD5E5A6F194D44F53BF73E816A12D2D /* Web3+Structures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+Structures.swift"; path = "Sources/web3swift/Web3/Web3+Structures.swift"; sourceTree = "<group>"; };
 		BC86B42C8CF968B24CC0B3148C8306D6 /* RoundRobinProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RoundRobinProvider.m; sourceTree = "<group>"; };
 		BCF19EA3E647FBF743DC126E5334FFDD /* RLPSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RLPSerialization.m; sourceTree = "<group>"; };
@@ -974,24 +906,21 @@
 		C13EBE3034C92BE4809810DE55D17C01 /* Hashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hashable.swift; path = sources/Hashable.swift; sourceTree = "<group>"; };
 		C17B540A678C1DAABD1433C5B0C5C103 /* AMBAssetInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBAssetInfo.swift; sourceTree = "<group>"; };
 		C214B0DCDCE4C90D51C392DCCC84D26E /* W3Personal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3Personal.swift; path = Sources/web3swift/ObjectiveC/W3Personal.swift; sourceTree = "<group>"; };
-		C2601DFD4C919A3A54F655C112C6633B /* keccak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = keccak.framework; path = keccak.c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35EA4962BB174C28C6BBEF07A2DA70C /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
 		C378BF8910C5C9D9DD52AF9DCE49E7B3 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		C3EA68900EC38FF4660EE3ADC8768EEA /* Pods-AmbrosusViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		C4408B9E6DE39928144A6D661F487CE8 /* NetworkProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkProvider.swift; path = Sources/web3swift/Network/NetworkProvider.swift; sourceTree = "<group>"; };
 		C4893D887F6CADCDF2338DE90888113F /* W3UInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3UInt.swift; path = Sources/web3swift/ObjectiveC/W3UInt.swift; sourceTree = "<group>"; };
 		C4BAD8815AFB12345D44DF960CAA8873 /* field_5x52_int128_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52_int128_impl.h; path = secp256k1/field_5x52_int128_impl.h; sourceTree = "<group>"; };
-		C4E35D7C475017C41F192023F9F20936 /* AmbrosusBlockchainSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AmbrosusBlockchainSDK.framework; path = AmbrosusBlockchainSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C60BD6E752D94449740D8EC25C084509 /* SipHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SipHash.framework; path = SipHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C648066BB91A0A430800724EB1566AB7 /* crypto_scrypt-ref.c */ = {isa = PBXFileReference; includeInIndex = 1; path = "crypto_scrypt-ref.c"; sourceTree = "<group>"; };
-		C699BF9A3D1531D7232B51801783F4CD /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusBlockchainSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6D04D5563A5669C0138799185D099EE /* Cryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptor.swift; path = Sources/web3swift/Encryption/Cryptor/Cryptor.swift; sourceTree = "<group>"; };
 		C6ECF679E5669C1E20E181C61E8EFBA1 /* ContractProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContractProtocol.swift; path = Sources/web3swift/Contract/ContractProtocol.swift; sourceTree = "<group>"; };
 		C6FBC0EB35025D9EADC62653A4D3906E /* RegEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RegEx.m; sourceTree = "<group>"; };
 		C750E2C71CE17911594BEDED90DAFBB1 /* AmbrosusSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AmbrosusSDK-Info.plist"; sourceTree = "<group>"; };
+		C76728B985292582B227156C13DDFD65 /* Pods-AmbrosusBlockchainSDKTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusBlockchainSDKTests-Info.plist"; sourceTree = "<group>"; };
 		C78196DD85B75C5F863B506AC9C9B8F6 /* Integer Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Integer Conversion.swift"; path = "sources/Integer Conversion.swift"; sourceTree = "<group>"; };
 		C7E581B7F259EBF1FC70B4A88601B2A0 /* warnp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = warnp.c; path = scrypt/warnp.c; sourceTree = "<group>"; };
 		C82B991E0220E0BA2BEF73F948CDBE99 /* String Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String Conversion.swift"; path = "sources/String Conversion.swift"; sourceTree = "<group>"; };
-		C91EB13ADD9C07777EFB63A1284D5004 /* web3swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = web3swift.framework; path = web3swift.pod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93176D2B2AB4C4CE6758B7899BB0F43 /* web3swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = web3swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AD072C7434491EABA35C72384B57E9 /* ERC20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ERC20.swift; path = Sources/web3swift/Contracts/ERC20.swift; sourceTree = "<group>"; };
 		C9DF9DB0B4FA86CA9B58871C6711CE78 /* JsonRpcProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JsonRpcProvider.h; sourceTree = "<group>"; };
@@ -999,16 +928,16 @@
 		CACBE76C077519AB71D7D298C406C09F /* ABIv2Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ABIv2Parsing.swift; path = Sources/web3swift/ABIv2/ABIv2Parsing.swift; sourceTree = "<group>"; };
 		CB3ED90DFE60920514D623D7A193173E /* W3Contracts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3Contracts.swift; path = Sources/web3swift/ObjectiveC/W3Contracts.swift; sourceTree = "<group>"; };
 		CBA211C8F6DBC4472C86843EA9F185FB /* Guides.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guides.swift; path = Sources/web3swift/Guides.swift; sourceTree = "<group>"; };
+		CBFEBAA42BEB81BE124B5CC50AD1953A /* Pods-AmbrosusBlockchainSDKTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusBlockchainSDKTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CC8CF1CB4218CCCC2F451545B8EB79B8 /* sysendian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sysendian.h; path = scrypt/sysendian.h; sourceTree = "<group>"; };
 		CDE22AB589F0E9D7EF44AF481508CD63 /* entropy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = scrypt/entropy.h; sourceTree = "<group>"; };
 		CE1D93F122F94CA84FFFE6E3A62686D8 /* Guarantee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guarantee.swift; path = Sources/Guarantee.swift; sourceTree = "<group>"; };
 		CE3618140ED380D4A66E09C43AF17369 /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/web3swift/Encryption/Cryptor/Updatable.swift; sourceTree = "<group>"; };
-		CF60F43D980C7120D0A7CE9BA2376C14 /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BigInt.framework; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE92C24FA9A1C360FA712F01DBDF0D6 /* Pods-AmbrosusViewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusViewer-acknowledgements.plist"; sourceTree = "<group>"; };
 		D151D4AB45A3B71F47F51B1BF32B0775 /* Hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Hash.h; sourceTree = "<group>"; };
 		D17BC1923D46B8F4AD151EDD33D5005F /* keccak.c.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = keccak.c.modulemap; sourceTree = "<group>"; };
 		D236072BD11E14A48681233DB0716A06 /* PlainKeystore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlainKeystore.swift; path = Sources/web3swift/KeystoreManager/PlainKeystore.swift; sourceTree = "<group>"; };
 		D277571E638ECA0D69989C3750FDD819 /* W3JsonRpc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = W3JsonRpc.swift; path = Sources/web3swift/ObjectiveC/W3JsonRpc.swift; sourceTree = "<group>"; };
-		D2A7E9FC9CEC9F2528020F197DFFE221 /* Pods-AmbrosusBlockchainSDKTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AmbrosusBlockchainSDKTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D456658720E3961A24BDACBADE4E2264 /* EthereumFilterEncodingExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EthereumFilterEncodingExtensions.swift; path = Sources/web3swift/Contract/EthereumFilterEncodingExtensions.swift; sourceTree = "<group>"; };
 		D5A8CB99917B3D710731F5DC6AABC5CE /* ComparisonExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComparisonExtensions.swift; path = Sources/web3swift/Contract/ComparisonExtensions.swift; sourceTree = "<group>"; };
 		D6F40B96FFAC7ED32D34EB51772814D7 /* BigInt.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BigInt.xcconfig; sourceTree = "<group>"; };
@@ -1016,7 +945,6 @@
 		D8B35F89BB8E8B4EFAD72B67F3B8E7AF /* scalar_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_impl.h; path = secp256k1/scalar_impl.h; sourceTree = "<group>"; };
 		D8E486D4427BA5159E03AEF79CC36644 /* ecmult_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_impl.h; path = secp256k1/ecmult_impl.h; sourceTree = "<group>"; };
 		D8EF3F36D33B80E47418BAEAF50AF037 /* HDPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HDPath.swift; path = Sources/web3swift/KeystoreManager/HDPath.swift; sourceTree = "<group>"; };
-		DAAE56CC4D58CAEF04344A4941F88A54 /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmbrosusBlockchainSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		DAB7273FA9CC5E7E41ADF39984BA6636 /* EtherscanProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EtherscanProvider.m; sourceTree = "<group>"; };
 		DAFC78891DC2F5DD46104D6C61F9AC53 /* firstly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = firstly.swift; path = Sources/firstly.swift; sourceTree = "<group>"; };
 		DB717BAABEC720F4D01B0843F3350C5D /* scalar_8x32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_8x32.h; path = secp256k1/scalar_8x32.h; sourceTree = "<group>"; };
@@ -1028,7 +956,6 @@
 		DDC5D19C580C506F7E8A2211043B7643 /* secp256k1_ec_mult_static_context.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1_ec_mult_static_context.h; path = secp256k1/secp256k1_ec_mult_static_context.h; sourceTree = "<group>"; };
 		DDEF9B574E141A9E5C52DD255117DD52 /* AMBAssetContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBAssetContent.swift; sourceTree = "<group>"; };
 		DE35F76653847F5AADA3195B2B82DCDB /* SipHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SipHash-prefix.pch"; sourceTree = "<group>"; };
-		E0382B2B25D2930C3004364F813380F9 /* Pods-AmbrosusViewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusViewer-acknowledgements.plist"; sourceTree = "<group>"; };
 		E06E77CB22425FDD7085827A73B8D92D /* TxPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TxPool.swift; path = Sources/web3swift/TxPool/TxPool.swift; sourceTree = "<group>"; };
 		E18E80FAAEA5DF83E4AF5DDFAA5237FA /* AmbrosusSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AmbrosusSDK-prefix.pch"; sourceTree = "<group>"; };
 		E1D2B14C91DEDC93B3DE3F34A77D77D9 /* Account.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
@@ -1039,10 +966,8 @@
 		E3FCCA2FB5DAE8CD5080471DE5F9BABE /* race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = race.m; path = Sources/race.m; sourceTree = "<group>"; };
 		E43159EC25DCF137F94172522E93814B /* bip39.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bip39.h; sourceTree = "<group>"; };
 		E4ED568868FB6DE212C2AB2027D3EC89 /* sysendian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
-		E6AD24DC34FF9D13ED60B14909E24446 /* Pods-AmbrosusBlockchainSDKTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusBlockchainSDKTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E6DEDD568ACF7E41DAF7153FEEE67B22 /* AMBSectionFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBSectionFormatter.swift; sourceTree = "<group>"; };
 		E74AC6F04BBE8A97CAF5C7868F6C86C3 /* field_10x26.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_10x26.h; path = secp256k1/field_10x26.h; sourceTree = "<group>"; };
-		E750817A84D4865ADF845AA2596619E3 /* Pods-CoffeeLoyaltyApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoffeeLoyaltyApp-umbrella.h"; sourceTree = "<group>"; };
 		E766C693004E15A004C1A7E4B7CE10B5 /* KeystoreManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeystoreManager.swift; path = Sources/web3swift/KeystoreManager/KeystoreManager.swift; sourceTree = "<group>"; };
 		E7EBA1717A8489BE0413C71CD214ED4F /* insecure_memzero.c */ = {isa = PBXFileReference; includeInIndex = 1; name = insecure_memzero.c; path = scrypt/insecure_memzero.c; sourceTree = "<group>"; };
 		E8289F7C8D6D974E6F5E460538931112 /* NetworkPromises.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkPromises.swift; path = Sources/web3swift/Network/NetworkPromises.swift; sourceTree = "<group>"; };
@@ -1050,18 +975,18 @@
 		E95AE9F4AF6D1B91494F2B48F238BC27 /* AmbrosusSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AmbrosusSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EAA0FDF12A9CFC3F68406DDAA9FF9148 /* curves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = curves.h; sourceTree = "<group>"; };
 		EADD9DC48219130457A18BC7784F2A4A /* GCD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCD.swift; path = sources/GCD.swift; sourceTree = "<group>"; };
+		EAFD709519FD6F956677530D9716936F /* Pods-AmbrosusViewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AmbrosusViewer-frameworks.sh"; sourceTree = "<group>"; };
 		EBA3206AFA161EFF36CC7C714C26C4B9 /* num_gmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = num_gmp.h; path = secp256k1/num_gmp.h; sourceTree = "<group>"; };
 		EBDBCB5FF1EC2DE90A49C1EE1E0B29C6 /* AmbrosusBlockchainSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AmbrosusBlockchainSDK.modulemap; sourceTree = "<group>"; };
 		ECEEB810DD5640DA9913638B6DC0509C /* KeyDerivation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyDerivation.swift; path = Sources/web3swift/Encryption/Cryptor/KeyDerivation.swift; sourceTree = "<group>"; };
 		ED4BF2C8034F7DD7950E2530925535E1 /* keccak.c.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = keccak.c.xcconfig; sourceTree = "<group>"; };
+		EDBA0CAC21740F7D685130419A5203AF /* Pods-AmbrosusBlockchainSDKTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AmbrosusBlockchainSDKTests.modulemap"; sourceTree = "<group>"; };
 		EDBCB1335C1F15C6BB46F43F244FB222 /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
 		EDF5DAE5D417880E9DD9E6DDFE23BF0A /* PrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrivateKey.swift; path = Sources/web3swift/Encryption/PrivateKey.swift; sourceTree = "<group>"; };
 		EE51A4C9C7A43B25D4607C098F7347FC /* keccak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = keccak.h; path = keccak/include/keccak.h; sourceTree = "<group>"; };
-		EE6DE51A437238B6AC1F2E84C1CA73EF /* Pods-AmbrosusBlockchainSDKTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AmbrosusBlockchainSDKTests-frameworks.sh"; sourceTree = "<group>"; };
 		EF12E79F397D0B4CFA18462D36F898DF /* BlockNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockNumber.swift; path = Sources/web3swift/Transactions/BlockNumber.swift; sourceTree = "<group>"; };
 		EF811CB3173A56D79FBED5083435C0DE /* macros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
 		F00D14DD644E64930A2A8886BCF7C250 /* JEncodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JEncodable.swift; path = Sources/web3swift/Network/JEncodable.swift; sourceTree = "<group>"; };
-		F07F14F234338A82EDB8330AA9FF99A0 /* Pods-AmbrosusBlockchainSDKTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AmbrosusBlockchainSDKTests-umbrella.h"; sourceTree = "<group>"; };
 		F095C2FAB9239383F30938CAF728F6A8 /* InputParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputParameters.swift; path = Sources/web3swift/Ethereum/InputParameters.swift; sourceTree = "<group>"; };
 		F0E90984A8D661B81B66234C025947C9 /* BigInt-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BigInt-umbrella.h"; sourceTree = "<group>"; };
 		F10CB2B6B9240E1785F0F429BDD7DBE6 /* Web3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Web3.swift; path = Sources/web3swift/Web3/Web3.swift; sourceTree = "<group>"; };
@@ -1070,15 +995,15 @@
 		F1E4C6C887050E6B0545B37301B17279 /* DecoderExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecoderExtensions.swift; path = Sources/web3swift/TxPool/DecoderExtensions.swift; sourceTree = "<group>"; };
 		F23464884E665C1B01DD63E218B5F180 /* UIViewPropertyAnimator+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewPropertyAnimator+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewPropertyAnimator+Promise.swift"; sourceTree = "<group>"; };
 		F25338A947B0DBDC86889C65E5A1CC32 /* scratch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scratch.h; path = secp256k1/scratch.h; sourceTree = "<group>"; };
-		F273B60D0C3E9D4F4ADAE34E70D86A2F /* Pods_AmbrosusViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AmbrosusViewer.framework; path = "Pods-AmbrosusViewer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2F721E24C21FB0D501CFC3BEFA9824D /* Pods-CoffeeLoyaltyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoffeeLoyaltyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F3902714E53746C545493D5C76BEAEF9 /* options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		F44B287BE56B2852A06EDC38AF2A933A /* secp256k1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = secp256k1.framework; path = secp256k1.c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B7B4A088444DAA837716FAF5738480 /* scratch_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scratch_impl.h; path = secp256k1/scratch_impl.h; sourceTree = "<group>"; };
 		F5D3920622E802C16DE312F7C6C7E40B /* AMBEventIdData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMBEventIdData.swift; sourceTree = "<group>"; };
 		F5F25336B6CC5A7E59ED18926DECC57C /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
 		F69DA0418A2A9C31F5ADA851069A7734 /* SSLPointerTricks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLPointerTricks.swift; path = Sources/web3swift/Encryption/Cryptor/SSLPointerTricks.swift; sourceTree = "<group>"; };
 		F6ECE603B787FEB5F742A46D4F5B3D8F /* keccak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = keccak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70356E015D103BC9789BE85FED0F6EF /* Payment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Payment.h; sourceTree = "<group>"; };
+		F8207431224DA515CBCF1FD775409B3E /* Pods_AmbrosusBlockchainSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AmbrosusBlockchainSDKTests.framework; path = "Pods-AmbrosusBlockchainSDKTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88AC52EE6F3D2E26E754B83BE98F754 /* num.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = num.h; path = secp256k1/num.h; sourceTree = "<group>"; };
 		F97CE27AA4EB2FC021802872ABDA8916 /* scrypt_sha256.c */ = {isa = PBXFileReference; includeInIndex = 1; path = scrypt_sha256.c; sourceTree = "<group>"; };
 		F9C74D8A646EABCCCF84F5D550B28DF3 /* AMBConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMBConstants.swift; path = AmbrosusSDK/AMBConstants.swift; sourceTree = "<group>"; };
@@ -1091,7 +1016,6 @@
 		FC88DD34629C1EB53767340E66295D2E /* Provider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Provider.h; sourceTree = "<group>"; };
 		FD3F436C2F8C419CF8E25D8443C5896C /* SolidityFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolidityFunction.swift; path = Sources/web3swift/Transactions/SolidityFunction.swift; sourceTree = "<group>"; };
 		FD41FE0F40D28804407346540B3248E6 /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
-		FF1E9D839022BCA3E3557F3DF176538F /* Pods-AmbrosusViewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmbrosusViewer-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1126,14 +1050,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA813E9A5A680D51AE30BEA7AB70EDE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F19BF925A4D8033B1C7815005E1D5D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF963F7F5D17E5A247B019F995592C70 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1271,6 +1187,23 @@
 			name = CorePromise;
 			sourceTree = "<group>";
 		};
+		21015402FDC5258FF6974E733C5E7BD3 /* Pods-AmbrosusBlockchainSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDBA0CAC21740F7D685130419A5203AF /* Pods-AmbrosusBlockchainSDKTests.modulemap */,
+				0FBB8A92BCDEEF47158AAA800E8086C8 /* Pods-AmbrosusBlockchainSDKTests-acknowledgements.markdown */,
+				CBFEBAA42BEB81BE124B5CC50AD1953A /* Pods-AmbrosusBlockchainSDKTests-acknowledgements.plist */,
+				3C2FF3862C0358AA8CB575557CCA60D5 /* Pods-AmbrosusBlockchainSDKTests-dummy.m */,
+				3CE24832B4519F62247C728FCCF1F988 /* Pods-AmbrosusBlockchainSDKTests-frameworks.sh */,
+				C76728B985292582B227156C13DDFD65 /* Pods-AmbrosusBlockchainSDKTests-Info.plist */,
+				3950D76CF291EF1B868F2FE6FE3EB2ED /* Pods-AmbrosusBlockchainSDKTests-umbrella.h */,
+				485047AE5036ECE752DF52FA94BFB61F /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */,
+				79EBA2FCD36C505D28129A56C4EE2438 /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */,
+			);
+			name = "Pods-AmbrosusBlockchainSDKTests";
+			path = "Target Support Files/Pods-AmbrosusBlockchainSDKTests";
+			sourceTree = "<group>";
+		};
 		2171FFEC85D87EE346691A4554FA54F1 /* ethers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1400,6 +1333,15 @@
 			path = "trezor-crypto";
 			sourceTree = "<group>";
 		};
+		354612E39D6044C0095AE7CA121B4037 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21015402FDC5258FF6974E733C5E7BD3 /* Pods-AmbrosusBlockchainSDKTests */,
+				F9B5A5EE4764C5B51A36152BDFEB3CE8 /* Pods-AmbrosusViewer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		39AF877968E604A03F9B92D24435B1FC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1412,69 +1354,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/keccak.c";
-			sourceTree = "<group>";
-		};
-		437A280508A280733A386106A37827ED /* Pods-AmbrosusBlockchainSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				267E8C44FDE44EA3921918CD3CBA4E5D /* Pods-AmbrosusBlockchainSDKTests.modulemap */,
-				D2A7E9FC9CEC9F2528020F197DFFE221 /* Pods-AmbrosusBlockchainSDKTests-acknowledgements.markdown */,
-				E6AD24DC34FF9D13ED60B14909E24446 /* Pods-AmbrosusBlockchainSDKTests-acknowledgements.plist */,
-				971ADA1A0FB18B2CE4056507AC9087C8 /* Pods-AmbrosusBlockchainSDKTests-dummy.m */,
-				EE6DE51A437238B6AC1F2E84C1CA73EF /* Pods-AmbrosusBlockchainSDKTests-frameworks.sh */,
-				BB82A5B48E5D65A89C35BF865ACEC5B9 /* Pods-AmbrosusBlockchainSDKTests-Info.plist */,
-				F07F14F234338A82EDB8330AA9FF99A0 /* Pods-AmbrosusBlockchainSDKTests-umbrella.h */,
-				C699BF9A3D1531D7232B51801783F4CD /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */,
-				DAAE56CC4D58CAEF04344A4941F88A54 /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */,
-			);
-			name = "Pods-AmbrosusBlockchainSDKTests";
-			path = "Target Support Files/Pods-AmbrosusBlockchainSDKTests";
-			sourceTree = "<group>";
-		};
-		43A40CDFB7D1B85BA0AC3F19B190308C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C4E35D7C475017C41F192023F9F20936 /* AmbrosusBlockchainSDK.framework */,
-				1CD3E67FB4625DE7EF4AB6B06EC39A12 /* AmbrosusSDK.framework */,
-				CF60F43D980C7120D0A7CE9BA2376C14 /* BigInt.framework */,
-				C2601DFD4C919A3A54F655C112C6633B /* keccak.framework */,
-				070E21AF6716206E2C0DB1BB764678C0 /* Pods_AmbrosusBlockchainSDKTests.framework */,
-				F273B60D0C3E9D4F4ADAE34E70D86A2F /* Pods_AmbrosusViewer.framework */,
-				2669C5AACAD1BAE927EB9EC27C18EB39 /* Pods_CoffeeLoyaltyApp.framework */,
-				7D575C7DCA2154BAE1270ABC81FF9216 /* PromiseKit.framework */,
-				661D09A916E60B2EFE80E24378F58A14 /* scrypt.framework */,
-				89FD4DF1850FC1BA86C97F7A67471A00 /* secp256k1.framework */,
-				C60BD6E752D94449740D8EC25C084509 /* SipHash.framework */,
-				C91EB13ADD9C07777EFB63A1284D5004 /* web3swift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		46C5E1142370F7D8311F32CB0FD5C584 /* Pods-AmbrosusViewer */ = {
-			isa = PBXGroup;
-			children = (
-				0C474CD4BA062F755F40793BF19DEBCB /* Pods-AmbrosusViewer.modulemap */,
-				6179F1425D92B3FB97B3CD9F5F08B918 /* Pods-AmbrosusViewer-acknowledgements.markdown */,
-				E0382B2B25D2930C3004364F813380F9 /* Pods-AmbrosusViewer-acknowledgements.plist */,
-				4A94F6100A6C66223A4F464C992E3F87 /* Pods-AmbrosusViewer-dummy.m */,
-				9B3A7B2DF69FF6183CC42C13D3A3A475 /* Pods-AmbrosusViewer-frameworks.sh */,
-				FF1E9D839022BCA3E3557F3DF176538F /* Pods-AmbrosusViewer-Info.plist */,
-				2F9FAA8409DC0103FF9AB8643022FD73 /* Pods-AmbrosusViewer-umbrella.h */,
-				8C54675A4B1E1FAFD3E5CB9748B4F6F2 /* Pods-AmbrosusViewer.debug.xcconfig */,
-				4084A2427CB9C0E66C2F7AEBA3EFA64A /* Pods-AmbrosusViewer.release.xcconfig */,
-			);
-			name = "Pods-AmbrosusViewer";
-			path = "Target Support Files/Pods-AmbrosusViewer";
-			sourceTree = "<group>";
-		};
-		49E8EC3C156F766FEC8673CA99BAC594 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				437A280508A280733A386106A37827ED /* Pods-AmbrosusBlockchainSDKTests */,
-				46C5E1142370F7D8311F32CB0FD5C584 /* Pods-AmbrosusViewer */,
-				61E4A3017098032C9FAF8A4A6AA20BB0 /* Pods-CoffeeLoyaltyApp */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		529C9C901628F3B77EB623BA81E5BC58 /* web3swift.pod */ = {
@@ -1632,23 +1511,6 @@
 			);
 			name = scanner;
 			path = AmbrosusSDK/scanner;
-			sourceTree = "<group>";
-		};
-		61E4A3017098032C9FAF8A4A6AA20BB0 /* Pods-CoffeeLoyaltyApp */ = {
-			isa = PBXGroup;
-			children = (
-				9A8C4529978B4C6F9467E33806CACFC8 /* Pods-CoffeeLoyaltyApp.modulemap */,
-				7D88408663F23FC490C27B65638428A9 /* Pods-CoffeeLoyaltyApp-acknowledgements.markdown */,
-				A3F7799FBBA43776CDDB536B8F7D6D0B /* Pods-CoffeeLoyaltyApp-acknowledgements.plist */,
-				8FCA9218DDFE91471E635AF987067152 /* Pods-CoffeeLoyaltyApp-dummy.m */,
-				9AFB5CFEE144E07ADD9D4990F2A8B7C5 /* Pods-CoffeeLoyaltyApp-frameworks.sh */,
-				5553EC67F58099AA79917016343CCD64 /* Pods-CoffeeLoyaltyApp-Info.plist */,
-				E750817A84D4865ADF845AA2596619E3 /* Pods-CoffeeLoyaltyApp-umbrella.h */,
-				F2F721E24C21FB0D501CFC3BEFA9824D /* Pods-CoffeeLoyaltyApp.debug.xcconfig */,
-				34FD5F1BE19DBF42632CA97DFFDFF63E /* Pods-CoffeeLoyaltyApp.release.xcconfig */,
-			);
-			name = "Pods-CoffeeLoyaltyApp";
-			path = "Target Support Files/Pods-CoffeeLoyaltyApp";
 			sourceTree = "<group>";
 		};
 		649B58D360E515C69374532E055B7691 /* secp256k1.c */ = {
@@ -1975,8 +1837,8 @@
 				D8FAEAEFC42BDB9F2E85C802D8E72A44 /* Development Pods */,
 				A1D62C7A2A70517768918E1CCD913264 /* Frameworks */,
 				59FE3CB87EABD29032BB68C3B34337CB /* Pods */,
-				43A40CDFB7D1B85BA0AC3F19B190308C /* Products */,
-				49E8EC3C156F766FEC8673CA99BAC594 /* Targets Support Files */,
+				E83A8A333C9A890367C30D082EFF5A94 /* Products */,
+				354612E39D6044C0095AE7CA121B4037 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2028,6 +1890,24 @@
 			path = "../Target Support Files/secp256k1.c";
 			sourceTree = "<group>";
 		};
+		E83A8A333C9A890367C30D082EFF5A94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25D818C9EF0FF4D3758472B56515745E /* AmbrosusBlockchainSDK.framework */,
+				65B9E28CDB87C0E6EDEAD91EBB72F503 /* AmbrosusSDK.framework */,
+				407A7D04DB288B3CE322156A221A93CD /* BigInt.framework */,
+				2691F18A3A5980F5A6AF86C61D3C9731 /* keccak.framework */,
+				F8207431224DA515CBCF1FD775409B3E /* Pods_AmbrosusBlockchainSDKTests.framework */,
+				809B037B505F4B63213CEE7AB7F3B7B2 /* Pods_AmbrosusViewer.framework */,
+				17B7346848D981BD845915705D386CCC /* PromiseKit.framework */,
+				6F02E49758A9E594E0277173842DA67E /* scrypt.framework */,
+				F44B287BE56B2852A06EDC38AF2A933A /* secp256k1.framework */,
+				3C04AFC33E2752812770FF62839391C0 /* SipHash.framework */,
+				4686CD113024A7F17CB8F5B655A8DFDD /* web3swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F2F2D88C13AE42C813ADCD73BBD72273 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2040,6 +1920,23 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/web3swift.pod";
+			sourceTree = "<group>";
+		};
+		F9B5A5EE4764C5B51A36152BDFEB3CE8 /* Pods-AmbrosusViewer */ = {
+			isa = PBXGroup;
+			children = (
+				4BC5FF42313BAD6EEE6CB3E51115C3F1 /* Pods-AmbrosusViewer.modulemap */,
+				50D624C7D29BF83C87E8AD8E7FFF8525 /* Pods-AmbrosusViewer-acknowledgements.markdown */,
+				CFE92C24FA9A1C360FA712F01DBDF0D6 /* Pods-AmbrosusViewer-acknowledgements.plist */,
+				3360B6C720027B333BA98743F1C36AC8 /* Pods-AmbrosusViewer-dummy.m */,
+				EAFD709519FD6F956677530D9716936F /* Pods-AmbrosusViewer-frameworks.sh */,
+				89EADCF2442264B917C4009059598FBD /* Pods-AmbrosusViewer-Info.plist */,
+				3DA4C15386FEDF404010796D72193B7E /* Pods-AmbrosusViewer-umbrella.h */,
+				C3EA68900EC38FF4660EE3ADC8768EEA /* Pods-AmbrosusViewer.debug.xcconfig */,
+				073DF335C14F5E2A5131EE2B89674E1F /* Pods-AmbrosusViewer.release.xcconfig */,
+			);
+			name = "Pods-AmbrosusViewer";
+			path = "Target Support Files/Pods-AmbrosusViewer";
 			sourceTree = "<group>";
 		};
 		F9CBCFBBC57A1D586EBAF65EDCBF57C9 /* Support Files */ = {
@@ -2113,14 +2010,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FCE602631003FCD43B723635570C9F /* web3swift.pod-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AA04B438082699CC0CD83B230224E5B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFCDCF4D64F62A30F9352B0947D3BB0F /* Pods-CoffeeLoyaltyApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2311,7 +2200,7 @@
 			);
 			name = secp256k1.c;
 			productName = secp256k1.c;
-			productReference = 89FD4DF1850FC1BA86C97F7A67471A00 /* secp256k1.framework */;
+			productReference = F44B287BE56B2852A06EDC38AF2A933A /* secp256k1.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2C4DF1F795F5187F6EF15DCCB353526F /* BigInt */ = {
@@ -2330,7 +2219,7 @@
 			);
 			name = BigInt;
 			productName = BigInt;
-			productReference = CF60F43D980C7120D0A7CE9BA2376C14 /* BigInt.framework */;
+			productReference = 407A7D04DB288B3CE322156A221A93CD /* BigInt.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3EA7B164A3D671F11BE8902D5EAD9CF5 /* AmbrosusBlockchainSDK */ = {
@@ -2349,7 +2238,7 @@
 			);
 			name = AmbrosusBlockchainSDK;
 			productName = AmbrosusBlockchainSDK;
-			productReference = C4E35D7C475017C41F192023F9F20936 /* AmbrosusBlockchainSDK.framework */;
+			productReference = 25D818C9EF0FF4D3758472B56515745E /* AmbrosusBlockchainSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4621A6BFD739BF525B6FF777A5F4110C /* keccak.c */ = {
@@ -2367,7 +2256,7 @@
 			);
 			name = keccak.c;
 			productName = keccak.c;
-			productReference = C2601DFD4C919A3A54F655C112C6633B /* keccak.framework */;
+			productReference = 2691F18A3A5980F5A6AF86C61D3C9731 /* keccak.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		474601A20D2713226AAFB1B1CA939A2E /* scrypt.c */ = {
@@ -2385,7 +2274,7 @@
 			);
 			name = scrypt.c;
 			productName = scrypt.c;
-			productReference = 661D09A916E60B2EFE80E24378F58A14 /* scrypt.framework */;
+			productReference = 6F02E49758A9E594E0277173842DA67E /* scrypt.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6B77C4AB0D35BECF71E28C8718C0A54F /* SipHash */ = {
@@ -2403,7 +2292,7 @@
 			);
 			name = SipHash;
 			productName = SipHash;
-			productReference = C60BD6E752D94449740D8EC25C084509 /* SipHash.framework */;
+			productReference = 3C04AFC33E2752812770FF62839391C0 /* SipHash.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A530D1BD326C9FCA2348C6D6544AB620 /* Pods-AmbrosusBlockchainSDKTests */ = {
@@ -2429,34 +2318,7 @@
 			);
 			name = "Pods-AmbrosusBlockchainSDKTests";
 			productName = "Pods-AmbrosusBlockchainSDKTests";
-			productReference = 070E21AF6716206E2C0DB1BB764678C0 /* Pods_AmbrosusBlockchainSDKTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D473B38100EC8B69C6CFA609FF04DDBB /* Pods-CoffeeLoyaltyApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E0F413690C148C473732A394945DCB67 /* Build configuration list for PBXNativeTarget "Pods-CoffeeLoyaltyApp" */;
-			buildPhases = (
-				5AA04B438082699CC0CD83B230224E5B /* Headers */,
-				5B39DBB4DCCB5A2FDB3CAFA325C37666 /* Sources */,
-				5F19BF925A4D8033B1C7815005E1D5D1 /* Frameworks */,
-				B72383D76F19B02B9262171697294006 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				03AACCB90D03C5248989ED5186674043 /* PBXTargetDependency */,
-				D10BFE2DBBC1A3026E33F81034300D8C /* PBXTargetDependency */,
-				E279A721DBE24A06F1E0FCC0A5BD8470 /* PBXTargetDependency */,
-				E86BCAFD47A6C38E97261C590DBFBFE4 /* PBXTargetDependency */,
-				4FC59C1EA17FDCD114A828CA123D845D /* PBXTargetDependency */,
-				492F30C2C1E98F16C639440D9C811B36 /* PBXTargetDependency */,
-				49BEB834A77866E79F2A1AA4B989ECCE /* PBXTargetDependency */,
-				61FED50F482F347DA7974335E9D6CE23 /* PBXTargetDependency */,
-				EFBE3CA954F0CFAD3E711F6CADB7A2DB /* PBXTargetDependency */,
-			);
-			name = "Pods-CoffeeLoyaltyApp";
-			productName = "Pods-CoffeeLoyaltyApp";
-			productReference = 2669C5AACAD1BAE927EB9EC27C18EB39 /* Pods_CoffeeLoyaltyApp.framework */;
+			productReference = F8207431224DA515CBCF1FD775409B3E /* Pods_AmbrosusBlockchainSDKTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EE689E63244060CED084CD2220D6BC9C /* Pods-AmbrosusViewer */ = {
@@ -2475,7 +2337,7 @@
 			);
 			name = "Pods-AmbrosusViewer";
 			productName = "Pods-AmbrosusViewer";
-			productReference = F273B60D0C3E9D4F4ADAE34E70D86A2F /* Pods_AmbrosusViewer.framework */;
+			productReference = 809B037B505F4B63213CEE7AB7F3B7B2 /* Pods_AmbrosusViewer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F1A01565254D60C276C790F42E037F2D /* PromiseKit */ = {
@@ -2493,7 +2355,7 @@
 			);
 			name = PromiseKit;
 			productName = PromiseKit;
-			productReference = 7D575C7DCA2154BAE1270ABC81FF9216 /* PromiseKit.framework */;
+			productReference = 17B7346848D981BD845915705D386CCC /* PromiseKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F4191B95A668344607E998CABB1FCF72 /* AmbrosusSDK */ = {
@@ -2511,7 +2373,7 @@
 			);
 			name = AmbrosusSDK;
 			productName = AmbrosusSDK;
-			productReference = 1CD3E67FB4625DE7EF4AB6B06EC39A12 /* AmbrosusSDK.framework */;
+			productReference = 65B9E28CDB87C0E6EDEAD91EBB72F503 /* AmbrosusSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F7A141E71F069C3CD3694536D9A11703 /* web3swift.pod */ = {
@@ -2534,7 +2396,7 @@
 			);
 			name = web3swift.pod;
 			productName = web3swift.pod;
-			productReference = C91EB13ADD9C07777EFB63A1284D5004 /* web3swift.framework */;
+			productReference = 4686CD113024A7F17CB8F5B655A8DFDD /* web3swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -2554,7 +2416,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 43A40CDFB7D1B85BA0AC3F19B190308C /* Products */;
+			productRefGroup = E83A8A333C9A890367C30D082EFF5A94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2564,7 +2426,6 @@
 				4621A6BFD739BF525B6FF777A5F4110C /* keccak.c */,
 				A530D1BD326C9FCA2348C6D6544AB620 /* Pods-AmbrosusBlockchainSDKTests */,
 				EE689E63244060CED084CD2220D6BC9C /* Pods-AmbrosusViewer */,
-				D473B38100EC8B69C6CFA609FF04DDBB /* Pods-CoffeeLoyaltyApp */,
 				F1A01565254D60C276C790F42E037F2D /* PromiseKit */,
 				474601A20D2713226AAFB1B1CA939A2E /* scrypt.c */,
 				01265FC2476B536809D6E8F6C5787F7F /* secp256k1.c */,
@@ -2618,13 +2479,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		76E1F9F6F4696E498EB700FF5A1EC9FB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B72383D76F19B02B9262171697294006 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2793,14 +2647,6 @@
 				5F78F2E4DCEC0B8BA319A5DE95BAB73E /* AccountsGenerator.swift in Sources */,
 				310F1C439E913098F2EDE81545F961E0 /* AmbrosusBlockchainSDK-dummy.m in Sources */,
 				F2E273F516C24439C0969C8F4D2AB727 /* AmbrosusBlockchainService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B39DBB4DCCB5A2FDB3CAFA325C37666 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3212683FA1AD8BB86529B27FAA8D1F83 /* Pods-CoffeeLoyaltyApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3020,12 +2866,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		03AACCB90D03C5248989ED5186674043 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AmbrosusBlockchainSDK;
-			target = 3EA7B164A3D671F11BE8902D5EAD9CF5 /* AmbrosusBlockchainSDK */;
-			targetProxy = 917D8FD3F48A841DC0BE23CFCBFC5005 /* PBXContainerItemProxy */;
-		};
 		08C9E8E92FBE947E98B02A52C54A2BA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BigInt;
@@ -3080,35 +2920,11 @@
 			target = 01265FC2476B536809D6E8F6C5787F7F /* secp256k1.c */;
 			targetProxy = D92A01F105A69A4BA6E680D6158CB46E /* PBXContainerItemProxy */;
 		};
-		492F30C2C1E98F16C639440D9C811B36 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = keccak.c;
-			target = 4621A6BFD739BF525B6FF777A5F4110C /* keccak.c */;
-			targetProxy = CE5B30284FDB6D633BFD2FEC93EF43DD /* PBXContainerItemProxy */;
-		};
-		49BEB834A77866E79F2A1AA4B989ECCE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = scrypt.c;
-			target = 474601A20D2713226AAFB1B1CA939A2E /* scrypt.c */;
-			targetProxy = 5FB9FFB09E7B3229F686C16EF0604A1A /* PBXContainerItemProxy */;
-		};
-		4FC59C1EA17FDCD114A828CA123D845D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SipHash;
-			target = 6B77C4AB0D35BECF71E28C8718C0A54F /* SipHash */;
-			targetProxy = 502F1AB31B5F14608B308B8A4D14E5E8 /* PBXContainerItemProxy */;
-		};
 		556E4452592E536CE928AEDBDFB3A0F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PromiseKit;
 			target = F1A01565254D60C276C790F42E037F2D /* PromiseKit */;
 			targetProxy = ECB9432A605A6AEE6F9EA2B1BE93DD19 /* PBXContainerItemProxy */;
-		};
-		61FED50F482F347DA7974335E9D6CE23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = secp256k1.c;
-			target = 01265FC2476B536809D6E8F6C5787F7F /* secp256k1.c */;
-			targetProxy = DE3367561BFA6EA06AFB8E700BD73213 /* PBXContainerItemProxy */;
 		};
 		68032E832C7639885E0DF485EC076171 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3140,30 +2956,6 @@
 			target = 2C4DF1F795F5187F6EF15DCCB353526F /* BigInt */;
 			targetProxy = F1F9DAAB0DACB334A14B1FE15BB6284E /* PBXContainerItemProxy */;
 		};
-		D10BFE2DBBC1A3026E33F81034300D8C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AmbrosusSDK;
-			target = F4191B95A668344607E998CABB1FCF72 /* AmbrosusSDK */;
-			targetProxy = 5CE7D2172666E1ABD85D306EA1EF114A /* PBXContainerItemProxy */;
-		};
-		E279A721DBE24A06F1E0FCC0A5BD8470 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BigInt;
-			target = 2C4DF1F795F5187F6EF15DCCB353526F /* BigInt */;
-			targetProxy = A2168AEF12DF5AD2A7886F94ABA6F2A6 /* PBXContainerItemProxy */;
-		};
-		E86BCAFD47A6C38E97261C590DBFBFE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PromiseKit;
-			target = F1A01565254D60C276C790F42E037F2D /* PromiseKit */;
-			targetProxy = 1003398F950E50A5A7B9855C63596DEF /* PBXContainerItemProxy */;
-		};
-		EFBE3CA954F0CFAD3E711F6CADB7A2DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = web3swift.pod;
-			target = F7A141E71F069C3CD3694536D9A11703 /* web3swift.pod */;
-			targetProxy = 7C33D2909D6E232F68A60692E79F8108 /* PBXContainerItemProxy */;
-		};
 		F0A91FA7E6C059F3AC3DFD647D4572C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = scrypt.c;
@@ -3175,7 +2967,7 @@
 /* Begin XCBuildConfiguration section */
 		029CC7ED9B9CCCB7B05168F6E12F7E95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C54675A4B1E1FAFD3E5CB9748B4F6F2 /* Pods-AmbrosusViewer.debug.xcconfig */;
+			baseConfigurationReference = C3EA68900EC38FF4660EE3ADC8768EEA /* Pods-AmbrosusViewer.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -3210,7 +3002,7 @@
 		};
 		094355F7A6AA0E6A722F75A0C5B0A2DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4084A2427CB9C0E66C2F7AEBA3EFA64A /* Pods-AmbrosusViewer.release.xcconfig */;
+			baseConfigurationReference = 073DF335C14F5E2A5131EE2B89674E1F /* Pods-AmbrosusViewer.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -3405,7 +3197,7 @@
 		};
 		51ACB177806CF2821EFB03D7833DF388 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C699BF9A3D1531D7232B51801783F4CD /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */;
+			baseConfigurationReference = 485047AE5036ECE752DF52FA94BFB61F /* Pods-AmbrosusBlockchainSDKTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -3566,41 +3358,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		8BA502EA21122201E4BE223EECAAE54E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2F721E24C21FB0D501CFC3BEFA9824D /* Pods-CoffeeLoyaltyApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CoffeeLoyaltyApp/Pods-CoffeeLoyaltyApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CoffeeLoyaltyApp/Pods-CoffeeLoyaltyApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		8C383BBE5A268AD265B147415919DF8F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3996,7 +3753,7 @@
 		};
 		EC955F75F31D9E0557F147C80DF40FAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAAE56CC4D58CAEF04344A4941F88A54 /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */;
+			baseConfigurationReference = 79EBA2FCD36C505D28129A56C4EE2438 /* Pods-AmbrosusBlockchainSDKTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -4056,42 +3813,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FD2D4E31989A12C4C019C4A2747C8F9C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34FD5F1BE19DBF42632CA97DFFDFF63E /* Pods-CoffeeLoyaltyApp.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CoffeeLoyaltyApp/Pods-CoffeeLoyaltyApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CoffeeLoyaltyApp/Pods-CoffeeLoyaltyApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -4197,15 +3918,6 @@
 			buildConfigurations = (
 				E8C82213A2C7FED5E21C32FD6AC8DAF3 /* Debug */,
 				EA026099AE522991917C47E9EFDD1773 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E0F413690C148C473732A394945DCB67 /* Build configuration list for PBXNativeTarget "Pods-CoffeeLoyaltyApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8BA502EA21122201E4BE223EECAAE54E /* Debug */,
-				FD2D4E31989A12C4C019C4A2747C8F9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

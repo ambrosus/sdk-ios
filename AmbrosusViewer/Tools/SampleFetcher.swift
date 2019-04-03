@@ -26,11 +26,11 @@ final class SampleFetcher {
 
     /// Fetches sample assets and events stored as JSON locally
     func fetch() {
-        AMBWeb3Manager.sharedInstance.setAccount(withPrivateKey: privateKey)
-        requestSampleAccounts()
+        // AMBWeb3Manager.sharedInstance.setAccount(withPrivateKey: privateKey)
+        // requestSampleAccounts()
         requestSampleJSON()
         //requestRealAccount()
-        requestCreationAssetsAndEventsForSpecificAccessLevels()
+        // requestCreationAssetsAndEventsForSpecificAccessLevels()
     }
 
     private func requestCreationAssetsAndEventsForSpecificAccessLevels() {

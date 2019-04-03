@@ -1,6 +1,6 @@
 //
 //  DialogBuilder.swift
-//  CoffeeLoyaltyApp
+//  AmbrosusViewer
 //
 //  Created by MaximCh on 2/27/19.
 //  Copyright © 2019 Ambrosus Inc. All rights reserved.

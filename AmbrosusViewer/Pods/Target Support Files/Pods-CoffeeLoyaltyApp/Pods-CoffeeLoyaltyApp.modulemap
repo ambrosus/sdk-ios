@@ -1,6 +1,0 @@
-framework module Pods_CoffeeLoyaltyApp {
-  umbrella header "Pods-CoffeeLoyaltyApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
