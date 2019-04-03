@@ -1,0 +1,70 @@
+//
+//  Copyright: Ambrosus Inc.
+//  Email: tech@ambrosus.com
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files
+// (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+
+"Scan" = "Scan";
+"Browse" = "Browse";
+"Settings" = "Settings";
+
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Error" = "Error";
+"Close" = "Close";
+"Copied" = "Copied";
+"Success" = "Success";
+
+"Scanned Assets" = "Scanned Assets";
+"No assets found for user with id: " = "No assets found for user with id: ";
+"Blockchain Verification" = "Blockchain Verification";
+
+"Manage Demo Accounts" = "Manage Demo Accounts";
+"Sign in with your private key QRcode" = "Sign in with your private key QRcode";
+"Sign Out" = "Sign Out";
+"Create assets and events with form" = "Create assets and events with form";
+"Create assets and events with code" = "Create assets and events with code";
+
+"Enter your private key" = "Enter your private key";
+"your private key" = "your private key";
+"If you don't provide your private key , your will be in guest mode" = "If you don't provide your private key , your will be in guest mode";
+"You already login" = "You already login";
+"You already sing in if you would like to sign out you can do this in settings tab." = "You already sing in if you would like to sign out you can do this in settings tab.";
+"Invalid private key." = "Invalid private key.";
+"Failed to find Ambrosus Asset from request with query: " = "Failed to find Ambrosus Asset from request with query: ";
+"Copy URL" = "Copy URL";
+"Instructions" = "Instructions";
+
+"Error, no Asset created." = "Error, no Asset created.";
+"Error, no Event created." = "Error, no Event created.";
+"Create Asset" = "Create Asset";
+"Create Event" = "Create Event";
+"Name cannot be empty." = "Name cannot be empty.";
+"Type cannot be empty." = "Type cannot be empty.";
+"Your asset created successfully." = "Your asset created successfully.";
+"Your asset and event created successfully." = "Your asset and event created successfully.";
+"Name *" = "Name *";
+"Type *" = "Type *";
+"Access Level" = "Access Level";
+"Description" = "Description";
+"enter event name" = "enter event name";
+"enter event type" = "enter event type";
+"enter event access level" = "enter event access level";
+"enter event description" = "enter event description";
+"Create asset without events." = "Create asset without events.";
+"Create asset and event with information what you provide above." = "Create asset and event with information what you provide above.";
+"Creation Form" = "Creation Form";
+
+"InstructionsKey" = "Ambrosus Viewer is capable of scanning Bar Codes, QR Codes, and Datamatrix codes. Codes with Ambrosus identifiers will display details about an asset on the AMB-Net.\nFor a set of sample of codes you can scan visit:\n%@\nWe recommend opening this link on a separate computer so you can scan codes with this device.\nTo see samples already included with the app select the browse tab (folder icon in the bottom right).";
+"SampleCodesUrlKey" = "URL to website with sample codes to scan:\n%@\nwas copied successfully!";
+"ScannedCodeKey" = "Scanned %@ code";
+
+

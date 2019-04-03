@@ -1,16 +1,68 @@
 PODS:
-  - AmbrosusSDK (1.2.1)
+  - AmbrosusBlockchainSDK (1.0.0):
+    - web3swift.pod
+  - AmbrosusSDK (1.3.0)
+  - BigInt (3.1.0):
+    - SipHash (~> 1.2)
+  - keccak.c (0.1.3)
+  - PromiseKit (6.8.3):
+    - PromiseKit/CorePromise (= 6.8.3)
+    - PromiseKit/Foundation (= 6.8.3)
+    - PromiseKit/UIKit (= 6.8.3)
+  - PromiseKit/CorePromise (6.8.3)
+  - PromiseKit/Foundation (6.8.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.3):
+    - PromiseKit/CorePromise
+  - scrypt.c (0.1.1)
+  - secp256k1.c (0.1.2)
+  - SipHash (1.2.2)
+  - web3swift.pod (2.1.10):
+    - BigInt (~> 3.1)
+    - keccak.c (~> 0.1)
+    - PromiseKit (~> 6.4)
+    - scrypt.c (~> 0.1)
+    - secp256k1.c (~> 0.1)
 
 DEPENDENCIES:
+  - AmbrosusBlockchainSDK (from `../`)
   - AmbrosusSDK (from `../`)
+  - web3swift.pod (from `https://github.com/bankex/web3swift.git`, branch `master`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BigInt
+    - keccak.c
+    - PromiseKit
+    - scrypt.c
+    - secp256k1.c
+    - SipHash
 
 EXTERNAL SOURCES:
+  AmbrosusBlockchainSDK:
+    :path: "../"
   AmbrosusSDK:
     :path: "../"
+  web3swift.pod:
+    :branch: master
+    :git: https://github.com/bankex/web3swift.git
+
+CHECKOUT OPTIONS:
+  web3swift.pod:
+    :commit: e5d0291b7d9709715b0e5a284ea71352a6c48c14
+    :git: https://github.com/bankex/web3swift.git
 
 SPEC CHECKSUMS:
-  AmbrosusSDK: 5f3931ce4c1587aafba42ac223993cadaa01fafd
+  AmbrosusBlockchainSDK: 72d2bedd4f7434dfdbf14142af9db79c588e6805
+  AmbrosusSDK: e36ccee34cd8e1b21bf615e83d92e993510f13e5
+  BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
+  keccak.c: 859583afdaccb4e4fcc0f0096064d101580313f4
+  PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
+  scrypt.c: b42ae06183251329d2b2c620c226fb541a4a3592
+  secp256k1.c: db47b726585d80f027423682eb369729e61b3b20
+  SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
+  web3swift.pod: e3bd1c18a84e9fc1c4bfab8ebc0754b0806a7bcd
 
-PODFILE CHECKSUM: ed9fc7676276b062abfeb3aa634b4b6796a73449
+PODFILE CHECKSUM: 4ca038cb6dbdef105ff799497160862ba50917ec
 
 COCOAPODS: 1.6.1

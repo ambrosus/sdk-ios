@@ -1,0 +1,70 @@
+//
+//  Copyright: Ambrosus Inc.
+//  Email: tech@ambrosus.com
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files
+// (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+
+"Scan" = "Сканер";
+"Browse" = "Просмотр";
+"Settings" = "Настройки";
+
+"OK" = "OK";
+"Cancel" = "Отмена";
+"Error" = "Ошибка";
+"Close" = "Закрыть";
+"Copied" = "Скопировано";
+"Success" = "Успешно";
+
+"Scanned Assets" = "Отсканированные ассеты";
+"No assets found for user with id: " = "Не найдены ассеты для этого пользователя с этим id: ";
+"Blockchain Verification" = "Проверка блокчейна";
+
+"Manage Demo Accounts" = "Управление демо аккаунтами";
+"Sign in with your private key QRcode" = "Войти при помощи QRcode";
+"Sign Out" = "Выйти из аккаунта";
+"Create assets and events with form" = "Cоздание ассета и ивента через форму";
+"Create assets and events with code" = "Cоздание ассета и ивента через код";
+
+"Enter your private key" = "Введите ваш приватный ключ";
+"your private key" = "ваш приватный ключ";
+"If you don't provide your private key , your will be in guest mode" = "Если вы не войдете под своим ключом вы будете в гостевом режиме";
+"You already login" = "Вы уже вошли";
+"You already sing in if you would like to sign out you can do this in settings tab." = "Вы уже уже вошли , если вый хотите выйти то перейдите на вкладку настроек";
+"Invalid private key." = "Неверный приватный ключ.";
+"Failed to find Ambrosus Asset from request with query: " = "Не удалось найти объект Ambrosus из запроса с id: ";
+"Copy URL" = "Копировать URL";
+"Instructions" = "Инструкция";
+
+"Error, no Asset created." = "Ошибка, ассет не создан.";
+"Error, no Event created." = "Ошибка, ивент не создан.";
+"Create Asset" = "Создать ассет";
+"Create Event" = "Создать ивент";
+"Name cannot be empty." = "Имя не может быть пустым.";
+"Type cannot be empty." = "Тип не может быть пустым.";
+"Your asset created successfully." = "Ваш ассет успешно создан.";
+"Your asset and event created successfully." = "Ваш ассет и ивент созданы успешно.";
+"Name *" = "Имя *";
+"Type *" = "Тип *";
+"Access Level" = "Уровень доступа";
+"Description" = "Описание";
+"enter event name" = "введите имя ивента";
+"enter event type" = "введите тип ивента";
+"enter event access level" = "введите уровень доступа";
+"enter event description" = "введите описание";
+"Create asset without events." = "Создать ассет без ивентов";
+"Create asset and event with information what you provide above." = "Создать ассет и ивент с информацией предоставленной выше.";
+"Creation Form" = "Форма для создания";
+
+"InstructionsKey" = "Ambrosus Viewer способен сканировать штрих-коды, QR-коды и коды Datamatrix. Коды с идентификаторами Ambrosus будут отображать сведения об активе в AMB-Net.\nДля набора образцов кодов, которые вы можете сканировать, посетите:\n%@\nМы рекомендуем открыть эту ссылку на отдельном компьютере, чтобы можно было сканировать коды с помощью этого устройства.\nЧтобы увидеть примеры, уже включенные в приложение, выберите вкладку обзора (значок папки в правом нижнем углу).";
+"SampleCodesUrlKey" = "URL для сайта с примерами кодов:\n%@\nскопирован успешно!";
+"ScannedCodeKey" = "Сканирован %@ код";
+
+

@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Public"; ObjectID = "6H7-dW-sJo"; */
+"6H7-dW-sJo.text" = "Public";
+
+/* Class = "UITableViewSection"; footerTitle = "Configures the endpoint used when scanning Assets"; ObjectID = "79L-up-aHg"; */
+"79L-up-aHg.footerTitle" = "Настроить endpoint, используемый при сканировании ассетов";
+
+/* Class = "UITableViewSection"; headerTitle = "AMB-NET Endpoint"; ObjectID = "79L-up-aHg"; */
+"79L-up-aHg.headerTitle" = "AMB-NET Endpoint";
+
+/* Class = "UITableViewSection"; footerTitle = "Create assets with events"; ObjectID = "9dX-Wd-ugc"; */
+"9dX-Wd-ugc.footerTitle" = "Создать ассеты с ивентами";
+
+/* Class = "UITableViewSection"; headerTitle = "Create assets & events"; ObjectID = "9dX-Wd-ugc"; */
+"9dX-Wd-ugc.headerTitle" = "Создать асстеы и ивенты";
+
+/* Class = "UILabel"; text = "Signed in"; ObjectID = "CUW-zt-5Rx"; */
+"CUW-zt-5Rx.text" = "Залогинен";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "D1y-Gn-TIO"; */
+"D1y-Gn-TIO.text" = "Имя пользователя";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "Ivt-dy-xrs"; */
+"Ivt-dy-xrs.text" = "Локация";
+
+/* Class = "UILabel"; text = "Event Name"; ObjectID = "KDG-4P-gO6"; */
+"KDG-4P-gO6.text" = "Имя ивента";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LVh-MH-fMQ"; */
+"LVh-MH-fMQ.text" = "Label";
+
+/* Class = "UILabel"; text = "0x1000"; ObjectID = "XXf-SG-esM"; */
+"XXf-SG-esM.text" = "0x1000";
+
+/* Class = "UITableViewSection"; headerTitle = "Account"; ObjectID = "hZE-PK-MF4"; */
+"hZE-PK-MF4.headerTitle" = "Аккаунт";
+
+/* Class = "UILabel"; text = "X Hours Ago"; ObjectID = "mL4-5g-wJf"; */
+"mL4-5g-wJf.text" = "X Hours Ago";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "p2P-YG-wpg"; */
+"p2P-YG-wpg.text" = "Label";

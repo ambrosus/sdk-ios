@@ -1,0 +1,6 @@
+framework module Pods_AmbrosusBlockchainSDKTests {
+  umbrella header "Pods-AmbrosusBlockchainSDKTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

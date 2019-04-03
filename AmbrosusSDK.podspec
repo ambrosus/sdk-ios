@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AmbrosusSDK'
-  s.version          = '1.2.1'
+  s.version          = '1.3.0'
   s.summary          = 'Fetches Assets and Events from the Ambrosus Network (AMB-NET) and makes it easy to build interfaces.'
+  s.swift_version    = '4.2'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,29 +19,29 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-# Ambrosus iOS SDK
+# AmbrosusSDK
 
 [![Version](https://img.shields.io/cocoapods/v/AmbrosusSDK.svg?style=flat)](http://cocoapods.org/pods/AmbrosusSDK)
 [![License](https://img.shields.io/cocoapods/l/AmbrosusSDK.svg?style=flat)](http://cocoapods.org/pods/AmbrosusSDK)
 [![Platform](https://img.shields.io/cocoapods/p/AmbrosusSDK.svg?style=flat)](http://cocoapods.org/pods/AmbrosusSDK)
 
-The Ambrosus iOS SDK makes it easy for iOS App Developers to get back data from the [Ambrosus API](https://ambrosus.docs.apiary.io) (AMB-NET), and build their own interfaces for displaying Assets and Events.
+- [AmbrosusSDK](#AmbrosusSDK)
+  * [Integration](#integration)
+  * [Overview](#overview)
+  * [Usage](#usage)
+  * [Usage (Objective-C)](#usage-objective-c)
+  
+- [Sample Application (Ambrosus Viewer)](#sample-application-ambrosus-viewer)
+  * [Ambrosus Viewer Support](#ambrosus-viewer-support)
+  * [Sample Symbologies](#sample-symbologies)
 
-The Ambrosus iOS SDK is written in Swift 4.2 and is compatible with Xcode 10.1+. Branches for newer versions of Swift will be added later on.
+The AmbrosusSDK for iOS makes it easy for iOS App Developers to get back data from the [Ambrosus API](https://ambrosus.docs.apiary.io) (AMB-NET), and build their own interfaces for displaying Assets and Events.
 
-Supports iOS 10+
-Supports Objective-C and Swift 4.2+
-Supports Xcode 10.1+
+* Supports iOS 10+
+* Supports Objective-C and Swift 4.2+
+* Supports Xcode 10.1+
 
-* [Integration](#integration)
-* [Overview](#overview)
-* [Usage](#usage)
-* [Usage (Objective-C)](#usage-objective-c)
-* [Sample Application (Ambrosus Viewer)](#sample-application-ambrosus-viewer)
-* [Ambrosus Viewer Support](#ambrosus-viewer-support)
-* [Sample Symbologies](#sample-symbologies)
-
-## Integration
+### Integration
 
 To start using the SDK you can add the following to your Podfile:
 
@@ -50,7 +51,7 @@ pod 'AmbrosusSDK'
 
 You can also download or clone this repository and import the AmbrosusSDK manually if not using Cocoapods, all of the code is contained in the top level "AmbrosusSDK" folder.
 
-## Overview
+### Overview
 
 The SDK is composed of three main files all contained within the "AmbrosusSDK" folder:
 
@@ -60,13 +61,18 @@ The interface layer which makes network requests to the Ambrosus API such as fet
 
 `AMBDataStore.swift`
 
-A singleton caching layer, you can insert assets into it using `AMBDataStore.sharedInstance.assetStore.insert(:)` or events using `AMBDataStore.sharedInstance.eventsStore.insert(_:)`, saving assets and events in here will make them easy to fetch later, and also improve network performance when requesting already stored assets and events from AMBNetwork. It also will cache images downloaded using `AMBNetwork.requestImage(_:)` calls.
+A singleton caching layer, you can insert assets into it using `AMBDataStore.sharedInstance.assetStore.insert(:)` or events using `AMBDataStore.sharedInstance.eventsStore.insert(_:)`, saving assets and events in here will make them easy to fetch later, and also improve network performance when requesting already stored assets and events from `AMBNetwork`. It also will cache images downloaded using `AMBNetwork.requestImage(_:)` calls.
 
-`AMBModels.swift`
+Models
 
 Defines the two main data models, `AMBAsset` and `AMBEvent` these are the objects which Asset and Event details screens can be built with. To see an example of these structures being used see the AmbrosusViewer example project included with this repository.
 
-## Usage
+`AMBScanViewController.swift`
+
+Built-in scanner. There are 2 types for scanning events and assets and for scanning private keys (login)
+Supports all necessary types as 1d or 2d codes (Symbologies).
+
+### Usage
 
 To start using the Ambrosus SDK within a Swift file first import it:
 ```swift
@@ -85,7 +91,7 @@ AMBNetwork.requestAsset(fromId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6
 }
 ```
 
-A single Asset in the Ambrosus SDK has many events associated with it, to get back all events associated with an asset you can make a call like the following:
+A single Asset in the AmbrosusSDK has many events associated with it, to get back all events associated with an asset you can make a call like the following:
 
 ```swift
 AMBNetwork.requestEvents(fromAssetId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae") { (events) in
@@ -160,8 +166,36 @@ AMBNetwork.createAsset(createdBy: publicKey) { (asset, error) in
     }
 }
 ```
+The AmbrosusSDK has a built-in Scanner: `AMBScanViewController` 
 
-## Usage (Objective-C)
+To start scanning codes your view controller needs to use `AMBScanViewControllerDelegate`. After a code is scanned it will execute the delegate method:
+
+```swift
+func scanner(_ controller: AMBScanViewController, didCaptureCode code: String, type: String, codeResult: @escaping (Bool) -> Void) {
+    // Do something with the code here
+}
+```
+* `code` - code what you scanned.
+* `type` - type of 1d or 2d code.
+* `codeResult` - callback for success or erorr scan result to reload scanner if smth goes wrong.
+
+To set up the scanner add the following to the `viewWillAppear` method:
+```swift
+scanner = AMBScanViewController()
+scanner?.delegate = self
+scanner?.setup(with: self, scannerType: .entity)
+```
+scannerType - has 2 states :
+ 1. `.entity` - for scan assets and events.
+ 2. `.account` - for scan private keys.
+ 
+To remove the scanner add the following to `viewWillDisappear`:
+```swift
+scanner?.delegate = nil
+scanner?.stop()
+```
+
+### Usage (Objective-C)
 
 The Ambrosus SDK is also fully compatible with Objective-C, you can import the SDK by adding the following to the top of your implementation file:
 ```objective-c
@@ -187,19 +221,19 @@ NSString *assetId = @"0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6
 }];
 ```
 
-# Sample Application (Ambrosus Viewer)
+## Sample Application (Ambrosus Viewer)
 
-The included example application, Ambrosus Viewer includes a scanner that is capable of scanning 1d and 2d codes and displaying details about an associated asset and its events from AMB-NET. It comes packaged with several sample assets and events as well. The app also contains Asset Details and Event Details screens which demonstrate using the SDK to build a fully featured iOS application for viewing data stored on AMB-NET.
+The included example application, Ambrosus Viewer includes a scanner that is capable of scanning 1d and 2d codes and displaying details about an associated asset and its events from AMB-NET. In App you can login with your private key and create assets and events. It comes packaged with several sample assets and events as well. The app also contains Asset Details and Event Details screens which demonstrate using the SDK to build a fully featured iOS application for viewing data stored on AMB-NET.
 
-## Ambrosus Viewer Support
+### Ambrosus Viewer Support
 
 * Supports iPhone 5S and above, iPad 5th Generation and above, iPod Touch 6th Generation and Above.
 * Minimum iOS Version 11
 * Requires Camera permission enabled in order to scan codes
 * Capable of scanning codes with the following symbologies:
-  * UPCE, UPC12, EAN8, EAN13, CODE 39, CODE 128, ITF, QR, DATAMATRIX
+  * UPCE, UPC12, EAN8, EAN13, CODE 39, CODE 128, ITF, QR, DATAMATRIX, AZTEC
 
-## Sample Symbologies
+### Sample Symbologies
 
 To see details about sample assets with the Ambrosus Viewer, scan any of the following codes from the app:
 
@@ -207,9 +241,12 @@ To see details about sample assets with the Ambrosus Viewer, scan any of the fol
 | --------- | ---------------------------------- | ---------- |
 | &emsp;&emsp;![EAN-8 Sample](https://i.imgur.com/m7QZIaS.png)   | &emsp;&emsp;![EAN-13 Sample](https://i.imgur.com/1HXwtPr.png) | &emsp;&emsp;![QR Sample](https://i.imgur.com/JfEUGo8.png)&emsp;&emsp;
 |  <a href="https://gateway-test.ambrosus.com/events?data[type]=ambrosus.asset.identifier&data[identifiers.ean8]=96385074" target="_blank">Generic Asset</a>&emsp;  | <a href="https://gateway-test.ambrosus.com/events?data[type]=ambrosus.asset.identifier&data[identifiers.ean13]=6942507312009" target="_blank">Guernsey Cow</a>&emsp;&emsp; | &emsp;&emsp;&emsp;&emsp;<a href="https://gateway-test.ambrosus.com/assets/0x4c289b68b5bb1a098a4aa622b84d6f523e02fc9346a3a0a99efdfd8a96ba56df" target="_blank">Ibuprofen Batch 200mg</a>&emsp;&emsp;
-```
 
+### Account Scanner Sample
 
+![Account QR Sample](https://www.scandit.com/wp-content/themes/bridge-child/wbq_barcode_gen.php?symbology=qr&value=type%3Dambrosus.account%26account%3D0x8536eBc067457602FfC92B89B55501b54bcf5049&size=100&ec=L)
+
+Add account (*ERC20 address:* 0x8536eBc067457602FfC92B89B55501b54bcf5049)
                        DESC
 
   s.homepage         = 'https://github.com/ambrosus/sdk-ios'

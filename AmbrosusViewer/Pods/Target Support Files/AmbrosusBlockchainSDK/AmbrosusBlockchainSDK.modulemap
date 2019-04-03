@@ -1,0 +1,6 @@
+framework module AmbrosusBlockchainSDK {
+  umbrella header "AmbrosusBlockchainSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
