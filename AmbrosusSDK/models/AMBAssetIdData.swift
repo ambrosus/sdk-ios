@@ -15,22 +15,29 @@
 import UIKit
 
 public class AMBAssetIdData: AMBIdData {
-
+    
     public let sequenceNumber: Double
-
+    
     override init?(json: [String: Any]?) {
-        guard let json = json,
-            let sequenceNumber = json[AMBConstants.sequenceNumberKey] as? String else {
-                return nil
+        guard let json = json else {
+            return nil
         }
-        let doubleSequence = Double(sequenceNumber)
-        self.sequenceNumber = doubleSequence ?? 0
+        if let sequenceNumber = json[AMBConstants.sequenceNumberKey] as? Double {
+            self.sequenceNumber = sequenceNumber
+        } else {
+            if let stringSequence = json[AMBConstants.sequenceNumberKey] as? String {
+                let doubleSequence = Double(stringSequence)
+                self.sequenceNumber = doubleSequence ?? 0
+            } else {
+                return nil
+            }
+        }
         super.init(json: json)
     }
-
+    
     public override init() {
         self.sequenceNumber = 0
         super.init()
     }
-
+    
 }

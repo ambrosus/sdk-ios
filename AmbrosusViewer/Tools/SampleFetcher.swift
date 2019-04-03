@@ -22,15 +22,16 @@ final class SampleFetcher {
     var privateKey = String()
     var publicKey = String()
 
-    private let sampleAccounts = [AMBAccount]()
+    private let sampleAccounts = [
+        AMBAccount(publicKey: "0x9A3Db936c94523ceb1CcC6C90461bc34a46E9dfE", privateKey: "0xc104ec10ff80d8011b972470fe2e60fa968149a16c61a42b4d15067c29ff4e4c", name: "public account", image: #imageLiteral(resourceName: "FarmerAccount")),
+        AMBAccount(publicKey: "0x446D213e730658199dbCA28D26562C1b8746F9e0", privateKey: "0x3e2711db637d1f0b6c12ae11ffc8a47f8bb59e5c0bc6dd0af4d536448bc6d048", name: "account with access level 1", image: #imageLiteral(resourceName: "PharmacyAccount")),
+        AMBAccount(publicKey: "0xFE8F7769e12b565319eD60AD53C087F5353E4406", privateKey: "0xc2c34bb72c8d0131bbb1eef56be0888938616dba92da7e5d434d3f0bb5745668", name: "account with access level 2", image: #imageLiteral(resourceName: "RetailerAccount"))]
 
     /// Fetches sample assets and events stored as JSON locally
     func fetch() {
-        // AMBWeb3Manager.sharedInstance.setAccount(withPrivateKey: privateKey)
-        // requestSampleAccounts()
+        AMBWeb3Manager.sharedInstance.setAccount(withPrivateKey: privateKey)
+        requestSampleAccounts()
         requestSampleJSON()
-        //requestRealAccount()
-        // requestCreationAssetsAndEventsForSpecificAccessLevels()
     }
 
     private func requestCreationAssetsAndEventsForSpecificAccessLevels() {
