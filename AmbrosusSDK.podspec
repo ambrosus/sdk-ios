@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AmbrosusSDK'
-  s.version          = 'v.2.0.1'
+  s.version          = '2.0.2'
   s.summary          = 'Fetches Assets and Events from the Ambrosus Network (AMB-NET) and makes it easy to build interfaces.'
   s.swift_version    = '4.2'
 
