@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AmbrosusSDK'
-  s.version          = '2.0.2'
+  s.version          = '2.0.3'
   s.summary          = 'Fetches Assets and Events from the Ambrosus Network (AMB-NET) and makes it easy to build interfaces.'
   s.swift_version    = '4.2'
 
@@ -82,21 +82,21 @@ import AmbrosusSDK
 To get back an asset from the API you can make a call like the following:
 
 ```swift
-AMBNetwork.requestAsset(fromId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae", completion: { (asset) in
-  guard let asset = asset else {
-    NSLog("asset failed to unwrap")
-    return
-  }
-  // Use unwrapped Asset here
-}
+AMBNetwork.requestAsset(fromId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae", completion: { asset, error in
+    guard let asset = asset else {
+        NSLog("asset failed to unwrap \(error ?? "")")
+        return
+    }
+    // Use unwrapped Asset here
+})
 ```
 
 A single Asset in the AmbrosusSDK has many events associated with it, to get back all events associated with an asset you can make a call like the following:
 
 ```swift
-AMBNetwork.requestEvents(fromAssetId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae") { (events) in
+AMBNetwork.requestEvents(fromAssetId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae") { events, error in
     guard let events = events else {
-        NSLog("Failed to return events")
+        NSLog("Failed to return events \(error ?? "")")
         return
     }
     // Use unwrapped events here
@@ -106,16 +106,16 @@ AMBNetwork.requestEvents(fromAssetId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09d
 To get back an asset along with all of its events, and store the information in the `AMBDataStore` this can be done as follows:
 
 ```swift
-AMBNetwork.requestAsset(fromId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae", completion: { (asset) in
+AMBNetwork.requestAsset(fromId: "0x602023f73ab25f0c95a3cf4e92c9cb2f4c9c09dbd3ca6e167d362de6e7f1eeae", completion: { asset, error  in
     guard let asset = asset else {
-        NSLog("asset failed to unwrap")
+        NSLog("asset failed to unwrap \(error ?? "")")
         return
     }
     AMBDataStore.sharedInstance.assetStore.insert(asset)
 
-    AMBNetwork.requestEvents(fromAssetId: asset.id, completion: { (events) in
+    AMBNetwork.requestEvents(fromAssetId: asset.id, completion: { events, error in
         guard let events = events else {
-            print("events failed to unwrap")
+            print("events failed to unwrap \(error ?? "")")
             return
         }
         AMBDataStore.sharedInstance.eventStore.insert(events)
